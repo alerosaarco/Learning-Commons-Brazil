@@ -1,0 +1,13 @@
+# Secrets
+.env
+
+# Data files (large — download locally)
+data/raw/
+data/processed/
+data/output/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
