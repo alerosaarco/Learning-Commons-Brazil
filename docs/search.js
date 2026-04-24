@@ -5,15 +5,13 @@
   const BASE = "data/";
   let allHabs = [];
   let fuse = null;
-  let subjects = new Set();
 
-  const searchInput  = document.getElementById("searchInput");
-  const searchMeta   = document.getElementById("searchMeta");
-  const resultsList  = document.getElementById("results");
-  const noResults    = document.getElementById("noResults");
-  const filters      = document.getElementById("filters");
-  const filterStage  = document.getElementById("filterStage");
-  const filterSubject= document.getElementById("filterSubject");
+  const searchInput   = document.getElementById("searchInput");
+  const resultsList   = document.getElementById("results");
+  const noResults     = document.getElementById("noResults");
+  const filters       = document.getElementById("filters");
+  const filterStage   = document.getElementById("filterStage");
+  const filterSubject = document.getElementById("filterSubject");
 
   // ── Load index ──────────────────────────────────────────────────────────
   fetch(BASE + "index.json")
@@ -21,11 +19,11 @@
     .then(data => {
       allHabs = data;
 
+      const subjects = new Set();
       data.forEach(h => subjects.add(h.subject));
       Array.from(subjects).sort().forEach(s => {
         const opt = document.createElement("option");
-        opt.value = s;
-        opt.textContent = s;
+        opt.value = s; opt.textContent = s;
         filterSubject.appendChild(opt);
       });
 
@@ -41,42 +39,38 @@
       });
 
       filters.classList.remove("hidden");
-      searchMeta.textContent = `${data.length} habilidades carregadas`;
-      render(allHabs.slice(0, 50));
     })
     .catch(() => {
-      searchMeta.textContent = "Erro ao carregar dados.";
+      resultsList.innerHTML = '<li style="color:var(--muted);padding:2rem;text-align:center">Erro ao carregar dados.</li>';
     });
 
   // ── Search ───────────────────────────────────────────────────────────────
-  function currentFiltered() {
-    const stage   = filterStage.value;
-    const subject = filterSubject.value;
-    let base = allHabs;
-    if (stage)   base = base.filter(h => h.stage === stage);
-    if (subject) base = base.filter(h => h.subject === subject);
-    return base;
+  function hasActiveFilter() {
+    return filterStage.value !== "" || filterSubject.value !== "";
   }
 
   function doSearch() {
-    const q      = searchInput.value.trim();
-    const stage  = filterStage.value;
-    const subject= filterSubject.value;
+    const q       = searchInput.value.trim();
+    const stage   = filterStage.value;
+    const subject = filterSubject.value;
+
+    // Show nothing until the user types or picks a filter
+    if (!q && !hasActiveFilter()) {
+      resultsList.innerHTML = "";
+      noResults.classList.add("hidden");
+      return;
+    }
 
     let results;
     if (!q) {
-      results = currentFiltered().slice(0, 80);
-      searchMeta.textContent = results.length < (currentFiltered().length)
-        ? `Mostrando 80 de ${currentFiltered().length} habilidades`
-        : `${results.length} habilidades`;
+      results = allHabs
+        .filter(h => (!stage || h.stage === stage) && (!subject || h.subject === subject))
+        .slice(0, 100);
     } else {
-      // Fuse searches all, then filter
-      const raw = fuse.search(q).map(r => r.item);
-      results = raw.filter(h =>
-        (!stage   || h.stage   === stage) &&
-        (!subject || h.subject === subject)
-      ).slice(0, 80);
-      searchMeta.textContent = `${results.length} resultado(s) para "${q}"`;
+      results = fuse.search(q)
+        .map(r => r.item)
+        .filter(h => (!stage || h.stage === stage) && (!subject || h.subject === subject))
+        .slice(0, 100);
     }
 
     render(results);
@@ -103,17 +97,15 @@
 
   function esc(s) {
     return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
   // ── Events ───────────────────────────────────────────────────────────────
   let debounce;
   searchInput.addEventListener("input", () => {
     clearTimeout(debounce);
-    debounce = setTimeout(doSearch, 200);
+    debounce = setTimeout(doSearch, 180);
   });
   filterStage.addEventListener("change",   doSearch);
   filterSubject.addEventListener("change", doSearch);

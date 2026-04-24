@@ -4,13 +4,6 @@
 
   const BASE = "data/habilidades/";
 
-  const TIER_LABEL = {
-    merge:          "Fusão",
-    link_regional:  "Link regional",
-    link:           "Link",
-    none:           "Sem correspondência",
-  };
-
   const MATH_SUBJECTS = new Set([
     "Matemática",
     "Matemática e suas Tecnologias",
@@ -41,10 +34,8 @@
 
   function esc(s) {
     return String(s || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
   function habLink(code, descPt) {
@@ -57,20 +48,18 @@
   }
   window.navigate = navigate;
 
-  function tierBadge(tier) {
-    return `<span class="comp-tier tier-${esc(tier)}">${esc(TIER_LABEL[tier] || tier)}</span>`;
+  function sourceBadge(tier) {
+    if (tier === "merge") {
+      return `<span class="comp-badge badge-lc">LC</span>`;
+    }
+    return `<span class="comp-badge badge-ai">AI</span>`;
   }
 
-  function scoreBar(score) {
-    const pct = Math.round(score * 100);
-    const fill = Math.min(100, Math.round(score * 333)); // scale: 0.3 = full bar
-    return `
-      <div class="cc-score-bar">
-        <span class="cc-score-val">${pct}%</span>
-        <div class="cc-score-track">
-          <div class="cc-score-fill" style="width:${fill}%"></div>
-        </div>
-      </div>`;
+  function section(title, body) {
+    return `<div class="section">
+      <div class="section-header">${esc(title)}</div>
+      <div class="section-body">${body}</div>
+    </div>`;
   }
 
   function render(h) {
@@ -89,91 +78,45 @@
     `;
 
     // ── Components ─────────────────────────────────────────────────────────
-    html += `<div class="section">
-      <div class="section-header">Componentes de aprendizagem</div>
-      <div class="section-body">`;
-
+    let compsBody;
     if (h.components.length === 0) {
-      html += `<p class="prereq-obs">Nenhum componente gerado.</p>`;
+      compsBody = `<p class="prereq-obs">Nenhum componente gerado.</p>`;
     } else {
-      html += `<ul class="comp-list">`;
-      h.components.forEach(c => {
-        html += `<li class="comp-item">
-          ${tierBadge(c.match_tier)}
-          <div class="comp-text">
-            ${esc(c.description_pt)}
-            ${c.cc_component_description
-              ? `<div class="comp-cc">↔ <em>${esc(c.cc_component_description)}</em></div>`
-              : ""}
-          </div>
-        </li>`;
-      });
-      html += `</ul>`;
+      compsBody = `<ul class="comp-list">` +
+        h.components.map(c => `
+          <li class="comp-item">
+            ${sourceBadge(c.match_tier)}
+            <span class="comp-text">${esc(c.description_pt)}</span>
+          </li>`).join("") +
+        `</ul>`;
     }
-    html += `</div></div>`;
-
-    // ── CC standard matches ────────────────────────────────────────────────
-    html += `<div class="section">
-      <div class="section-header">Correspondências com Common Core (Learning Commons)</div>
-      <div class="section-body">`;
-
-    if (h.cc_matches.length === 0) {
-      html += `<p class="prereq-obs">Nenhuma correspondência com padrões Common Core encontrada.</p>`;
-    } else {
-      html += `<ul class="cc-list">`;
-      h.cc_matches.forEach(m => {
-        const tierParts = [];
-        if (m.n_merge)         tierParts.push(`${m.n_merge} fusão`);
-        if (m.n_link_regional) tierParts.push(`${m.n_link_regional} link regional`);
-        if (m.n_link)          tierParts.push(`${m.n_link} link`);
-        html += `<li class="cc-item">
-          ${scoreBar(m.score)}
-          <div class="cc-info">
-            <span class="cc-code">${esc(m.standard_code)}</span>
-            <div class="cc-desc">${esc(m.description)}</div>
-            <div class="cc-tiers">${tierParts.join(" · ")}</div>
-          </div>
-        </li>`;
-      });
-      html += `</ul>`;
-    }
-    html += `</div></div>`;
+    html += section("Componentes de aprendizagem", compsBody);
 
     // ── Prerequisites ──────────────────────────────────────────────────────
-    html += `<div class="section">
-      <div class="section-header">Pré-requisitos</div>
-      <div class="section-body">`;
-
+    let preBody;
     if (!isMath) {
-      html += `<p class="prereq-obs">Obs: O Learning Commons ainda não mapeou pré-requisitos fora de Matemática.</p>`;
+      preBody = `<p class="prereq-obs">Obs: O Learning Commons ainda não mapeou pré-requisitos fora de Matemática.</p>`;
     } else if (h.prerequisites.length === 0) {
-      html += `<p class="prereq-obs">Nenhum pré-requisito identificado para esta habilidade.</p>`;
+      preBody = `<p class="prereq-obs">Nenhum pré-requisito identificado para esta habilidade.</p>`;
     } else {
-      html += `<ul class="hab-link-list">`;
-      h.prerequisites.forEach(p => {
-        html += `<li class="hab-link-item">${habLink(p.code, p.description_pt)}</li>`;
-      });
-      html += `</ul>`;
+      preBody = `<ul class="hab-link-list">` +
+        h.prerequisites.map(p => `<li class="hab-link-item">${habLink(p.code, p.description_pt)}</li>`).join("") +
+        `</ul>`;
     }
-    html += `</div></div>`;
+    html += section("Pré-requisitos", preBody);
 
     // ── Unlocks ────────────────────────────────────────────────────────────
-    html += `<div class="section">
-      <div class="section-header">Habilidades que esta desbloqueia</div>
-      <div class="section-body">`;
-
+    let unlockBody;
     if (!isMath) {
-      html += `<p class="prereq-obs">Obs: O Learning Commons ainda não mapeou pré-requisitos fora de Matemática.</p>`;
+      unlockBody = `<p class="prereq-obs">Obs: O Learning Commons ainda não mapeou pré-requisitos fora de Matemática.</p>`;
     } else if (h.unlocks.length === 0) {
-      html += `<p class="prereq-obs">Nenhuma habilidade posterior identificada.</p>`;
+      unlockBody = `<p class="prereq-obs">Nenhuma habilidade posterior identificada.</p>`;
     } else {
-      html += `<ul class="hab-link-list">`;
-      h.unlocks.forEach(u => {
-        html += `<li class="hab-link-item">${habLink(u.code, u.description_pt)}</li>`;
-      });
-      html += `</ul>`;
+      unlockBody = `<ul class="hab-link-list">` +
+        h.unlocks.map(u => `<li class="hab-link-item">${habLink(u.code, u.description_pt)}</li>`).join("") +
+        `</ul>`;
     }
-    html += `</div></div>`;
+    html += section("Habilidades que esta desbloqueia", unlockBody);
 
     // ── Render ─────────────────────────────────────────────────────────────
     contentEl.innerHTML = html;

@@ -15,9 +15,9 @@
   </header>
 
   <main class="search-page">
-    <div class="nav-tabs" style="display:flex;gap:.5rem;margin-bottom:1rem;">
-      <span class="nav-tab active" style="display:inline-block;padding:.45rem 1rem;border-radius:20px;font-size:.85rem;font-weight:500;background:var(--brand);color:#fff;border:1px solid var(--brand);">🔍 Buscar</span>
-      <a href="about.html" class="nav-tab" style="display:inline-block;padding:.45rem 1rem;border-radius:20px;font-size:.85rem;font-weight:500;color:var(--muted);border:1px solid var(--border);background:var(--surface);text-decoration:none;">📖 Sobre o projeto</a>
+    <div class="nav-tabs">
+      <span class="nav-tab active">🔍 Buscar</span>
+      <a href="about.html" class="nav-tab">📖 Sobre o projeto</a>
     </div>
 
     <div class="search-box">
@@ -28,19 +28,23 @@
         autocomplete="off"
         spellcheck="false"
       />
-      <div id="searchMeta" class="search-meta"></div>
     </div>
 
     <div id="filters" class="filters hidden">
       <select id="filterStage">
-        <option value="">Todas as etapas</option>
+        <option value="">Segmento</option>
         <option value="EI">Educação Infantil</option>
         <option value="EF">Ensino Fundamental</option>
         <option value="EM">Ensino Médio</option>
       </select>
       <select id="filterSubject">
-        <option value="">Todas as disciplinas</option>
+        <option value="">Disciplina</option>
       </select>
+    </div>
+
+    <div class="download-bar">
+      <span>Explorar todos os dados:</span>
+      <a href="data/bncc_learning_commons.xlsx" download>⬇ Baixar planilha completa (.xlsx)</a>
     </div>
 
     <ul id="results" class="results-list" aria-live="polite"></ul>
