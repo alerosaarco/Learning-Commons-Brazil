@@ -89,7 +89,7 @@ EF02LP12,c4073ab6-560b-40f9-9e9d-d9f927f97bb3,"Read and comprehend folk songs, s
 EF35LP06,18dbed75-20e3-4f1c-8af1-d052d9ffb10d,Identify lexical substitutions that contribute to textual cohesion
 EF35LP06,d04a2437-ecd6-4b03-94aa-651621a6ee56,Identify anaphoric pronouns used as pronominal substitutions in a text
 EF35LP06,15d11800-afd8-4809-9256-2de96c0adb57,Trace referential relationships between parts of a text using lexical and pronominal substitutions
-EF35LP05,19755aad-c32d-4e41-adb4-7be60344cd45,Identify unknown words or expressions in a text
+EF35LP05,6f1948fe-6b46-4786-befb-65b69ebadad9,Identify unknown words encountered in an informational text
 EF35LP05,70dc7c6e-e2bf-46f1-bb34-b473c8de5c07,Infer the meaning of unknown words or expressions using sentence-level context
 EF35LP04,44444d1e-6ca1-4c40-8553-c90bedf4e9d1,Identify information that is implicitly conveyed in a text
 EF35LP04,022a19c0-b220-474e-a90d-3c879e87ef32,Infer implicit information in texts based on textual evidence
@@ -195,7 +195,7 @@ EF07LP02,53bb8a63-d129-40f7-adae-f33443df7ded,Recognize media convergence in mul
 EF05LP01,6f95b504-23d1-4797-b749-730e6a3bf413,Apply regular phoneme-grapheme correspondence rules to spell words correctly
 EF05LP01,b5987a9f-c80d-4e1e-a3c3-b56c406d3e81,Apply contextual spelling rules to write words with context-dependent correspondences
 EF05LP01,41d39c21-59ef-4252-817d-f7c162b47625,Apply morphological rules to spell words with predictable morphological patterns
-EF05LP01,89960a6c-8a22-4f58-8e0a-4c05b911b96f,Spell high-frequency words with irregular phoneme-grapheme correspondences
+EF05LP01,18a5a5ae-e5d9-49b8-a726-c647d63defbc,Spell high-frequency words correctly in written work
 EF04LP27,0c3aec75-e738-42d8-ae38-8bf34f63f7c1,Identify markers that distinguish characters' speech from stage directions in dramatic texts
 EF04LP27,5f03d280-96dd-4d1b-b13a-9a931264a501,Differentiate between dialogue lines and stage directions using textual markers
 EF04LP27,84f82c8d-44c5-4594-936a-668251552981,Recognize the formatting conventions used to present characters' speech in dramatic texts
@@ -449,7 +449,7 @@ EF35LP09,07468fba-b7ab-4b78-9f92-2c9429a2d0e5,Identify units of meaning as the b
 EF35LP09,7b144162-e2ea-4a92-879f-effcf2d53bd9,Organize a text into paragraphs following graphic conventions of the genre
 EF35LP09,4d580bb8-2296-4493-a9c4-1078a981f89c,Apply paragraph division appropriate to the characteristics of a specific text genre
 EF35LP07,9009c261-6854-4d46-8f37-d4881ed33b29,Apply spelling conventions when producing a written text
-EF35LP07,6774fe70-c62c-4153-8dcb-16ca6fc191cd,Use basic noun and verb agreement rules in written text production
+EF35LP07,61784f92-07f7-4311-83ba-f008e6bcddec,Use correct noun and verb agreement in written and spoken sentences
 EF35LP07,b0a384f4-511b-4c66-b45d-df690efe5ed4,"Apply punctuation marks correctly, including period, exclamation point, question mark, and commas in lists"
 EF35LP07,741a695f-a537-4293-83b9-3ff5715e728a,Punctuate direct speech correctly when producing a written text
 EF02LP08,cbf0b343-31d2-4d61-9620-a1ba1e9c14f4,Identify correct word boundaries when writing sentences
@@ -493,7 +493,7 @@ EF06LP04,bf75c79f-9836-4596-91a8-cae323635fc9,"Distinguish among verb forms in t
 EF06LP04,0754bdd5-31c2-4a47-bd19-c7d2f63650f6,Identify affirmative and negative forms of verbs across the three moods
 EF06LP04,72d4bb2b-58df-46cc-b228-5c3a58388dbb,Explain meaning changes produced by shifts in verb mood in a given context
 EF06LP03,fc438fef-b04e-4753-9e01-442e796a718d,Identify words that belong to the same synonymous series
-EF06LP03,bd247052-89a5-46c6-b9b5-b082a9b48336,Compare subtle differences in meaning among synonymous words
+EF06LP03,54ac6be9-fc1e-4aa2-9d18-cc0a4c4d4598,Distinguish subtle differences in meaning among words with similar denotations
 EF06LP03,fb193ce8-19f1-47b7-ac0e-44e6017c517d,Select the most appropriate synonym for a given context based on meaning distinctions
 EF06LP02,3e0d12fe-6e74-4229-b9b3-1ceb69e06c7c,Identify the defining characteristics of the news article as a journalistic genre
 EF06LP02,5b670797-447d-4beb-8641-919b43bfd09f,Distinguish among different journalistic genres by their purpose and structural features
@@ -539,7 +539,7 @@ EF04LP07,0a945e27-e1ec-488f-87ec-d74a6e4ce02c,"Identify agreement among articles
 EF04LP07,06bc8710-f5e7-40d2-980a-f87f7fb80b1c,Apply nominal agreement rules correctly in written production
 EF04LP06,d21f4b3f-8a7f-4a0c-a8e9-c9e71509f7c8,Identify subject-verb agreement between a noun and a verb in texts
 EF04LP06,c6487949-b71d-4800-903f-bbd7baad103f,Apply subject-verb agreement rules in complex sentence structures
-EF04LP05,25d7caa8-f4b3-4b50-b966-9ad5315bbd29,"Identify the function of periods, question marks, and exclamation marks while reading"
+EF04LP05,30291368-8373-4c96-b728-546b2c5a04c6,"Recognize and name end punctuation marks including periods, question marks, and exclamation points"
 EF04LP05,5ac86e85-d1d5-4ef2-9cea-3503dd53b913,Identify the function of colons and dashes in dialogue (direct speech) while reading
 EF04LP05,aeecd9a4-5e3a-4a94-bf11-8f7feea4bb2d,Use commas correctly in enumerations and to set off vocatives and appositives in writing
 EF04LP05,a2b8be2e-8f34-456a-aedd-2ffde0d9ecbb,Apply punctuation marks appropriately in written production
@@ -754,14 +754,14 @@ EF06LI16,e2133500-f94a-4c5b-8dea-d930d9893e90,Identify common expressions used f
 EF06LI16,84ed95da-18d7-4fe9-996e-34a5f1c5e998,Recognize expressions used for classroom routines and instructions in English
 EF06LI16,1879a8ce-e671-415f-9794-68b0c60c6829,"Use fixed expressions appropriately for greetings, requests, and classroom interaction in English"
 EF01LP05,4ad9911c-6c16-44a9-ac08-0ddd6876ee5a,Recognize that letters in alphabetic writing represent sounds of spoken language
-EF01LP05,35225014-1a02-4661-967c-40b14ee05361,Identify that spoken words can be represented by sequences of letters
+EF01LP05,b7d718c4-c043-4a19-b4b0-baf418d1e732,Recognize that spoken words are represented in written language by sequences of letters
 EF01LP05,72d99206-d410-4708-8628-b6a30b480ee7,Distinguish alphabetic writing from other writing systems based on its sound-symbol correspondence
 EF06LI15,fc02218c-0e9a-4a24-858c-391f3f0f753d,"Identify key features of written English genres such as comic strips, blog posts, and chats"
 EF06LI15,5d41d456-bc14-4543-9b69-6b2e87f5dee7,"Write sentences in English describing oneself, one's family, friends, and personal preferences"
 EF06LI15,46b1711e-5742-4fc2-8122-07b1d4c89d77,"Produce a short written text in English about one's routine, community, or school context"
 EF06LI15,a6a5c638-b8bf-4a3b-a53f-2e92d1a5df1b,Select an appropriate genre and format to present personal or community-related content in written English
 EF01LP06,3254c233-f098-4477-ae05-bf41ddc0ebb4,Segment spoken words into individual syllables
-EF01LP06,5d9e6225-2425-473e-b957-85b4b0dc05ff,Count the number of syllables in a spoken word
+EF01LP06,dd60925f-f2d6-4800-8e3d-fb4681deb36c,Count syllables in spoken words
 EF01LP06,f2602cdd-f417-4b88-a010-a2fc82b4e519,Identify syllable boundaries in words of varying lengths when spoken aloud
 EF01LP08,353e7e04-45ce-47ae-b239-e1e633b61d32,Match spoken syllables to their corresponding written representations
 EF01LP08,333a6abd-78a4-43a9-a8c4-b6373102b529,Identify the written representation of individual phonemes in simple words
@@ -818,7 +818,7 @@ EF01LP10,b4becda5-7f70-4e12-9395-3bf236421100,Name each letter of the alphabet i
 EF01LP10,58cfae1a-5a70-46bc-b33b-8d8702723cbe,Recite the letters of the alphabet in correct sequential order
 EF01LP09,12af0f28-c72a-4288-9cf2-804331292389,Compare two words by listening to the sounds of their initial syllables
 EF01LP09,57a746c3-280b-4f9e-9b61-da7324f7a51e,Identify similarities between the initial syllable sounds of two or more words
-EF01LP07,62f62375-1dfc-41ea-8df9-88b8af2feb28,Identify individual phonemes within spoken words
+EF01LP07,0f3b876f-624d-4471-9bd5-4c731bbb3c6a,Distinguish spoken words by identifying individual phonemes within them
 EF01LP07,b34d2332-296f-43cc-b1ca-8be8fd2a355a,Match a given phoneme to the letter or letters that represent it
 EF01LP07,e12b4774-ed28-40ba-a13d-0629a4d7237a,Distinguish between different phonemes and their corresponding written representations
 EF08LI05,2633241a-43f0-4f0d-a4ed-13db2cceacbc,Identify information implied but not explicitly stated in a text
@@ -911,7 +911,7 @@ EF08LI07,11e3acc0-75f3-4b96-a6d6-3ffeab4f791a,Engage with artistic heritage cont
 EF08LI07,2f095886-de70-4c6d-bdb7-2e0da95d6198,Explore English literary and artistic resources using digital tools for comprehension and appreciation
 EF02LP04,9f33cf39-b43f-4e8f-8285-020acf3ad180,"Read words with CV, V, CVC, and CCV syllable structures correctly"
 EF02LP04,d299852c-7c8e-4ea7-b633-b36739b1b68a,Recognize that every syllable contains at least one vowel when reading and writing words
-EF02LP02,e579afd2-abbb-490b-bc27-4fd775e494dd,Segment spoken or written words into syllables
+EF02LP02,3254c233-f098-4477-ae05-bf41ddc0ebb4,Segment spoken words into individual syllables
 EF02LP02,7c837115-0e69-4dc2-8382-b635407dca11,"Remove initial, medial, or final syllables from a word to form a new word"
 EF02LP02,ff1a6d9b-0c23-4b56-8533-c0b6307ac030,"Substitute syllables in initial, medial, or final positions to produce new words"
 EF03LP11,0f5cec02-133c-42c8-b1a7-6a09f1ee12ae,Read and independently comprehend instructional injunctive texts such as recipes and assembly instructions
@@ -1025,7 +1025,7 @@ EF01LP16,31d3f6d9-b7b8-49ad-a93c-c5063b8d5d4a,Explain how the organizational for
 EF01LP16,322917f3-f188-4e09-9651-5d96424a06c9,Comprehend the meaning of short everyday-life genre texts with contextual support
 EF01LP15,03edfa3a-d217-4446-a653-b894d067cc8d,Group words that share similar meanings as synonyms
 EF01LP15,4fcb3c41-2a41-4f90-9caf-349391f0d215,Distinguish pairs of words that express opposite meanings as antonyms
-EF01LP14,3f427ca0-7534-49b0-9ec3-321a8a703389,"Identify periods, question marks, and exclamation points within a written text"
+EF01LP14,30291368-8373-4c96-b728-546b2c5a04c6,"Recognize and name end punctuation marks including periods, question marks, and exclamation points"
 EF01LP14,67ddc7b6-0c77-432e-a316-15ce1dd5de1b,Recognize that punctuation marks are distinct from letters in a text
 EF01LP14,5e1b955d-81d5-456b-8a26-0e07db52c741,Explain how punctuation marks such as question marks and exclamation points affect reading intonation
 EF01LP13,9290e34c-3fd6-46f5-b726-3c487829dece,Identify similar sounds in the medial syllables of different words
@@ -1033,7 +1033,7 @@ EF01LP13,f7f683fa-dc44-4ce4-81e5-ee97b9e9383c,Compare words by describing differ
 EF01LP12,585b6b9f-e9c9-4530-ac97-39b919142401,Recognize that written words are separated from one another by white spaces
 EF01LP12,b87f791d-d6ae-40d9-b51f-0f904d2eb2d9,Identify word boundaries in a written sentence using spacing as a cue
 EF01LP11,62702b96-9ae5-46ba-8b86-db2c27757898,Identify letters in both print and cursive formats
-EF01LP11,609386c2-47d6-461b-8948-a25ba38d95fd,Differentiate uppercase and lowercase forms of the same letter
+EF01LP11,8efe7170-9c83-4218-b320-6712de482d0d,Distinguish between uppercase and lowercase forms of each letter when printing
 EF01LP11,becaef2c-028b-4365-b703-e9506238de68,Relate print and cursive versions of the same letter to each other
 EF03LP14,de1c181a-c67f-49c2-945f-715f769f458d,"Identify structural features of instructional injunctive texts, including imperative verbs and sequenced steps"
 EF03LP14,22f69779-ca58-45ee-a37d-318419321543,Plan an instructional text by organizing steps in logical sequence with peer support
@@ -1442,9 +1442,9 @@ EF89LP26,c210c76d-5ff5-4ed8-a481-1eed7ac51e6e,Produce a review drawing on previo
 EF89LP25,735a5161-c89e-4ba0-acae-e9bfd30230e8,Organize and present research findings through oral presentations in academic contexts
 EF89LP25,6944d805-2026-4f05-b374-3dcfc90bff06,Disseminate research findings through written formats such as science communication articles or collaborative encyclopedia entries
 EF89LP25,16c3b79f-403c-4ef7-b77d-babe16201af6,Disseminate research findings through digital formats such as science vlogs or videos
-EF89LP24,a2efcc3b-6885-4a49-bfe3-3504a4ecc164,Establish a clear and focused research question to guide an inquiry
+EF89LP24,179219d4-ca05-445b-a667-d07b71d42d68,Formulate a focused research question to guide a short inquiry project
 EF89LP24,1056e4f6-6ae5-4589-acc6-c9ec7740576f,Select open and reliable sources appropriate to the research focus
-EF89LP24,26c134d6-ec6e-4c99-8e0e-ba768214b599,Evaluate the credibility and relevance of sources used in a research process
+EF89LP24,7baff1fb-32c6-40ee-a801-4ffd093b9375,Assess the credibility and accuracy of print and digital sources used in research
 EF89LP23,d291eaec-a04f-48f3-95fd-6a33f0a705fc,"Identify argumentative moves — support, refutation, and negotiation — in argumentative and proposal-driven texts"
 EF89LP23,a247570c-de1e-480b-98b1-d4304abda1fc,Analyze the function of each argumentative move within the overall structure of an argumentative text
 EF89LP23,fcce747f-7644-4821-bda1-ba61131ea865,Evaluate the strength and effectiveness of arguments used in advocacy-oriented and proposal-driven texts
@@ -1864,7 +1864,7 @@ EF67LP11,a8b9447f-7a6a-44ff-88b1-4404a1354174,"Plan a review, vlog, podcast, or 
 EF67LP11,a8383f94-569a-4b44-bb47-60ed6bb0cada,Script a step-by-step walkthrough or structured commentary for subsequent recording or publication
 EF89LP37,3f7f0f4b-5a54-4383-908b-91232fbc0220,"Identify figures of speech such as irony, euphemism, antithesis, alliteration, and assonance in texts"
 EF89LP37,c63e2ef7-9426-434a-83a5-c27067393b37,Analyze the semantic effects produced by a specific figure of speech in a given textual context
-EF89LP37,06509384-6988-41dd-aaef-c463f56e481f,Interpret how an author's choice of figure of speech contributes to the overall meaning of a text
+EF89LP37,8254c442-26b5-4f20-845f-d67d42424365,Explain how a specific figure of speech contributes to meaning in a text
 EF09LP11,61f96dd2-f472-4779-afbc-d0374b3e40b0,Identify sequential cohesion resources such as conjunctions and textual connectors in a text
 EF09LP11,40fca0d0-b150-417c-99bd-01858c00e98c,Infer the meaning effects arising from specific cohesion resources used in a text
 EF09LP10,93344bc1-0520-4779-b90f-ed63dccce4b1,Identify the rules governing clitic pronoun placement in the standard written norm
@@ -2049,7 +2049,7 @@ EM13LGG105,e232dfc1-9ef1-4a90-92da-7bd6fdfb5d6c,Evaluate the social participatio
 EM13LGG105,73bc2603-cc9d-4e52-bd5f-5d7e6841bd90,Experiment with creating or adapting content across different media and semiotic modes
 EI02EF03,489e674f-88ef-4ae4-912a-99e1dc6d546b,Distinguish written text from illustrations in a book during read-aloud
 EI02EF03,92717b62-9c38-4816-9df1-5adb66348176,Demonstrate attention and interest during read-aloud of stories and texts
-EI02EF03,5750fe89-25f5-4ceb-8425-cfe36fe797d5,Track print directionality from top to bottom with adult guidance
+EI02EF03,145e8b0f-667a-4df8-8f04-53840520f0d3,Track print from top to bottom down a page of text
 EM13LGG201,c26726c5-47e2-4658-9ff9-e287dfd09147,"Use artistic, bodily, and verbal languages appropriately in different social contexts"
 EM13LGG201,a85958b6-0447-4603-8847-9abb61b9aa31,"Recognize languages as social, cultural, and historical phenomena"
 EM13LGG201,360cdf59-8ec0-4ec7-bb73-481a72e99d70,Explain how languages vary and are heterogeneous across different contexts
@@ -3105,7 +3105,7 @@ EF08MA20,a07fda7c-00eb-4e55-8e6d-18d93342cd01,Recognize that one liter is equiva
 EF08MA20,2711d39e-62bb-4d6c-8646-f4bc2d841184,Convert between liters and cubic meters using the relationship 1 m³ = 1000 L
 EF08MA20,089d3c63-4b13-4fed-a066-ee3a06fd4c0c,Solve problems involving container capacity using liter-to-cubic-decimeter equivalence
 EF08MA19,03bcf0c8-0f19-4485-a66e-5a75da19f671,Apply area formulas to calculate the area of quadrilaterals and triangles
-EF08MA19,856d5dcf-b557-4e16-a8c2-56d2c123b316,Apply the formula to calculate the area of a circle
+EF08MA19,a6134b89-4846-52b1-8df2-7fc536318e85,"Find the area of a circle to solve problems, including by using the formula for area of a circle"
 EF08MA19,7df9b3ce-b89b-467c-b565-859de019cc10,Solve real-world problems involving area measurement of geometric figures
 EF08MA19,e8645e20-09c9-4ca2-9acf-85fa84c80c9d,Compose problems requiring the use of area formulas in land-measurement contexts
 EF08MA18,23a3755e-03ce-407b-ab8c-74be8a47c4a2,"Identify a figure produced by a composition of translations, reflections, or rotations"
@@ -3256,7 +3256,7 @@ EF07MA21,76b88535-e6b1-4c3d-84fe-e9f36cac4619,"Identify figures produced by tran
 EF07MA21,e3d3c8b3-75ef-48db-ad0d-8111e76759de,"Construct figures using translation, rotation, and reflection with drawing instruments or software"
 EF07MA21,248eb988-d7bd-447b-bf8e-9f920caa31bc,"Distinguish between translation, rotation, and reflection transformations"
 EF07MA21,56f837bb-7ce3-4bdd-a813-8149d86627c3,Connect symmetry transformations to patterns in art and architectural contexts
-EM13MAT308,8c72c4ea-923c-48c8-af8b-5014c8b7fb64,Apply the Law of Sines to solve problems involving triangles
+EM13MAT308,bd6d804c-f6ac-5b4c-b1fb-b9b762028a80,Use the Laws of Sines to solve problems
 EM13MAT308,4a5f2dd0-e7ae-5fe9-9ab8-ce2ba4d70660,Use congruence and similarity to solve problems about geometric figures
 EM13MAT308,bb7d7c8d-700f-40a9-8fbe-e949ce7f7bda,Create problems in varied contexts whose solutions require metric relations in triangles
 EM13MAT307,f2bbf6d0-4eb0-44ec-aaca-3f37b3b76b07,Determine the area of a surface using reconfiguration methods
@@ -3265,8 +3265,8 @@ EM13MAT307,b55cc450-8813-488f-a224-2851ffe8c466,Derive area calculation expressi
 EM13MAT307,6f240439-a924-40a0-8423-066e42912e4e,Apply area formulas to solve real-world problems such as crop layout and land distribution
 EM13MAT306,40cc77f9-7d1b-4b0a-af0a-726c1014cd94,Identify characteristics of periodic phenomena in real-world contexts
 EM13MAT306,02cbba80-f16a-4e73-b0c4-c187b021d077,Represent periodic phenomena graphically in the Cartesian plane
-EM13MAT306,d3dd0149-e72c-4f17-abfb-17282d335f4c,Compare representations of real periodic phenomena with sine and cosine functions
-EM13MAT306,3398099c-bc15-4519-91d6-d98b27b1f787,Solve problems involving periodic phenomena using sine and cosine functions
+EM13MAT306,0cb33278-9c22-54ed-8781-e9597a9925ea,Use sine and cosine to model periodic phenomena
+EM13MAT306,0cb33278-9c22-54ed-8781-e9597a9925ea,Use sine and cosine to model periodic phenomena
 EM13MAT305,bf9b90e6-ea55-4f63-b745-260a28abf81d,Interpret the variation of quantities modeled by logarithmic functions
 EM13MAT305,e7908dbb-2fe3-4959-bf61-62809b3816ec,Solve problems involving logarithmic functions in real-world contexts such as pH or seismic activity
 EM13MAT305,a2cc4c1f-b32f-4992-9f66-62a6de90e7fe,Create problems that require the use of logarithmic functions to model contextual situations
@@ -3377,7 +3377,7 @@ EF06MA09,a84732de-2bae-473c-9c8b-a909e696fcc1,Calculate a fraction of a quantity
 EF06MA09,f66dfb80-052a-4606-9317-dba00f65b32d,Solve problems involving finding a fractional part of a given quantity
 EF06MA09,21aa5a66-fa57-4008-8d0b-a5c0b718379e,Compose problems involving the calculation of a fraction of a quantity
 EF05MA04,de0261db-4700-4a08-8fc0-3a34452e028d,Identify equivalent fractions using visual models or multiplication and division
-EF05MA04,3c0e320d-a36b-4cd6-aea8-36e17589c0a1,Generate equivalent fractions for a given fraction
+EF05MA04,c3b684c1-9c44-51cd-8a52-d7812ec62951,Generate equivalent fractions using the principle a/b = (n x a)/(n x b)
 EF05MA04,16c252cb-8bae-4d7f-ae12-1dc5e84f7d4b,Recognize that equivalent fractions represent the same quantity or position on the number line
 EF05MA05,9489e3f6-0da4-43db-8b5c-513e25269811,Compare two positive rational numbers in fractional or decimal representation
 EF05MA05,d67ee451-bb81-472a-bbee-93b0661aa509,Order a set of positive rational numbers in fractional and decimal forms
@@ -3392,11 +3392,11 @@ EF08MA09,63e2fc2a-08fe-481e-9680-64520f82bc72,Compose problems that can be model
 EF05MA23,7ce0da72-240e-41d2-89e7-1a8e9cfe32b9,Identify all equally likely outcomes in a random event
 EF05MA23,daf75cdc-0646-439d-abda-b8e34649be83,Calculate the probability of a specific outcome in an equiprobable sample space
 EF05MA23,c6f36891-ad4e-4bd8-b7ec-faff11ed3ed1,Express the probability of an outcome as a fraction of favorable outcomes over total outcomes
-EF07MA11,dee912d6-3d43-414a-b20e-6a44492e84e3,"Multiply rational numbers, including negative values, applying operational properties"
+EF07MA11,46fa1581-c95a-556e-9573-d6b6a1924e4b,Multiply rational numbers
 EF07MA11,405b366c-2f55-4a55-aff6-06b489acd8ae,Identify the relationship between multiplication and division of rational numbers
 EF07MA11,4bc77816-3df2-4d7e-924b-9784ed99fe4d,Apply properties of multiplication and division of rational numbers to simplify calculations
 EF05MA21,cedf081f-f5dd-481b-841c-29b1399adb70,Recognize volume as a quantity associated with three-dimensional geometric solids
-EF05MA21,83feef6a-3483-464a-96f6-d954de253031,Measure the volume of a solid by counting stacked unit cubes
+EF05MA21,7f339f4c-abc1-50e7-a0f3-448af44eabec,Find the volume of a three-dimensional figure by counting unit cubes
 EF05MA21,13204de1-3979-45eb-8227-9aee231c2907,Compare volumes of different solids using unit cube stacking
 EF02MA08,28425817-29fd-445c-9515-2cddd93a436c,Calculate the double of a quantity using personal strategies or manipulative materials
 EF02MA08,12bd699b-f488-4bf4-9774-0162ec141028,"Solve problems involving double, half, triple, and one-third of quantities"
@@ -3623,7 +3623,7 @@ EM13MAT302,6cb02ce9-2e48-40c5-be99-404171d0f618,Construct a first-degree polynom
 EM13MAT302,f5227118-7abc-468c-8fa8-24ca5951cfad,Use a polynomial function model to solve a problem and interpret the solution in context
 EM13MAT302,2dc2a385-cb5d-450d-9951-a513ba536f95,Validate a polynomial model using digital technologies and adjust it as needed
 EM13MAT301,31b95539-ae08-4155-9665-047bc5c44bb9,Represent a real-world situation as a system of simultaneous linear equations
-EM13MAT301,ff298a35-95ba-4624-b531-9fd6cca05ae4,Solve a system of simultaneous linear equations using algebraic techniques
+EM13MAT301,7782ce05-1218-5a88-8d2c-ef908e4d8fb4,Analyze and solve pairs of simultaneous linear equations
 EM13MAT301,9038b99f-1465-459e-9fea-089925c4c9f6,Interpret the solution of a system of linear equations in the context of the original problem
 EM13MAT301,3a8361b4-0747-4eef-accc-4af3306bb603,Formulate problems from other areas of knowledge that can be solved using systems of linear equations
 EM13MAT203,6fc22775-66cd-4d4b-a6c8-f4e697589cdc,Use spreadsheet formulas to build a household budget tracker or interest calculator
@@ -3737,7 +3737,7 @@ EF09MA18,517f0612-46bc-494c-9e9e-02876688fa9d,Convert between units used for ver
 EF09MA17,0c90b67d-4dfd-4e49-801b-2ff6094686b3,"Identify orthographic views (front, side, and top) of three-dimensional figures"
 EF09MA17,904cc076-846c-4a23-a12a-214490c2bd89,Match a three-dimensional figure to its corresponding orthographic views
 EF09MA17,e4013470-dba5-4964-88e7-07893e975b8c,Draw a three-dimensional object in perspective using orthographic view knowledge
-EF09MA16,ef3dc3e9-6e38-4536-9800-c71ea4852e78,Determine the midpoint of a line segment given the coordinates of its endpoints
+EF09MA16,d7f72fb7-cf73-5e6f-b121-de26302ed7cd,Find the midpoint of a line segment defined by two given points
 EF09MA16,43f22866-78e5-4a40-a791-aff24767d88d,Calculate the distance between two points given their coordinates in the Cartesian plane
 EF09MA16,08119d75-4179-4128-bfef-0d5db056df44,Apply distance calculations to determine perimeter of plane figures in the coordinate plane
 EF09MA15,751e3506-aec8-4876-ba09-0d7866c33e33,Describe in writing the steps of an algorithm for constructing a regular polygon with a known side length
@@ -4249,7 +4249,7 @@ EF07CI14,fd64110f-5c04-4122-8b1f-12dc806dcac6,Evaluate individual and collective
 EF07CI15,a5399798-2329-4aa5-a3ac-7261a209ed83,"Interpret natural phenomena such as volcanoes, earthquakes, and tsunamis using the tectonic plate model"
 EF07CI15,314a7705-d4e0-4fc8-8181-aa4e41ed5f67,Justify the rare occurrence of volcanoes and earthquakes in Brazil using tectonic plate theory
 EF07CI15,2af44b9d-ef6c-4dac-af6d-df0ffccfae35,Analyze the relationship between tectonic plate boundaries and the formation of geologic structures
-EF07CI16,1cd22530-415b-4fd6-bc4c-1e223a6d3e01,Describe the theory of continental drift and its key evidence
+EF07CI16,a4f341ff-7cc9-47d3-aaad-b6265ec143f7,Compare continental shapes and rock formations across plates to support the theory of continental drift
 EF07CI16,98d02fd2-6b7c-46e8-b966-24839982d652,Justify the complementary shapes of the Brazilian and African coastlines using continental drift theory
 EF08CI01,9e8ff9d0-9964-4f97-8e49-ef9d2eeaa20e,"Identify different energy sources used in homes, communities, or cities"
 EF08CI01,cef59aa7-1895-46f4-91d9-2f8c4461b76b,Classify energy sources as renewable or non-renewable
@@ -4304,7 +4304,7 @@ EF07CI01,43060f15-75e9-4d42-97c1-e1cbaf346146,Propose solutions using simple mac
 EF07CI02,0bfb0596-e361-4b95-b644-6514f79dabf7,Distinguish between temperature and heat as different physical concepts
 EF07CI02,ac2396a4-f6ce-404b-87d2-332b29b39f8d,Differentiate thermal sensation from actual temperature in everyday situations
 EF07CI02,d2026045-6292-453a-81ad-71ca84d28a47,Identify thermodynamic equilibrium conditions in everyday contexts
-EF07CI03,1c9466ed-66fc-4e96-87ee-bd280823c824,"Identify the three modes of heat transfer: conduction, convection, and radiation"
+EF07CI03,5c67207d-4827-4943-bb21-0d822ca7eed9,"Compare mechanisms of energy transfer such as conduction, convection, and radiation"
 EF07CI03,ecb37911-fb74-4494-9a60-7b9c16b3c897,Classify materials as thermal conductors or insulators based on their heat-transfer properties
 EF07CI03,113b13a3-c2c3-46c8-9602-d3ec9d7f171a,Justify the choice of specific materials in everyday objects using knowledge of heat transfer modes
 EF07CI03,8b8a361e-9d08-4b21-965d-c8fbf7a192ba,"Explain the operating principles of thermal devices (thermos flasks, solar collectors) using heat transfer concepts"
@@ -4386,12 +4386,12 @@ EF08CI16,06546029-9701-4f1c-a52a-1a4883d593b4,Describe initiatives that contribu
 EF08CI16,6f5f0b74-9130-4649-8316-87e0a75327fa,Evaluate the effectiveness of proposed initiatives in addressing human-caused climate changes
 EF09CI01,92886824-00b3-41ad-a453-6defe060a2d0,Identify changes of physical state of matter in observable phenomena
 EF09CI01,6531fe59-3a69-4de8-8f1f-c2be30d25e88,Explain physical state changes using the submicroscopic model of matter's composition
-EF09CI01,733ce6f3-6747-4576-94e5-27266e115d7d,Distinguish between the arrangement and motion of particles in different physical states
+EF09CI01,9df428fd-fcb9-482b-b05d-5f91f2d0a2a2,Explain how the arrangement and motion of particles account for differences between states of matter
 EF09CI02,d9c1a41d-ba3e-483c-8071-701453b623a8,Compare the masses of reactants and products in chemical transformations
 EF09CI02,280165ca-95f0-42a4-abac-1bebc7cce364,Establish the ratio between the masses of reactants and products in a chemical reaction
 EF09CI02,47d9eed5-553b-430d-a3d5-405bbfdb6349,Apply the law of conservation of mass to analyze chemical transformations
 EF09CI03,963435cb-737b-4d4e-b91b-136182ef8bd9,Identify models that describe the atomic constitution of matter
-EF09CI03,8f008771-25a1-4c1b-a9c4-3ebaee9a10ea,Describe the composition of simple molecules using atomic models
+EF09CI03,6fdd6c83-bf82-4d73-8f10-d5378df77044,Identify the atomic composition of simple molecules using chemical formulas or models
 EF09CI03,80ada446-206c-477d-aa58-27f98a86782e,Recognize the historical development of atomic and molecular models of matter
 EF09CI04,f02fcc61-f160-4f3e-a70e-4dc14501514b,Demonstrate through experimentation that the three primary colors of light combine to produce all other colors
 EF09CI04,4c4f0d16-0676-4eab-a5e5-9bc21795b7fa,Investigate how the color of light illuminating an object affects its apparent color
@@ -4443,7 +4443,7 @@ EF02CI07,6262cff9-b30c-43ce-bca3-dcf30e01e9e1,Observe and record the length of s
 EF02CI07,6a7c97ca-34a8-478c-aa04-1f1c3fce026f,Relate the position of the Sun to the corresponding length of shadows cast by objects
 EF02CI08,bc015383-73c3-4464-9460-6bc9e0540986,"Identify how different surface types (water, sand, soil, dark, light, and metallic surfaces) respond to solar radiation"
 EF02CI08,0f1a213a-36c7-4c64-82a8-27a1b4ac8277,Compare the degree of heating produced by solar radiation on different types of surfaces
-EF04CI05,a1505913-a9d1-44bf-afd4-8d3570a52dac,Describe how matter cycles among the living and nonliving components of an ecosystem
+EF04CI05,24448377-b52b-4d3c-a90e-d1b052fb8907,"Describe how matter cycles among producers, consumers, decomposers, and abiotic components of an ecosystem"
 EF04CI05,e201613c-9627-43d2-bb01-4feae3894261,Describe how energy flows (rather than cycles) through the living and nonliving components of an ecosystem
 EF04CI05,35f3e901-35c8-4ff0-a416-7512c49dc89b,"Compare the cycling of matter with the flow of energy, highlighting similarities and differences"
 EF04CI05,11df15d2-c756-410e-b4c1-a105d4d3f869,Identify the roles of living and nonliving components in both matter cycling and energy flow
@@ -4896,7 +4896,7 @@ EF06CO05,eb553860-7050-4a07-b562-f598bf472642,Identify the inputs required and t
 EF06CO05,0e0b4ca8-0970-4fa3-abc8-8fca24628c48,Determine appropriate data types for the inputs and outputs of a problem
 EF06CO05,184ada07-4af5-4f3c-a566-e54de11e6d4a,Define a problem formally as a relationship between input and output
 EF06CO05,0ef877fb-ec66-448e-8bfe-6ecf6ae54a67,Apply decomposition and generalization strategies to structure a problem solution
-EF06CO04,fd9e1e32-daff-42e2-b61e-13352fc464f8,"Decompose a problem into smaller, manageable sub-problems"
+EF06CO04,96f5c0fe-f649-4083-ab8c-ca62f82d6ad9,"Decompose a complex real-world problem into smaller, independently solvable sub-problems"
 EF06CO04,80c1cfcf-a370-4b29-a6b0-69947ec806c6,Construct a solution to a problem using the decomposition technique
 EF06CO04,d126f34e-6b60-420b-9168-5f131aa4a6d3,Automate a decomposed solution using a programming language
 EF06CO04,08afd7e6-e4c4-4668-9945-7a0313f0ad06,Apply reuse strategies by incorporating existing solution components into new problems
@@ -5370,7 +5370,7 @@ EF09CI16,930087b3-51ec-45cc-a22c-e8133fe9aa42,Analyze arguments about human surv
 EF09CI14,97583ae1-f7ef-479c-aadc-04843cfb43ba,"Describe the categories of bodies that compose the Solar System, including the Sun, rocky planets, gas giants, and smaller bodies"
 EF09CI14,1864dc82-4229-4f22-9ca9-9d6944682c1a,Distinguish between rocky planets and gas giant planets based on their physical characteristics
 EF09CI14,aabc5418-5ee7-4f2e-b189-2315e160a08b,Identify Earth's solar system as one component within the Milky Way galaxy
-EF09CI14,70e502cf-d2a4-4ffc-b826-6eb0888c3ac4,Describe the position of the Milky Way as one among billions of galaxies in the Universe
+EF09CI14,a44c8348-c4ad-4289-8a35-4dc69a2decd7,Compare the relative position of Earth's solar system within the Milky Way to other galaxies in the universe
 EF67EF13,215670e5-b73e-41f1-9825-c7b04f0f21d2,Differentiate urban dances from other dance forms based on their defining characteristics
 EF67EF13,bf095f4c-b15b-4f11-812e-ce0b2a9feae0,Identify the cultural meanings and social significance attributed to urban dances by different groups
 EF67EF13,778e7920-e6de-41d1-b24b-c637379a7b8e,Recognize and respect the diversity of social groups that practice and value urban dance forms
