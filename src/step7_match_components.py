@@ -40,11 +40,29 @@ from tqdm import tqdm
 load_dotenv()
 
 THRESHOLD_AUTO_MERGE = 0.92   # near-identical text: auto-merge, skip AI
-TOP_K_CANDIDATES     = 3      # CC candidates per BNCC component sent to AI
-AI_BATCH_SIZE        = 20     # BNCC components per AI call (each with TOP_K candidates)
-CONCURRENCY          = 8
+TOP_K_CANDIDATES     = 20     # CC candidates per BNCC component sent to AI (subject-filtered)
+AI_BATCH_SIZE        = 5      # BNCC components per AI call (each with TOP_K candidates)
+CONCURRENCY          = 2      # low concurrency to avoid rate limits
 MAX_TOKENS           = 4096
 CHUNK                = 500
+
+CHECKPOINT_CSV = PROC / "step7_checkpoint.csv"   # resume support
+
+# BNCC subject → CC academic_subject for candidate pool filtering
+BNCC_TO_CC_SUBJECT: dict[str, str] = {
+    "Matemática":                                          "Mathematics",
+    "Matemática e suas Tecnologias":                       "Mathematics",
+    "Espaços, Tempos, Quantidades, Relações e Transformações": "Mathematics",
+    "Língua Portuguesa":                                   "English Language Arts",
+    "Linguagens e suas Tecnologias":                       "English Language Arts",
+    "Escuta, Fala, Pensamento e Imaginação":               "English Language Arts",
+    "Língua Inglesa":                                      "English Language Arts",
+    "Ciências":                                            "Science",
+    "Ciências da Natureza e suas Tecnologias":             "Science",
+    "Geografia":                                           "Science",
+    "Computação":                                          "Science",
+    # No CC counterpart — use all subjects as fallback
+}
 
 ROOT     = Path(__file__).resolve().parent.parent
 PROC     = ROOT / "data" / "processed"
@@ -180,32 +198,64 @@ def main() -> None:
 
     # ---- TF-IDF pass ----
     all_texts = cc_df["description"].tolist() + bncc_df["description"].tolist()
-    log.info("Fitting TF-IDF vectoriser…")
+    # Build subject-filtered CC pools and per-pool TF-IDF matrices
+    bncc_hab  = pd.read_csv(PROC / "bncc_translated.csv", encoding="utf-8-sig")
+    hab_subj  = bncc_hab.set_index("bncc_code")["subject"].to_dict()
+    bncc_hab_map = bncc_df.set_index("component_id")["habilidade_code"].to_dict()
+
+    cc_std    = pd.read_csv(ROOT / "data" / "raw" / "lc_cc_standards.csv", encoding="utf-8-sig")
+    cc_subj_map = (
+        cc_df.merge(cc_std[["identifier", "academic_subject"]],
+                    left_on="standard_id", right_on="identifier", how="left")
+        .set_index("component_id")["academic_subject"]
+        .to_dict()
+    )
+
+    all_cc_subjects = ["Mathematics", "English Language Arts", "Science", "all"]
+    cc_pools: dict[str, pd.DataFrame] = {}
+    cc_pool_mats: dict[str, object] = {}
+
+    log.info("Building subject-filtered CC pools and TF-IDF matrices…")
+    for subj in all_cc_subjects:
+        if subj == "all":
+            pool = cc_df.copy()
+        else:
+            pool = cc_df[cc_df["component_id"].map(cc_subj_map) == subj].copy()
+        cc_pools[subj] = pool.reset_index(drop=True)
+
+    # Fit one shared vectoriser on the full corpus for consistent vocabulary
     vec = TfidfVectorizer(ngram_range=(1, 2), min_df=1, sublinear_tf=True)
-    vec.fit(all_texts)
+    vec.fit(cc_df["description"].tolist() + bncc_df["description"].tolist())
 
-    cc_mat   = vec.transform(cc_df["description"].tolist())
-    bncc_mat = vec.transform(bncc_df["description"].tolist())
+    for subj in all_cc_subjects:
+        cc_pool_mats[subj] = vec.transform(cc_pools[subj]["description"].tolist())
+        log.info("  %s: %d CC components", subj, len(cc_pools[subj]))
 
-    cc_ids   = cc_df["component_id"].tolist()
-    cc_descs = cc_df["description"].tolist()
-
-    log.info("Finding top-%d CC candidates per BNCC component…", TOP_K_CANDIDATES)
+    log.info("Finding top-%d subject-matched CC candidates per BNCC component…",
+             TOP_K_CANDIDATES)
     auto_merges: list[dict] = []
-    ai_items: list[dict] = []   # each: {bncc_component_id, bncc_desc, cc_candidates, cc_ids, top_sim}
+    ai_items: list[dict] = []
+
+    bncc_mat = vec.transform(bncc_df["description"].tolist())
 
     for start in tqdm(range(0, len(bncc_df), CHUNK), desc="tfidf"):
         chunk = bncc_mat[start: start + CHUNK]
-        sims  = cosine_similarity(chunk, cc_mat)   # (chunk, N_cc)
 
-        # top-K indices per row
-        top_k_idx = np.argsort(sims, axis=1)[:, -TOP_K_CANDIDATES:][:, ::-1]
-        top_k_sim = sims[np.arange(len(top_k_idx))[:, None], top_k_idx]
-
-        for k in range(len(top_k_idx)):
+        for k in range(chunk.shape[0]):
             bncc_row  = bncc_df.iloc[start + k]
-            best_sim  = float(top_k_sim[k, 0])
-            best_cc   = cc_df.iloc[int(top_k_idx[k, 0])]
+            hab_code  = bncc_hab_map.get(bncc_row["component_id"], "")
+            bncc_subj = hab_subj.get(hab_code, "")
+            cc_subj   = BNCC_TO_CC_SUBJECT.get(bncc_subj, "all")
+
+            pool    = cc_pools[cc_subj]
+            mat     = cc_pool_mats[cc_subj]
+            sims    = cosine_similarity(chunk[k], mat)[0]   # (N_pool,)
+            k_take  = min(TOP_K_CANDIDATES, len(pool))
+            top_idx = np.argsort(sims)[-k_take:][::-1]
+            top_sim = sims[top_idx]
+
+            best_sim = float(top_sim[0])
+            best_cc  = pool.iloc[int(top_idx[0])]
 
             if best_sim >= THRESHOLD_AUTO_MERGE:
                 auto_merges.append({
@@ -215,8 +265,8 @@ def main() -> None:
                     "match_tier":        "merge",
                 })
             else:
-                candidates = [cc_descs[int(i)] for i in top_k_idx[k]]
-                cand_ids   = [cc_ids[int(i)]   for i in top_k_idx[k]]
+                candidates = [pool.iloc[int(i)]["description"] for i in top_idx]
+                cand_ids   = [pool.iloc[int(i)]["component_id"] for i in top_idx]
                 ai_items.append({
                     "bncc_component_id": bncc_row["component_id"],
                     "bncc_desc":         bncc_row["description"],
@@ -231,11 +281,25 @@ def main() -> None:
     match_rows: list[dict] = list(auto_merges)
 
     if ai_items:
+        # Resume: skip already-processed BNCC component IDs
+        done_ids: set[str] = set()
+        checkpoint_rows: list[dict] = []
+        if CHECKPOINT_CSV.exists():
+            try:
+                ckpt = pd.read_csv(CHECKPOINT_CSV, encoding="utf-8-sig")
+                done_ids = set(ckpt["bncc_component_id"].astype(str))
+                checkpoint_rows = ckpt.to_dict("records")
+                log.info("Resuming from checkpoint: %d already processed", len(done_ids))
+            except pd.errors.EmptyDataError:
+                pass
+
+        todo_ai = [it for it in ai_items if it["bncc_component_id"] not in done_ids]
         log.info("Sending %d BNCC components to AI (top-%d candidates each)…",
-                 len(ai_items), TOP_K_CANDIDATES)
+                 len(todo_ai), TOP_K_CANDIDATES)
+
         batches = [
-            ai_items[i: i + AI_BATCH_SIZE]
-            for i in range(0, len(ai_items), AI_BATCH_SIZE)
+            todo_ai[i: i + AI_BATCH_SIZE]
+            for i in range(0, len(todo_ai), AI_BATCH_SIZE)
         ]
 
         with ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
@@ -248,13 +312,22 @@ def main() -> None:
                     log.error("AI batch failed: %s — defaulting to none", e)
                     decisions = [{"tier": "none", "cc_component_id": None}] * len(batch)
 
+                new_rows = []
                 for item, decision in zip(batch, decisions):
-                    match_rows.append({
+                    new_rows.append({
                         "bncc_component_id": item["bncc_component_id"],
                         "cc_component_id":   decision["cc_component_id"] or item["cc_ids"][0],
                         "similarity":        item["top_sim"],
                         "match_tier":        decision["tier"],
                     })
+
+                checkpoint_rows.extend(new_rows)
+                pd.DataFrame(checkpoint_rows).to_csv(
+                    CHECKPOINT_CSV, index=False, encoding="utf-8-sig"
+                )
+
+        for row in checkpoint_rows:
+            match_rows.append(row)
 
     # ---- Write matches ----
     matches = pd.DataFrame(match_rows)
