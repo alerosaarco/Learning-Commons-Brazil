@@ -42,11 +42,9 @@ load_dotenv()
 THRESHOLD_AUTO_MERGE = 0.92   # near-identical text: auto-merge, skip AI
 TOP_K_CANDIDATES     = 20     # CC candidates per BNCC component sent to AI (subject-filtered)
 AI_BATCH_SIZE        = 5      # BNCC components per AI call (each with TOP_K candidates)
-CONCURRENCY          = 2      # low concurrency to avoid rate limits
+CONCURRENCY          = 4      # balanced: throughput without hammering rate limits
 MAX_TOKENS           = 4096
 CHUNK                = 500
-
-CHECKPOINT_CSV = PROC / "step7_checkpoint.csv"   # resume support
 
 # BNCC subject → CC academic_subject for candidate pool filtering
 BNCC_TO_CC_SUBJECT: dict[str, str] = {
@@ -72,6 +70,7 @@ LOGS_DIR.mkdir(parents=True, exist_ok=True)
 BNCC_COMPS_CSV = PROC / "bncc_components.csv"
 CC_COMPS_CSV   = PROC / "cc_components_full.csv"
 MATCHES_CSV    = PROC / "bncc_component_matches.csv"
+CHECKPOINT_CSV = PROC / "step7_checkpoint.csv"
 
 logging.basicConfig(
     level=logging.INFO,
