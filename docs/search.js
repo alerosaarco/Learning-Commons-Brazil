@@ -13,18 +13,22 @@
   const filterStage   = document.getElementById("filterStage");
   const filterSubject = document.getElementById("filterSubject");
 
-  // Discipline groups — order and membership are curriculum knowledge
+  // Canonical discipline groups.
+  // The dropdown shows only the label; filtering matches ALL subjects in the group.
+  // This means "Matemática e suas Tecnologias" (EM) appears under "Matemática", etc.
   const SUBJECT_GROUPS = [
     { label: "Matemática", subjects: [
         "Matemática",
         "Matemática e suas Tecnologias",
         "Espaços, Tempos, Quantidades, Relações e Transformações",
     ]},
-    { label: "Linguagens", subjects: [
+    { label: "Língua Portuguesa", subjects: [
         "Língua Portuguesa",
         "Linguagens e suas Tecnologias",
-        "Língua Inglesa",
         "Escuta, Fala, Pensamento e Imaginação",
+    ]},
+    { label: "Língua Inglesa", subjects: [
+        "Língua Inglesa",
     ]},
     { label: "Ciências", subjects: [
         "Ciências",
@@ -48,32 +52,23 @@
     { label: "Computação",       subjects: ["Computação"] },
   ];
 
+  // flat map: raw subject string → canonical group label
+  const subjectToGroup = {};
+  SUBJECT_GROUPS.forEach(g => g.subjects.forEach(s => { subjectToGroup[s] = g.label; }));
+
   // ── Load index ──────────────────────────────────────────────────────────
   fetch(BASE + "index.json")
     .then(r => r.json())
     .then(data => {
       allHabs = data;
 
-      // Build grouped <optgroup> dropdown; only include subjects present in data
+      // Flat dropdown with canonical group labels only
       const present = new Set(data.map(h => h.subject));
       SUBJECT_GROUPS.forEach(group => {
-        const opts = group.subjects.filter(s => present.has(s));
-        if (!opts.length) return;
-        const grp = document.createElement("optgroup");
-        grp.label = group.label;
-        opts.forEach(s => {
-          const opt = document.createElement("option");
-          opt.value = s;
-          opt.textContent = s;
-          grp.appendChild(opt);
-        });
-        filterSubject.appendChild(grp);
-      });
-      // Anything not in any group goes at the bottom ungrouped
-      const grouped = new Set(SUBJECT_GROUPS.flatMap(g => g.subjects));
-      Array.from(present).filter(s => !grouped.has(s)).sort().forEach(s => {
+        if (!group.subjects.some(s => present.has(s))) return; // skip empty groups
         const opt = document.createElement("option");
-        opt.value = s; opt.textContent = s;
+        opt.value = group.label;
+        opt.textContent = group.label;
         filterSubject.appendChild(opt);
       });
 
@@ -111,15 +106,18 @@
       return;
     }
 
+    // subject filter value is a canonical group label — match all disciplines in that group
+    const matchesSubject = h => !subject || subjectToGroup[h.subject] === subject;
+
     let results;
     if (!q) {
       results = allHabs
-        .filter(h => (!stage || h.stage === stage) && (!subject || h.subject === subject))
+        .filter(h => (!stage || h.stage === stage) && matchesSubject(h))
         .slice(0, 100);
     } else {
       results = fuse.search(q)
         .map(r => r.item)
-        .filter(h => (!stage || h.stage === stage) && (!subject || h.subject === subject))
+        .filter(h => (!stage || h.stage === stage) && matchesSubject(h))
         .slice(0, 100);
     }
 
@@ -136,7 +134,7 @@
       li.innerHTML = `
         <span class="result-code">${esc(h.code)}</span>
         <span class="result-desc">${esc(h.description_pt)}</span>
-        <span class="result-subject">${esc(h.subject)}</span>
+        <span class="result-subject">${esc(subjectToGroup[h.subject] || h.subject)}</span>
       `;
       li.addEventListener("click", () => {
         window.location.href = `habilidade.html?code=${encodeURIComponent(h.code)}`;
