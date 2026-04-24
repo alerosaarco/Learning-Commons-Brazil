@@ -94,27 +94,63 @@ def _get(endpoint: str, params: dict | None = None) -> dict:
 
 def _paged(endpoint: str, params: dict | None = None) -> list[dict]:
     """
-    Collect all pages.  The API uses page/pageSize-style pagination
-    (observed from tutorials).  We request large pages and walk until empty.
+    Collect all pages.
+
+    Uses response metadata to determine when to stop, so we don't depend
+    on guessing the server's effective page size.  Tries several common
+    pagination envelope shapes:
+      - {data:[...], meta:{totalPages, currentPage}}
+      - {data:[...], meta:{total, pageSize}}
+      - {data:[...], pagination:{totalPages}}
+      - {data:[...], totalCount}
+    Falls back to stopping when a page returns fewer items than the
+    *actual* page size observed in the first response.
     """
     params = dict(params or {})
-    params.setdefault("pageSize", 500)
+    params["pageSize"] = 100          # conservative — server may cap lower
+    params["page"] = 1
     out: list[dict] = []
-    page = 1
-    while True:
+    observed_page_size: int | None = None
+
+    for page in range(1, 5001):      # absolute safety cap
         params["page"] = page
         resp = _get(endpoint, params)
         data = resp.get("data", [])
+
         if not data:
             break
         out.extend(data)
-        # Stop if the API returned fewer items than the page size
-        if len(data) < params["pageSize"]:
+
+        if observed_page_size is None:
+            observed_page_size = len(data)
+
+        # Try to read total pages from response envelope
+        meta = resp.get("meta") or resp.get("pagination") or {}
+        total_pages = (
+            meta.get("totalPages")
+            or meta.get("total_pages")
+        )
+        if total_pages is not None:
+            if page >= int(total_pages):
+                break
+            continue
+
+        # Try total count + observed page size
+        total_count = (
+            meta.get("total")
+            or meta.get("totalCount")
+            or resp.get("totalCount")
+        )
+        if total_count is not None and observed_page_size:
+            import math
+            if page >= math.ceil(int(total_count) / observed_page_size):
+                break
+            continue
+
+        # Fallback: stop when the page is smaller than the first page
+        if len(data) < observed_page_size:
             break
-        page += 1
-        if page > 200:  # hard guard
-            log.warning("Pagination cap hit on %s (%d items)", endpoint, len(out))
-            break
+
     return out
 
 
@@ -122,9 +158,17 @@ def _paged(endpoint: str, params: dict | None = None) -> list[dict]:
 # Fetch phases
 # ---------------------------------------------------------------------------
 
+def _log_envelope(label: str, resp: dict) -> None:
+    """Log the non-data keys of a response so we can see pagination metadata."""
+    keys = {k: v for k, v in resp.items() if k != "data"}
+    log.info("Response envelope [%s]: %s", label, keys)
+
+
 def fetch_cc_frameworks() -> list[dict]:
     log.info("Fetching Multi-State (Common Core) frameworks…")
-    frameworks = _paged("/standards-frameworks", {"jurisdiction": "Multi-State"})
+    raw = _get("/standards-frameworks", {"jurisdiction": "Multi-State", "pageSize": 100})
+    _log_envelope("/standards-frameworks", raw)
+    frameworks = raw.get("data", [])
     for f in frameworks:
         log.info(
             "  framework: %s — %s (uuid=%s)",
@@ -140,7 +184,14 @@ def fetch_standards_for_framework(framework: dict) -> list[dict]:
     if not uuid:
         return []
     subject = framework.get("academicSubject", "")
-    log.info("Fetching standards for %s (uuid=%s)…", subject, uuid)
+    title = framework.get("title") or framework.get("name") or ""
+    log.info("Fetching standards for '%s' — %s (uuid=%s)…", title, subject, uuid)
+
+    # Log first-page envelope to confirm pagination shape
+    first = _get("/academic-standards",
+                 {"standardsFrameworkCaseIdentifierUUID": uuid, "pageSize": 100, "page": 1})
+    _log_envelope(f"/academic-standards [{subject}]", first)
+
     items = _paged(
         "/academic-standards",
         {"standardsFrameworkCaseIdentifierUUID": uuid},
