@@ -5,7 +5,9 @@
 data/processed/
 data/output/
 data/logs/
-# data/raw/ IS tracked: it holds committed source PDFs + API JSONs
+# data/raw/ IS tracked — except the large Learning Commons exports
+data/raw/lc_nodes.jsonl
+data/raw/lc_relationships.jsonl
 
 # Python
 __pycache__/
