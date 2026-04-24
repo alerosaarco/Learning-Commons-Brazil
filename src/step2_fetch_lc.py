@@ -94,62 +94,34 @@ def _get(endpoint: str, params: dict | None = None) -> dict:
 
 def _paged(endpoint: str, params: dict | None = None) -> list[dict]:
     """
-    Collect all pages.
+    Collect all pages using cursor-based pagination.
 
-    Uses response metadata to determine when to stop, so we don't depend
-    on guessing the server's effective page size.  Tries several common
-    pagination envelope shapes:
-      - {data:[...], meta:{totalPages, currentPage}}
-      - {data:[...], meta:{total, pageSize}}
-      - {data:[...], pagination:{totalPages}}
-      - {data:[...], totalCount}
-    Falls back to stopping when a page returns fewer items than the
-    *actual* page size observed in the first response.
+    The LC API returns:
+      {"data":[...], "pagination":{"limit":100, "nextCursor":"...", "hasMore":true}}
+
+    We pass the opaque `cursor` back on each subsequent request until
+    `hasMore` is false (or the cursor is missing).
     """
     params = dict(params or {})
-    params["pageSize"] = 100          # conservative — server may cap lower
-    params["page"] = 1
+    params["limit"] = 100
     out: list[dict] = []
-    observed_page_size: int | None = None
+    cursor: str | None = None
 
-    for page in range(1, 5001):      # absolute safety cap
-        params["page"] = page
+    for i in range(50_000):  # absolute safety cap
+        if cursor:
+            params["cursor"] = cursor
         resp = _get(endpoint, params)
         data = resp.get("data", [])
-
-        if not data:
-            break
         out.extend(data)
 
-        if observed_page_size is None:
-            observed_page_size = len(data)
-
-        # Try to read total pages from response envelope
-        meta = resp.get("meta") or resp.get("pagination") or {}
-        total_pages = (
-            meta.get("totalPages")
-            or meta.get("total_pages")
-        )
-        if total_pages is not None:
-            if page >= int(total_pages):
-                break
-            continue
-
-        # Try total count + observed page size
-        total_count = (
-            meta.get("total")
-            or meta.get("totalCount")
-            or resp.get("totalCount")
-        )
-        if total_count is not None and observed_page_size:
-            import math
-            if page >= math.ceil(int(total_count) / observed_page_size):
-                break
-            continue
-
-        # Fallback: stop when the page is smaller than the first page
-        if len(data) < observed_page_size:
+        pg = resp.get("pagination") or {}
+        if not pg.get("hasMore"):
             break
+        cursor = pg.get("nextCursor")
+        if not cursor:
+            break
+    else:
+        log.warning("Hit 50k safety cap on %s (%d items)", endpoint, len(out))
 
     return out
 
