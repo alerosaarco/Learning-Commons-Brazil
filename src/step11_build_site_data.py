@@ -72,6 +72,38 @@ def main() -> None:
     log.info("Loaded all data files")
 
     # -----------------------------------------------------------------------
+    # Deduplicate BNCC habilidades with identical (subject, description_pt).
+    # The BNCC source contains pairs where the same skill appears under both
+    # a single-grade code (e.g. EF06CO08) and a multi-grade code (EF69CO08).
+    # Keep the entry whose grade field covers more years (widest range), so
+    # the multi-grade code wins; fall back to the first occurrence.
+    # -----------------------------------------------------------------------
+    def _grade_width(grade_str: str) -> int:
+        """Count how many distinct grade years a grade string covers."""
+        import re
+        return len(re.findall(r'\d+º', str(grade_str)))
+
+    seen_desc: dict[tuple, str] = {}   # (subject, description_pt) → winning bncc_code
+    for _, row in bncc.iterrows():
+        key = (row["subject"], row["description_pt"])
+        if key not in seen_desc:
+            seen_desc[key] = row["bncc_code"]
+        else:
+            # Replace if this entry covers more grades
+            existing_code = seen_desc[key]
+            existing_row  = bncc[bncc["bncc_code"] == existing_code].iloc[0]
+            if _grade_width(row["grade"]) > _grade_width(existing_row["grade"]):
+                seen_desc[key] = row["bncc_code"]
+
+    # Keep only the winning code per (subject, description_pt) pair
+    winning_codes = set(seen_desc.values())
+    dropped = len(bncc) - len(winning_codes)
+    if dropped:
+        log.info("Deduplicating %d habilidades with identical descriptions → keeping %d",
+                 dropped, len(winning_codes))
+        bncc = bncc[bncc["bncc_code"].isin(winning_codes)]
+
+    # -----------------------------------------------------------------------
     # Build lookup tables
     # -----------------------------------------------------------------------
     # bncc_code → metadata
