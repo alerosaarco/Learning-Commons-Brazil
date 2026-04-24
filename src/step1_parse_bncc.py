@@ -1,327 +1,335 @@
 """
-Step 1: Download and parse BNCC EF Math habilidades.
+Step 1: Parse ALL BNCC standards (EI + EF + EM, all subjects).
 
-Strategy:
-  1. Download the official MEC PDF (Ensino Fundamental)
-  2. Parse with pdfplumber, using regex to locate habilidade blocks
-  3. Output: data/processed/bncc_standards.csv
+Input PDFs (drop in data/raw/):
+  - BNCC_EI_EF.pdf   (Educação Infantil + Ensino Fundamental)
+       https://basenacionalcomum.mec.gov.br/images/BNCC_EI_EF_110518_versaofinal_site.pdf
+  - BNCC_EM.pdf       (Ensino Médio)
+       https://basenacionalcomum.mec.gov.br/images/BNCC_20dez_site.pdf
 
-BNCC code structure:  EF 05 MA 01
-  EF  = Ensino Fundamental
-  05  = 5th grade (01-09)
-  MA  = Matemática
-  01  = sequential skill number
+Output:
+  data/processed/bncc_standards.csv
+  data/logs/step1_parsing.log
 """
 
+from __future__ import annotations
+
+import logging
 import re
 import sys
-import csv
-import json
-import logging
+from dataclasses import dataclass, asdict
 from pathlib import Path
 
-import requests
-import pdfplumber
 import pandas as pd
+import pdfplumber
 from tqdm import tqdm
 
-logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-log = logging.getLogger(__name__)
-
-# ---------------------------------------------------------------------------
-# Paths
-# ---------------------------------------------------------------------------
 ROOT = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "raw"
 PROCESSED_DIR = ROOT / "data" / "processed"
-RAW_DIR.mkdir(parents=True, exist_ok=True)
-PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+LOGS_DIR = ROOT / "data" / "logs"
+for d in (RAW_DIR, PROCESSED_DIR, LOGS_DIR):
+    d.mkdir(parents=True, exist_ok=True)
 
-PDF_URL = (
-    "https://basenacionalcomum.mec.gov.br"
-    "/images/BNCC_EI_EF_110518_versaofinal_site.pdf"
-)
-PDF_PATH = RAW_DIR / "BNCC_EI_EF.pdf"
+LOG_PATH = LOGS_DIR / "step1_parsing.log"
 OUTPUT_CSV = PROCESSED_DIR / "bncc_standards.csv"
+PDF_EI_EF = RAW_DIR / "BNCC_EI_EF.pdf"
+PDF_EM = RAW_DIR / "BNCC_EM.pdf"
 
-# Only extract Ensino Fundamental Math
-TARGET_STAGE = "EF"
-TARGET_SUBJECT = "MA"
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s: %(message)s",
+    handlers=[logging.FileHandler(LOG_PATH, mode="w"), logging.StreamHandler()],
+)
+log = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
-# BNCC code regex — matches EF01MA01 through EF09MA99
+# Code patterns — capture stage / grade / subject / sequential
 # ---------------------------------------------------------------------------
-BNCC_CODE_RE = re.compile(
-    r"\b(EF\d{2}MA\d{2,3})\b"
+
+CODE_RE = re.compile(
+    r"\b(EI|EF|EM)(\d{2})([A-Z]{2,3})(\d{2,3})\b"
 )
 
-# Thematic units for EF Math (used to detect section boundaries)
-THEMATIC_UNITS = [
-    "Números",
-    "Álgebra",
-    "Geometria",
-    "Grandezas e Medidas",
-    "Probabilidade e Estatística",
-]
+# Valid subject codes per stage
+EI_SUBJECTS = {"EO", "CG", "TS", "EF", "ET"}
+EF_SUBJECTS = {"MA", "LP", "CI", "GE", "HI", "AR", "EF", "ER"}
+EM_SUBJECTS = {"LGG", "MAT", "CNT", "CHS", "LP", "LI", "ART", "EDF"}
 
-# Grade labels used in the BNCC document
-GRADE_LABELS = {
-    "01": "1º ano",
-    "02": "2º ano",
-    "03": "3º ano",
-    "04": "4º ano",
-    "05": "5º ano",
-    "06": "6º ano",
-    "07": "7º ano",
-    "08": "8º ano",
-    "09": "9º ano",
+# Subject code → full name.  EF is context-dependent, handled separately.
+SUBJECT_NAMES = {
+    # EF / fundamental
+    "MA": "Matemática",
+    "LP": "Língua Portuguesa",
+    "CI": "Ciências",
+    "GE": "Geografia",
+    "HI": "História",
+    "AR": "Arte",
+    "ER": "Ensino Religioso",
+    # EI fields of experience
+    "EO": "O eu, o outro e o nós",
+    "CG": "Corpo, Gestos e Movimentos",
+    "TS": "Traços, Sons, Cores e Formas",
+    "ET": "Espaços, Tempos, Quantidades, Relações e Transformações",
+    # EM areas
+    "LGG": "Linguagens e suas Tecnologias",
+    "MAT": "Matemática e suas Tecnologias",
+    "CNT": "Ciências da Natureza e suas Tecnologias",
+    "CHS": "Ciências Humanas e Sociais Aplicadas",
+    "LI": "Língua Inglesa",
+    "ART": "Arte",
+    "EDF": "Educação Física",
 }
 
 
+def subject_full_name(stage: str, subj_code: str) -> str:
+    if subj_code == "EF":
+        return (
+            "Escuta, Fala, Pensamento e Imaginação"
+            if stage == "EI"
+            else "Educação Física"
+        )
+    return SUBJECT_NAMES.get(subj_code, subj_code)
+
+
+# Grade labels
+EI_GRADES = {
+    "01": "Bebês (0–1a6m)",
+    "02": "Crianças bem pequenas (1a7m–3a11m)",
+    "03": "Crianças pequenas (4a–5a11m)",
+}
+EF_GRADES = {
+    "01": "1º ano", "02": "2º ano", "03": "3º ano", "04": "4º ano",
+    "05": "5º ano", "06": "6º ano", "07": "7º ano", "08": "8º ano",
+    "09": "9º ano",
+    "15": "1º–5º ano", "35": "3º–5º ano", "69": "6º–9º ano",
+}
+EM_GRADES = {"13": "1º–3º ano (Ensino Médio)"}
+
+
+def grade_label(stage: str, grade_digits: str) -> str:
+    if stage == "EI":
+        return EI_GRADES.get(grade_digits, grade_digits)
+    if stage == "EF":
+        return EF_GRADES.get(grade_digits, grade_digits)
+    if stage == "EM":
+        return EM_GRADES.get(grade_digits, grade_digits)
+    return grade_digits
+
+
+# Context-header patterns (thematic unit / knowledge object / etc.)
+THEMATIC_HEADERS = [
+    "UNIDADES TEMÁTICAS",
+    "UNIDADE TEMÁTICA",
+    "CAMPOS DE EXPERIÊNCIAS",
+    "CAMPO DE EXPERIÊNCIAS",
+    "COMPETÊNCIAS ESPECÍFICAS",
+    "COMPETÊNCIA ESPECÍFICA",
+]
+KNOWLEDGE_HEADERS = [
+    "OBJETOS DE CONHECIMENTO",
+    "OBJETO DE CONHECIMENTO",
+    "OBJETIVOS DE APRENDIZAGEM E DESENVOLVIMENTO",
+]
+
+
 # ---------------------------------------------------------------------------
-# Step 1a: Download PDF
+# Data model
 # ---------------------------------------------------------------------------
-def download_pdf() -> Path:
-    if PDF_PATH.exists():
-        log.info("PDF already downloaded: %s", PDF_PATH)
-        return PDF_PATH
 
-    log.info("Downloading BNCC PDF from MEC...")
-    headers = {
-        "User-Agent": (
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-            "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        ),
-        "Accept": "application/pdf,*/*",
-        "Referer": "https://basenacionalcomum.mec.gov.br/",
-    }
-
-    with requests.get(PDF_URL, headers=headers, stream=True, timeout=120) as r:
-        r.raise_for_status()
-        total = int(r.headers.get("content-length", 0))
-        with open(PDF_PATH, "wb") as f, tqdm(
-            total=total, unit="B", unit_scale=True, desc="PDF download"
-        ) as bar:
-            for chunk in r.iter_content(chunk_size=8192):
-                f.write(chunk)
-                bar.update(len(chunk))
-
-    log.info("Saved: %s (%.1f MB)", PDF_PATH, PDF_PATH.stat().st_size / 1e6)
-    return PDF_PATH
+@dataclass
+class Habilidade:
+    bncc_code: str
+    stage: str
+    grade: str
+    grade_code: str
+    subject: str
+    subject_code: str
+    description_pt: str
+    thematic_unit: str
+    knowledge_object: str
+    source_pdf: str
 
 
 # ---------------------------------------------------------------------------
-# Step 1b: Extract raw text blocks from PDF pages
+# PDF reading
 # ---------------------------------------------------------------------------
-def extract_text_from_pdf(pdf_path: Path) -> list[str]:
-    """Return list of page texts from the entire PDF."""
+
+def extract_pdf_text(pdf_path: Path) -> str:
+    """Extract full text from a PDF preserving page order."""
+    log.info("Reading %s ...", pdf_path.name)
     pages = []
     with pdfplumber.open(pdf_path) as pdf:
-        for page in tqdm(pdf.pages, desc="Extracting PDF pages"):
-            text = page.extract_text(x_tolerance=2, y_tolerance=2)
-            if text:
-                pages.append(text)
-    return pages
+        for page in tqdm(pdf.pages, desc=f"Pages ({pdf_path.name})"):
+            text = page.extract_text(x_tolerance=2, y_tolerance=2) or ""
+            pages.append(text)
+    return "\n".join(pages)
 
 
 # ---------------------------------------------------------------------------
-# Step 1c: Parse habilidades from extracted text
+# Parsing
 # ---------------------------------------------------------------------------
-def parse_habilidades(pages: list[str]) -> list[dict]:
-    """
-    Strategy:
-      - Concatenate all page text into one big string (preserving newlines).
-      - Find all occurrences of BNCC Math codes (EF\d{2}MA\d{2,3}).
-      - For each occurrence, extract:
-          * The code itself
-          * The description: text following the code until the next code or
-            a double-newline block, cleaned of page artefacts
-          * Thematic unit: last seen THEMATIC_UNIT header before the code
-          * Knowledge object: paragraph header between thematic unit and code
-          * Grade: derived from the code digits
-    """
-    full_text = "\n".join(pages)
 
-    # Normalise: collapse runs of whitespace (but keep newlines)
-    full_text = re.sub(r"[ \t]{2,}", " ", full_text)
+def parse_text_to_habilidades(full_text: str, source_pdf: str) -> list[Habilidade]:
+    # Normalise repeated whitespace inside lines
+    text = re.sub(r"[ \t]{2,}", " ", full_text)
 
-    # --- Find all code positions ---
-    matches = list(BNCC_CODE_RE.finditer(full_text))
-    if not matches:
-        log.warning("No BNCC Math codes found in PDF text.")
-        return []
+    matches = list(CODE_RE.finditer(text))
+    log.info("Found %d code occurrences in %s", len(matches), source_pdf)
 
-    log.info("Found %d BNCC Math code occurrences in PDF.", len(matches))
-
-    # Deduplicate: some codes appear in tables AND in body text.
-    # Keep the last occurrence (body text is usually after summary tables).
-    code_to_last_match: dict[str, re.Match] = {}
+    # Keep only the last occurrence of each code (later ones usually have fuller descriptions)
+    last_by_code: dict[str, re.Match] = {}
     for m in matches:
-        code_to_last_match[m.group(1)] = m
+        stage, grade_digits, subj, _ = m.group(1), m.group(2), m.group(3), m.group(4)
+        valid = (
+            (stage == "EI" and subj in EI_SUBJECTS and grade_digits in EI_GRADES)
+            or (stage == "EF" and subj in EF_SUBJECTS and grade_digits in EF_GRADES)
+            or (stage == "EM" and subj in EM_SUBJECTS and grade_digits in EM_GRADES)
+        )
+        if not valid:
+            continue
+        full_code = m.group(0)
+        last_by_code[full_code] = m
 
-    habilidades: list[dict] = []
+    ordered = sorted(last_by_code.values(), key=lambda m: m.start())
+    log.info("Kept %d unique valid codes after validation", len(ordered))
 
-    # Sort by position in text
-    sorted_matches = sorted(code_to_last_match.values(), key=lambda m: m.start())
+    habilidades: list[Habilidade] = []
+    for i, m in enumerate(ordered):
+        code = m.group(0)
+        stage, grade_digits, subj = m.group(1), m.group(2), m.group(3)
 
-    for i, m in enumerate(sorted_matches):
-        code = m.group(1)
-        grade_num = code[2:4]  # e.g. "05"
-        grade = GRADE_LABELS.get(grade_num, grade_num)
-
-        # --- Description: text after the code until next code or blank line ---
+        # Description: everything after this code up to next code or ~1500 chars
         start = m.end()
-        if i + 1 < len(sorted_matches):
-            end = sorted_matches[i + 1].start()
-        else:
-            end = start + 2000  # last entry — take generous window
+        end = ordered[i + 1].start() if i + 1 < len(ordered) else min(start + 1500, len(text))
+        raw = text[start:end]
+        description = _clean_description(raw)
 
-        raw_desc = full_text[start:end]
-        description = _clean_description(raw_desc)
-
-        # --- Thematic unit: last THEMATIC_UNIT string before this code ---
-        thematic_unit = _find_last_before(full_text, THEMATIC_UNITS, m.start())
-
-        # --- Knowledge object: line(s) between thematic unit and code ---
-        knowledge_object = _extract_knowledge_object(full_text, m.start(), thematic_unit)
+        # Thematic unit / knowledge object: search back from code position
+        thematic = _search_back(text, m.start(), THEMATIC_HEADERS)
+        knowledge = _search_back(text, m.start(), KNOWLEDGE_HEADERS)
 
         habilidades.append(
-            {
-                "bncc_code": code,
-                "stage": "EF",
-                "grade": grade,
-                "subject": "Matemática",
-                "subject_code": "MA",
-                "description_pt": description,
-                "thematic_unit": thematic_unit,
-                "knowledge_object": knowledge_object,
-            }
+            Habilidade(
+                bncc_code=code,
+                stage=stage,
+                grade=grade_label(stage, grade_digits),
+                grade_code=grade_digits,
+                subject=subject_full_name(stage, subj),
+                subject_code=subj,
+                description_pt=description,
+                thematic_unit=thematic,
+                knowledge_object=knowledge,
+                source_pdf=source_pdf,
+            )
         )
 
     return habilidades
 
 
 def _clean_description(raw: str) -> str:
-    """Clean raw text following a BNCC code into a readable description."""
-    # Remove leading punctuation / bullets the code was part of
-    raw = raw.lstrip("() \n\t–-")
-
-    # Take up to 3 lines (descriptions are typically 1-2 lines)
+    """Clean raw text immediately following a BNCC code into a clean description."""
+    # Strip leading parenthesis/punctuation remnants
+    raw = raw.lstrip(") \n\t:–-.")
     lines = [ln.strip() for ln in raw.split("\n") if ln.strip()]
-    # Stop at lines that look like a new section header or next entry
-    result_lines = []
-    for ln in lines[:8]:
-        # Stop if line looks like a page number, header, or thematic section
-        if re.match(r"^\d{1,3}$", ln):  # lone page number
+
+    out: list[str] = []
+    for ln in lines[:15]:
+        # Stop at obvious section starters
+        if re.match(r"^\d{1,3}$", ln):  # page number
             break
-        if any(ln.startswith(t) for t in THEMATIC_UNITS):
+        if any(ln.upper().startswith(h) for h in THEMATIC_HEADERS + KNOWLEDGE_HEADERS):
             break
-        if re.match(r"^EF\d{2}(MA|LP|CI|GE|HI)", ln):  # next code
+        if CODE_RE.match(ln):  # next code already on this line
             break
-        result_lines.append(ln)
-        # Description sentences usually end with period or semicolon
-        if ln.endswith((".", ";", ")", "!")):
+        out.append(ln)
+        if ln.endswith((".", ";", "!", "?")):
             break
 
-    description = " ".join(result_lines)
-    # Normalise internal whitespace
-    description = re.sub(r"\s+", " ", description).strip()
-    return description
+    desc = " ".join(out)
+    desc = re.sub(r"\s+", " ", desc).strip()
+    return desc
 
 
-def _find_last_before(text: str, candidates: list[str], pos: int) -> str:
-    """Return whichever candidate string appears closest before `pos`."""
+def _search_back(text: str, pos: int, headers: list[str]) -> str:
+    """
+    Find the nearest header that appears before `pos` and return what follows it
+    on the same or next line (up to newline or 200 chars).
+    """
     best_pos = -1
-    best_candidate = ""
-    for c in candidates:
-        idx = text.rfind(c, 0, pos)
+    best_header = ""
+    for h in headers:
+        idx = text.rfind(h, max(0, pos - 4000), pos)
         if idx > best_pos:
             best_pos = idx
-            best_candidate = c
-    return best_candidate
-
-
-def _extract_knowledge_object(text: str, code_pos: int, thematic_unit: str) -> str:
-    """
-    Extract the knowledge object paragraph:
-    the block of text between the thematic unit header and the BNCC code.
-    """
-    if not thematic_unit:
+            best_header = h
+    if best_pos < 0:
         return ""
 
-    # Find the last occurrence of the thematic unit before the code
-    tu_pos = text.rfind(thematic_unit, 0, code_pos)
-    if tu_pos == -1:
-        return ""
-
-    segment = text[tu_pos + len(thematic_unit) : code_pos]
-    lines = [ln.strip() for ln in segment.split("\n") if ln.strip()]
-
-    # Filter out lines that are noise (numbers, short fragments, grade headers)
-    candidates = []
-    for ln in lines:
-        if re.match(r"^\d{1,3}$", ln):
-            continue
-        if len(ln) < 5:
-            continue
-        if re.match(r"^EF\d{2}MA", ln):
-            continue
-        candidates.append(ln)
-
-    if not candidates:
-        return ""
-
-    # The knowledge object is usually the last substantive line before the code
-    return candidates[-1]
+    tail = text[best_pos + len(best_header) : best_pos + len(best_header) + 300]
+    tail = tail.lstrip(":\n\t ")
+    # First non-empty line after header
+    for ln in tail.split("\n"):
+        ln = ln.strip()
+        if ln and not CODE_RE.match(ln):
+            return ln[:250]
+    return ""
 
 
 # ---------------------------------------------------------------------------
-# Step 1d: Validate and save
+# Save + summary
 # ---------------------------------------------------------------------------
-def save_results(habilidades: list[dict]) -> Path:
+
+def save_and_summarise(habilidades: list[Habilidade]) -> None:
     if not habilidades:
-        log.error("No habilidades parsed — check PDF extraction above.")
+        log.error("No habilidades parsed — check input PDFs.")
         sys.exit(1)
 
-    df = pd.DataFrame(habilidades)
-    # Sort by grade then sequential number
-    df["_sort_key"] = df["bncc_code"].apply(
-        lambda c: (int(c[2:4]), int(re.sub(r"\D", "", c[6:])) if len(c) > 6 else 0)
-    )
-    df = df.sort_values("_sort_key").drop(columns=["_sort_key"]).reset_index(drop=True)
-
+    df = pd.DataFrame([asdict(h) for h in habilidades])
+    df = df.drop_duplicates(subset=["bncc_code"]).reset_index(drop=True)
+    df = df.sort_values(["stage", "subject_code", "grade_code", "bncc_code"]).reset_index(drop=True)
     df.to_csv(OUTPUT_CSV, index=False, encoding="utf-8-sig")
     log.info("Saved %d habilidades → %s", len(df), OUTPUT_CSV)
 
-    # Quick stats
-    by_grade = df["grade"].value_counts().sort_index()
-    log.info("Habilidades per grade:\n%s", by_grade.to_string())
+    # Summary counts by stage × subject
+    pivot = df.groupby(["stage", "subject"]).size().unstack(fill_value=0)
+    log.info("Counts by stage × subject:\n%s", pivot.to_string())
 
-    return OUTPUT_CSV
+    by_stage = df["stage"].value_counts().to_dict()
+    log.info(
+        "Summary: total=%d | EI=%d EF=%d EM=%d",
+        len(df),
+        by_stage.get("EI", 0),
+        by_stage.get("EF", 0),
+        by_stage.get("EM", 0),
+    )
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
-def main():
-    log.info("=== Step 1: Parse BNCC EF Math Habilidades ===")
 
-    pdf_path = download_pdf()
-    log.info("Extracting text from PDF...")
-    pages = extract_text_from_pdf(pdf_path)
-    log.info("Extracted text from %d pages.", len(pages))
+def main() -> None:
+    log.info("=== Step 1: Parse ALL BNCC standards ===")
 
-    log.info("Parsing habilidades...")
-    habilidades = parse_habilidades(pages)
-    log.info("Parsed %d unique habilidades.", len(habilidades))
+    pdfs_found = [p for p in (PDF_EI_EF, PDF_EM) if p.exists()]
+    if not pdfs_found:
+        log.error(
+            "No input PDFs found.  Drop them into data/raw/:\n"
+            "  - BNCC_EI_EF.pdf  (EI + EF)\n"
+            "  - BNCC_EM.pdf     (EM)"
+        )
+        sys.exit(1)
 
-    out = save_results(habilidades)
-    log.info("Step 1 complete. Output: %s", out)
+    all_habs: list[Habilidade] = []
+    for pdf in pdfs_found:
+        text = extract_pdf_text(pdf)
+        habs = parse_text_to_habilidades(text, pdf.name)
+        log.info("  → parsed %d habilidades from %s", len(habs), pdf.name)
+        all_habs.extend(habs)
 
-    # Preview first 5
-    df = pd.read_csv(out)
-    print("\nSample output:")
-    print(df.head().to_string(index=False))
+    save_and_summarise(all_habs)
+    log.info("Step 1 complete.")
 
 
 if __name__ == "__main__":
