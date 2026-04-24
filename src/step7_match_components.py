@@ -1,17 +1,17 @@
 """
 Step 7: Match BNCC components to CC components via TF-IDF + AI validation.
 
-For each BNCC component, find the most similar CC component via TF-IDF cosine
-similarity, then apply a hybrid decision strategy:
+For each BNCC component:
+  1. TF-IDF finds the top-3 CC candidates (best lexical overlap).
+  2. AI reviews all 3 candidates and decides for the best one:
+       merge — same atomic skill (even if differently worded)
+       link  — related but distinct skill
+       none  — no meaningful match among the candidates
 
-  auto-merge  — similarity >= 0.58: clearly the same skill, no AI needed
-  AI review   — 0.43 <= similarity < 0.58: Claude decides merge/link/none
-  auto-none   — similarity < 0.43: too different, no link
-
-Three output tiers:
-  merge  — same skill: BNCC component replaced with CC text + CC component_id
-  link   — related skill: explicit link in matches file, separate IDs kept
-  none   — BNCC-specific: no CC equivalent
+TF-IDF alone misses semantic similarity (e.g. "formulate hypotheses" vs
+"develop predictions"), so every BNCC component is sent to AI regardless
+of TF-IDF score.  Auto-merge (>= 0.92 TF-IDF) is retained for the rare
+cases of near-identical text, saving a few API calls.
 
 Outputs:
   bncc_component_matches.csv  — (bncc_component_id, cc_component_id,
@@ -39,11 +39,11 @@ from tqdm import tqdm
 
 load_dotenv()
 
-THRESHOLD_AUTO_MERGE = 0.58   # auto-merge, no AI
-THRESHOLD_AI_LOW     = 0.43   # below this: auto-none
-AI_BATCH_SIZE        = 20
+THRESHOLD_AUTO_MERGE = 0.92   # near-identical text: auto-merge, skip AI
+TOP_K_CANDIDATES     = 3      # CC candidates per BNCC component sent to AI
+AI_BATCH_SIZE        = 20     # BNCC components per AI call (each with TOP_K candidates)
 CONCURRENCY          = 8
-MAX_TOKENS           = 2048
+MAX_TOKENS           = 4096
 CHUNK                = 500
 
 ROOT     = Path(__file__).resolve().parent.parent
@@ -82,29 +82,41 @@ client = _make_client()
 # AI validation for borderline pairs
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are a curriculum alignment specialist comparing learning components from two curricula.
+SYSTEM_PROMPT = """You are a curriculum alignment specialist comparing learning components from two school curricula (Brazilian BNCC and US Common Core).
 
-For each pair, decide whether the BNCC component and the CC component describe:
-  merge — exactly the same atomic skill (even if worded differently). A teacher would use them interchangeably.
-  link  — related but distinct skills (same domain, different scope, depth, or cognitive demand).
-  none  — too different to be meaningfully linked.
+For each BNCC component you receive its top candidate CC components. Select the BEST match (if any) and classify it:
+  merge — the BNCC and CC components describe exactly the same atomic skill, even if worded differently. A teacher could use either description interchangeably.
+  link  — related but distinct: same broad domain or concept, but different scope, cognitive demand, or specificity.
+  none  — none of the candidates is a meaningful match for this BNCC component.
 
-Return ONLY a JSON object mapping each pair id to its decision:
-{"p00": "merge", "p01": "link", "p02": "none", ...}"""
+Rules:
+- Choose at most ONE candidate per BNCC component (the best one).
+- Prefer merge over link when the core skill is truly identical.
+- Use none when the BNCC component covers genuinely different or Brazil-specific content.
+
+Return ONLY a JSON object — one entry per BNCC component:
+{
+  "b00": {"tier": "merge", "cc_idx": 1},
+  "b01": {"tier": "link",  "cc_idx": 0},
+  "b02": {"tier": "none",  "cc_idx": null},
+  ...
+}
+cc_idx is the 0-based index of the chosen candidate (null for none)."""
 
 
-def _user_message(pairs: list[dict]) -> str:
-    items = [
-        {
-            "id":   f"p{i:02d}",
-            "bncc": p["bncc_desc"],
-            "cc":   p["cc_desc"],
-        }
-        for i, p in enumerate(pairs)
-    ]
+def _user_message(items: list[dict]) -> str:
+    payload = []
+    for i, item in enumerate(items):
+        payload.append({
+            "id":         f"b{i:02d}",
+            "bncc":       item["bncc_desc"],
+            "candidates": [
+                {"idx": j, "cc": c} for j, c in enumerate(item["cc_candidates"])
+            ],
+        })
     return (
-        "Classify each BNCC↔CC component pair as merge / link / none.\n\n"
-        + json.dumps(items, ensure_ascii=False, indent=2)
+        "For each BNCC component, select the best CC candidate match (if any).\n\n"
+        + json.dumps(payload, ensure_ascii=False, indent=2)
     )
 
 
@@ -113,12 +125,13 @@ def _user_message(pairs: list[dict]) -> str:
     wait=wait_exponential(multiplier=2, min=2, max=60),
     reraise=True,
 )
-def _ai_validate_batch(pairs: list[dict]) -> dict[str, str]:
+def _ai_validate_batch(items: list[dict]) -> list[dict]:
+    """Returns list of {tier, cc_component_id} aligned with items."""
     resp = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=MAX_TOKENS,
         system=SYSTEM_PROMPT,
-        messages=[{"role": "user", "content": _user_message(pairs)}],
+        messages=[{"role": "user", "content": _user_message(items)}],
     )
     text = resp.content[0].text.strip()
     brace = text.find("{")
@@ -128,13 +141,21 @@ def _ai_validate_batch(pairs: list[dict]) -> dict[str, str]:
         text = text[:text.rfind("```")]
     result = json.loads(text.strip())
 
-    for i in range(len(pairs)):
-        key = f"p{i:02d}"
+    output = []
+    for i, item in enumerate(items):
+        key = f"b{i:02d}"
         if key not in result:
             raise ValueError(f"missing key {key}")
-        if result[key] not in ("merge", "link", "none"):
-            raise ValueError(f"invalid decision {result[key]!r} for {key}")
-    return result
+        entry = result[key]
+        tier   = entry.get("tier", "none")
+        cc_idx = entry.get("cc_idx")
+        if tier not in ("merge", "link", "none"):
+            raise ValueError(f"invalid tier {tier!r} for {key}")
+        if tier != "none" and (cc_idx is None or cc_idx >= len(item["cc_candidates"])):
+            raise ValueError(f"invalid cc_idx {cc_idx} for {key}")
+        cc_component_id = item["cc_ids"][cc_idx] if tier != "none" else None
+        output.append({"tier": tier, "cc_component_id": cc_component_id})
+    return output
 
 
 # ---------------------------------------------------------------------------
@@ -159,81 +180,74 @@ def main() -> None:
     cc_mat   = vec.transform(cc_df["description"].tolist())
     bncc_mat = vec.transform(bncc_df["description"].tolist())
 
-    log.info("Computing cosine similarities…")
-    match_rows: list[dict] = []
-    ai_candidates: list[dict] = []   # pairs needing AI review
+    cc_ids   = cc_df["component_id"].tolist()
+    cc_descs = cc_df["description"].tolist()
+
+    log.info("Finding top-%d CC candidates per BNCC component…", TOP_K_CANDIDATES)
+    auto_merges: list[dict] = []
+    ai_items: list[dict] = []   # each: {bncc_component_id, bncc_desc, cc_candidates, cc_ids, top_sim}
 
     for start in tqdm(range(0, len(bncc_df), CHUNK), desc="tfidf"):
-        chunk   = bncc_mat[start: start + CHUNK]
-        sims    = cosine_similarity(chunk, cc_mat)
-        best_idx = sims.argmax(axis=1)
-        best_sim = sims[np.arange(len(best_idx)), best_idx]
+        chunk = bncc_mat[start: start + CHUNK]
+        sims  = cosine_similarity(chunk, cc_mat)   # (chunk, N_cc)
 
-        for k, (idx, sim) in enumerate(zip(best_idx, best_sim)):
-            bncc_row = bncc_df.iloc[start + k]
-            cc_row   = cc_df.iloc[idx]
+        # top-K indices per row
+        top_k_idx = np.argsort(sims, axis=1)[:, -TOP_K_CANDIDATES:][:, ::-1]
+        top_k_sim = sims[np.arange(len(top_k_idx))[:, None], top_k_idx]
 
-            if sim >= THRESHOLD_AUTO_MERGE:
-                tier = "merge"
-                match_rows.append({
+        for k in range(len(top_k_idx)):
+            bncc_row  = bncc_df.iloc[start + k]
+            best_sim  = float(top_k_sim[k, 0])
+            best_cc   = cc_df.iloc[int(top_k_idx[k, 0])]
+
+            if best_sim >= THRESHOLD_AUTO_MERGE:
+                auto_merges.append({
                     "bncc_component_id": bncc_row["component_id"],
-                    "cc_component_id":   cc_row["component_id"],
-                    "similarity":        round(float(sim), 4),
-                    "match_tier":        tier,
-                })
-            elif sim >= THRESHOLD_AI_LOW:
-                # defer to AI
-                ai_candidates.append({
-                    "bncc_component_id": bncc_row["component_id"],
-                    "cc_component_id":   cc_row["component_id"],
-                    "similarity":        round(float(sim), 4),
-                    "bncc_desc":         bncc_row["description"],
-                    "cc_desc":           cc_row["description"],
+                    "cc_component_id":   best_cc["component_id"],
+                    "similarity":        round(best_sim, 4),
+                    "match_tier":        "merge",
                 })
             else:
-                match_rows.append({
+                candidates = [cc_descs[int(i)] for i in top_k_idx[k]]
+                cand_ids   = [cc_ids[int(i)]   for i in top_k_idx[k]]
+                ai_items.append({
                     "bncc_component_id": bncc_row["component_id"],
-                    "cc_component_id":   cc_row["component_id"],
-                    "similarity":        round(float(sim), 4),
-                    "match_tier":        "none",
+                    "bncc_desc":         bncc_row["description"],
+                    "cc_candidates":     candidates,
+                    "cc_ids":            cand_ids,
+                    "top_sim":           round(best_sim, 4),
                 })
 
-    log.info("Auto-merge: %d  |  AI review: %d  |  Auto-none: %d",
-             sum(1 for r in match_rows if r["match_tier"] == "merge"),
-             len(ai_candidates),
-             sum(1 for r in match_rows if r["match_tier"] == "none"))
+    log.info("Auto-merge: %d  |  AI review: %d", len(auto_merges), len(ai_items))
 
-    # ---- AI validation pass ----
-    if ai_candidates:
-        log.info("Sending %d pairs to AI for validation…", len(ai_candidates))
+    # ---- AI validation: all non-auto-merge BNCC components ----
+    match_rows: list[dict] = list(auto_merges)
+
+    if ai_items:
+        log.info("Sending %d BNCC components to AI (top-%d candidates each)…",
+                 len(ai_items), TOP_K_CANDIDATES)
         batches = [
-            ai_candidates[i: i + AI_BATCH_SIZE]
-            for i in range(0, len(ai_candidates), AI_BATCH_SIZE)
+            ai_items[i: i + AI_BATCH_SIZE]
+            for i in range(0, len(ai_items), AI_BATCH_SIZE)
         ]
-
-        ai_decisions: dict[str, str] = {}   # bncc_component_id → tier
 
         with ThreadPoolExecutor(max_workers=CONCURRENCY) as pool:
             futures = {pool.submit(_ai_validate_batch, b): b for b in batches}
             for fut in tqdm(as_completed(futures), total=len(futures), desc="AI batches"):
                 batch = futures[fut]
                 try:
-                    result = fut.result()
+                    decisions = fut.result()
                 except Exception as e:
-                    log.error("AI batch failed: %s — defaulting to 'link'", e)
-                    result = {f"p{i:02d}": "link" for i in range(len(batch))}
+                    log.error("AI batch failed: %s — defaulting to none", e)
+                    decisions = [{"tier": "none", "cc_component_id": None}] * len(batch)
 
-                for i, pair in enumerate(batch):
-                    ai_decisions[pair["bncc_component_id"]] = result[f"p{i:02d}"]
-
-        for pair in ai_candidates:
-            tier = ai_decisions.get(pair["bncc_component_id"], "link")
-            match_rows.append({
-                "bncc_component_id": pair["bncc_component_id"],
-                "cc_component_id":   pair["cc_component_id"],
-                "similarity":        pair["similarity"],
-                "match_tier":        tier,
-            })
+                for item, decision in zip(batch, decisions):
+                    match_rows.append({
+                        "bncc_component_id": item["bncc_component_id"],
+                        "cc_component_id":   decision["cc_component_id"] or item["cc_ids"][0],
+                        "similarity":        item["top_sim"],
+                        "match_tier":        decision["tier"],
+                    })
 
     # ---- Write matches ----
     matches = pd.DataFrame(match_rows)
