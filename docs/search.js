@@ -13,15 +13,65 @@
   const filterStage   = document.getElementById("filterStage");
   const filterSubject = document.getElementById("filterSubject");
 
+  // Discipline groups — order and membership are curriculum knowledge
+  const SUBJECT_GROUPS = [
+    { label: "Matemática", subjects: [
+        "Matemática",
+        "Matemática e suas Tecnologias",
+        "Espaços, Tempos, Quantidades, Relações e Transformações",
+    ]},
+    { label: "Linguagens", subjects: [
+        "Língua Portuguesa",
+        "Linguagens e suas Tecnologias",
+        "Língua Inglesa",
+        "Escuta, Fala, Pensamento e Imaginação",
+    ]},
+    { label: "Ciências", subjects: [
+        "Ciências",
+        "Ciências da Natureza e suas Tecnologias",
+    ]},
+    { label: "Ciências Humanas", subjects: [
+        "História",
+        "Geografia",
+        "Ciências Humanas e Sociais Aplicadas",
+        "O eu, o outro e o nós",
+    ]},
+    { label: "Arte", subjects: [
+        "Arte",
+        "Traços, Sons, Cores e Formas",
+    ]},
+    { label: "Educação Física", subjects: [
+        "Educação Física",
+        "Corpo, Gestos e Movimentos",
+    ]},
+    { label: "Ensino Religioso", subjects: ["Ensino Religioso"] },
+    { label: "Computação",       subjects: ["Computação"] },
+  ];
+
   // ── Load index ──────────────────────────────────────────────────────────
   fetch(BASE + "index.json")
     .then(r => r.json())
     .then(data => {
       allHabs = data;
 
-      const subjects = new Set();
-      data.forEach(h => subjects.add(h.subject));
-      Array.from(subjects).sort().forEach(s => {
+      // Build grouped <optgroup> dropdown; only include subjects present in data
+      const present = new Set(data.map(h => h.subject));
+      SUBJECT_GROUPS.forEach(group => {
+        const opts = group.subjects.filter(s => present.has(s));
+        if (!opts.length) return;
+        const grp = document.createElement("optgroup");
+        grp.label = group.label;
+        opts.forEach(s => {
+          const opt = document.createElement("option");
+          opt.value = s;
+          opt.textContent = s;
+          grp.appendChild(opt);
+        });
+        filterSubject.appendChild(grp);
+      });
+      // Anything not in any group goes at the bottom ungrouped
+      const grouped = new Set(SUBJECT_GROUPS.flatMap(g => g.subjects));
+      Array.from(present).filter(s => !grouped.has(s)).sort().forEach(s => {
         const opt = document.createElement("option");
         opt.value = s; opt.textContent = s;
         filterSubject.appendChild(opt);
