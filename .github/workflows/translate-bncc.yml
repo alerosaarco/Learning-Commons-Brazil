@@ -1,0 +1,55 @@
+name: Translate BNCC habilidades (step 3)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Step 1 — parse BNCC JSONs (regenerate bncc_standards.csv)
+        run: python src/step1_parse_bncc.py
+
+      - name: Step 3 — translate PT → EN
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python src/step3_translate.py
+
+      - name: Commit and push translated CSV
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/processed/bncc_translated.csv
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Translate BNCC habilidades PT → EN (step 3)"
+            git push
+          fi
+
+      - name: Upload log as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: step3-log
+          path: data/logs/step3_translate.log
+          if-no-files-found: ignore
