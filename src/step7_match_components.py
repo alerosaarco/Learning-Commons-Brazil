@@ -82,23 +82,30 @@ client = _make_client()
 # AI validation for borderline pairs
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are a curriculum alignment specialist comparing learning components from two school curricula (Brazilian BNCC and US Common Core).
+SYSTEM_PROMPT = """You are a curriculum alignment specialist comparing learning components from the Brazilian BNCC and US Common Core curricula.
 
-For each BNCC component you receive its top candidate CC components. Select the BEST match (if any) and classify it:
-  merge — the BNCC and CC components describe exactly the same atomic skill, even if worded differently. A teacher could use either description interchangeably.
-  link  — related but distinct: same broad domain or concept, but different scope, cognitive demand, or specificity.
-  none  — none of the candidates is a meaningful match for this BNCC component.
+For each BNCC component you receive its top candidate CC components. Select the BEST match (if any) and classify it into one of four tiers:
+
+  merge         — Exactly the same atomic skill, same or near-identical wording. A teacher could use either description interchangeably.
+
+  link_regional — The same underlying skill, but the BNCC describes it through Brazilian linguistic, cultural, or regional framing (e.g. Portuguese grammar terminology like "modalization", "agglutination", Brazilian text genres like "cordel", Brazilian institutions). If you removed the regional framing, the skill would be identical to the CC component.
+
+  link          — Related but genuinely distinct: same broad domain, but different cognitive demand, scope, or subject matter. The difference is NOT just regional framing.
+
+  none          — None of the candidates is a meaningful match. The BNCC component covers genuinely different or Brazil-specific content with no CC equivalent.
 
 Rules:
 - Choose at most ONE candidate per BNCC component (the best one).
-- Prefer merge over link when the core skill is truly identical.
-- Use none when the BNCC component covers genuinely different or Brazil-specific content.
+- Prefer merge over link_regional when wording is nearly identical.
+- Prefer link_regional over link when the only difference is Brazilian/Portuguese framing.
+- Use none when the BNCC component is genuinely Brazil-specific.
 
 Return ONLY a JSON object — one entry per BNCC component:
 {
-  "b00": {"tier": "merge", "cc_idx": 1},
-  "b01": {"tier": "link",  "cc_idx": 0},
-  "b02": {"tier": "none",  "cc_idx": null},
+  "b00": {"tier": "merge",         "cc_idx": 1},
+  "b01": {"tier": "link_regional", "cc_idx": 0},
+  "b02": {"tier": "link",          "cc_idx": 2},
+  "b03": {"tier": "none",          "cc_idx": null},
   ...
 }
 cc_idx is the 0-based index of the chosen candidate (null for none)."""
@@ -149,7 +156,7 @@ def _ai_validate_batch(items: list[dict]) -> list[dict]:
         entry = result[key]
         tier   = entry.get("tier", "none")
         cc_idx = entry.get("cc_idx")
-        if tier not in ("merge", "link", "none"):
+        if tier not in ("merge", "link_regional", "link", "none"):
             raise ValueError(f"invalid tier {tier!r} for {key}")
         if tier != "none" and (cc_idx is None or cc_idx >= len(item["cc_candidates"])):
             raise ValueError(f"invalid cc_idx {cc_idx} for {key}")
@@ -253,9 +260,10 @@ def main() -> None:
     matches = pd.DataFrame(match_rows)
     tier_counts = matches["match_tier"].value_counts()
     log.info("Final match results:")
-    log.info("  merge: %d", tier_counts.get("merge", 0))
-    log.info("  link:  %d", tier_counts.get("link",  0))
-    log.info("  none:  %d", tier_counts.get("none",  0))
+    log.info("  merge:         %d  (weight=1.0)", tier_counts.get("merge",         0))
+    log.info("  link_regional: %d  (weight=0.7)", tier_counts.get("link_regional", 0))
+    log.info("  link:          %d  (weight=0.5)", tier_counts.get("link",          0))
+    log.info("  none:          %d  (weight=0.0)", tier_counts.get("none",          0))
 
     # ---- Apply merges to bncc_components.csv ----
     merge_map = (
