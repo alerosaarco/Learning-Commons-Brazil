@@ -1750,6 +1750,7 @@ bc2b7fef-2dfb-40be-83ac-cf73db5245a3,7baff1fb-32c6-40ee-a801-4ffd093b9375,Assess
 bc2b7fef-2dfb-40be-83ac-cf73db5245a3,ac6d10ae-b2af-4f8c-a0ca-26c27d41d606,Quote or paraphrase others' data and conclusions while avoiding plagiarism,ai_generated
 bc2b7fef-2dfb-40be-83ac-cf73db5245a3,228a5263-ca0d-49de-8941-25de1ed3a7ac,Apply a standard citation format when referencing sources in research writing,ai_generated
 ecb43b09-0794-4722-b6e0-f810d128c65a,a6616779-6351-4286-9341-3a67cc0b9ad0,Locate specific textual evidence within a primary source to support a historical analysis,ai_generated
+ecb43b09-0794-4722-b6e0-f810d128c65a,b138be8c-7890-48dd-a5ce-c7ae2d5eb11b,Locate specific textual evidence within a secondary source to support a historical analysis,ai_generated
 ecb43b09-0794-4722-b6e0-f810d128c65a,db81cbd7-7292-440d-af20-cbd966348ac6,Distinguish between evidence that strongly supports an analytical claim and evidence that does not,ai_generated
 6b33678b-d7cc-11e8-824f-0242ac160002,6d8fb77d-7d7a-4e21-8196-e8f6f94e2f1c,Interpret quantitative data such as charts or graphs presented alongside a print or digital text,ai_generated
 6b33678b-d7cc-11e8-824f-0242ac160002,4bf87746-15d1-4db8-bfbf-76e648a8e174,Integrate qualitative analysis with quantitative or technical data to deepen understanding of a topic,ai_generated
@@ -1761,6 +1762,7 @@ ecb43b09-0794-4722-b6e0-f810d128c65a,db81cbd7-7292-440d-af20-cbd966348ac6,Distin
 6b376194-d7cc-11e8-824f-0242ac160002,4bb042e0-cf4a-4449-8be8-beee13387e4c,"Evaluate the credibility of sources presented in visual, quantitative, or oral formats",ai_generated
 6b376194-d7cc-11e8-824f-0242ac160002,ad28daad-85d1-4175-a24c-644c117e446b,Assess the accuracy of information across multiple media sources on the same topic,ai_generated
 6b9711c3-d7cc-11e8-824f-0242ac160002,f8fc0316-88e0-4bdb-8c1d-40d3d227ac0a,Identify how adding a known prefix to a known word changes its meaning,ai_generated
+6b9711c3-d7cc-11e8-824f-0242ac160002,59d523ff-a94d-4955-adab-a165230d93cd,Identify how adding a known suffix to a known word changes its meaning,ai_generated
 6b9711c3-d7cc-11e8-824f-0242ac160002,5a21dc05-3a1d-4d1d-80fe-6419faeaad9c,Determine the meaning of a new word formed by adding a known affix to a known root word,ai_generated
 6b38ecb2-d7cc-11e8-824f-0242ac160002,ad2c388a-2171-4462-adb9-3fbd7d61d6dc,Compare findings presented in a science or technical text to findings from other sources,ai_generated
 6b38ecb2-d7cc-11e8-824f-0242ac160002,6277381e-6426-42d7-8207-f8c104da6286,Identify when findings from one source contradict explanations or data from another source,ai_generated
@@ -1773,6 +1775,7 @@ ecb43b09-0794-4722-b6e0-f810d128c65a,db81cbd7-7292-440d-af20-cbd966348ac6,Distin
 6b386c8e-d7cc-11e8-824f-0242ac160002,0d92cb2c-468e-416c-abf6-cc03abe0e818,Assess the quality of evidence an author uses to support a historical argument,ai_generated
 6b386c8e-d7cc-11e8-824f-0242ac160002,cc88291e-dafd-4dd7-a9ee-f5cc475d83e5,Compare how two authors' perspectives shape their interpretations of the same historical event,ai_generated
 6b33e83c-d7cc-11e8-824f-0242ac160002,48ec6476-b8c5-4b52-9541-a2496cae295f,Read and comprehend stories at the grades 11–CCR text complexity band proficiently,ai_generated
+6b33e83c-d7cc-11e8-824f-0242ac160002,85863198-40a5-41fc-9a91-fdb5aaa53b46,Read and comprehend dramas and poems at the grades 11–CCR text complexity band proficiently,ai_generated
 6b33e83c-d7cc-11e8-824f-0242ac160002,5d3da15a-7814-490d-a5ae-4c2683a75c7a,Independently read and comprehend literary texts at the high end of the grades 11–CCR complexity band,ai_generated
 6b96b658-d7cc-11e8-824f-0242ac160002,a1cc66ad-483d-4a31-a9a0-f8b05e7b9201,Introduce a topic clearly and preview the organizational structure of an informational piece,ai_generated
 6b96b658-d7cc-11e8-824f-0242ac160002,671a3cb0-e28d-4b83-8536-03018dd3278c,Organize ideas and information into broader categories in an explanatory text,ai_generated
@@ -1797,13 +1800,16 @@ da37ab9f-7f2f-4bd3-b00e-ed341cf057e9,1b558292-ab39-4c8e-8edd-cc39a7073225,Identi
 80fb3e5b-2264-44f2-aa52-fdbcb1245016,02b0ddfe-5243-48ed-a691-1f8d7e814d40,Cite relevant quotations or data from a technical text to substantiate a claim,ai_generated
 80fb3e5b-2264-44f2-aa52-fdbcb1245016,67008eda-042a-4250-ad34-f4ad98ef6c4f,Distinguish between evidence that directly supports an analysis and tangential information in a text,ai_generated
 f7ef1420-7ef3-4601-bd30-f17fdc9eff10,356954b0-6146-4bf4-8eb6-ebbd9efb5327,Identify statements of fact in a historical or social studies text,ai_generated
+f7ef1420-7ef3-4601-bd30-f17fdc9eff10,a1c8bee7-58b5-4187-8a3f-f1fa10ccdd0c,Identify statements of opinion in a historical or social studies text,ai_generated
 f7ef1420-7ef3-4601-bd30-f17fdc9eff10,e696e6bc-b8e0-47e0-89d0-76e1576d4ad5,Distinguish reasoned judgment from unsupported opinion in a text,ai_generated
 f7ef1420-7ef3-4601-bd30-f17fdc9eff10,fa46d881-c3d2-4c1e-b5e3-fcc733203c87,"Evaluate the credibility of a claim by classifying it as fact, opinion, or reasoned judgment",ai_generated
 6b34a301-d7cc-11e8-824f-0242ac160002,64245651-b4fc-4f5c-a378-83962a61dcea,Report on a topic or text using appropriate facts and relevant descriptive details,ai_generated
 6b34a301-d7cc-11e8-824f-0242ac160002,d22f4356-6282-453e-bcd6-61ed68abd1d0,Speak at an understandable pace when presenting information to an audience,ai_generated
 6b34a301-d7cc-11e8-824f-0242ac160002,715a47fb-4ed1-4ad4-8cb4-9e738f0e046a,Organize a spoken report so that facts and details support the topic clearly,ai_generated
 6b38de2a-d7cc-11e8-824f-0242ac160002,a183e5aa-86f5-47d2-be45-b44ca4b9501c,Name the author of a story with prompting and support,ai_generated
+6b38de2a-d7cc-11e8-824f-0242ac160002,356e89c7-8284-47bb-871c-46c87d554ea7,Name the illustrator of a story with prompting and support,ai_generated
 6b38de2a-d7cc-11e8-824f-0242ac160002,5015f553-b970-41b4-b96c-6d4374febadc,Explain the role of the author in telling a story with prompting and support,ai_generated
+6b38de2a-d7cc-11e8-824f-0242ac160002,ee0dce0b-778e-493a-b8c0-a5779a56e0b9,Explain the role of the illustrator in telling a story with prompting and support,ai_generated
 5422cce0-b749-4f63-9a25-fa4e03f6f62c,9de7da01-0295-483d-86b1-4d754ecb5ba5,Identify the key steps in a historical or social studies process described in a text,ai_generated
 5422cce0-b749-4f63-9a25-fa4e03f6f62c,d96d3913-9d52-42b2-b9e9-bcfa9d5de1c4,Sequence the steps of a described historical process in correct order,ai_generated
 5422cce0-b749-4f63-9a25-fa4e03f6f62c,c967e4da-5a45-4bfc-baaa-5a3df8d2d003,Explain how each key step contributes to the outcome of a described process,ai_generated
@@ -1812,6 +1818,7 @@ f7ef1420-7ef3-4601-bd30-f17fdc9eff10,fa46d881-c3d2-4c1e-b5e3-fcc733203c87,"Evalu
 6b3787f1-d7cc-11e8-824f-0242ac160002,f31a64ba-ff2c-4414-b0af-94cf45e4578d,Take brief notes on sources while researching a topic,ai_generated
 6b3787f1-d7cc-11e8-824f-0242ac160002,8c402044-1e38-4983-914d-a2d28843cf57,Sort gathered evidence into provided categories to organize research,ai_generated
 6b33d2a0-d7cc-11e8-824f-0242ac160002,4d6f2a7e-b79d-4bd4-8f60-1882dc593e71,Ask questions about key details in an informational text with prompting and support,ai_generated
+6b33d2a0-d7cc-11e8-824f-0242ac160002,39a0fc6a-021c-473d-81ec-1b18fcaa0734,Answer questions about key details in an informational text with prompting and support,ai_generated
 e551cf87-be7b-44fb-b8d5-6ca0a7704408,274539d6-6363-439e-9196-54cb83c27810,Apply formal diction and tone consistently throughout an argumentative piece,ai_generated
 e551cf87-be7b-44fb-b8d5-6ca0a7704408,b5109fff-1e6a-4f58-b302-8654f77c2f28,"Avoid informal language, slang, or first-person constructions in academic writing",ai_generated
 e551cf87-be7b-44fb-b8d5-6ca0a7704408,d6b92cd8-0171-4315-9513-54e05d6df0ca,Revise writing to maintain a formal style appropriate to audience and purpose,ai_generated
@@ -1930,6 +1937,7 @@ d677ec7e-b4b5-4b44-876f-9a99011053dc,a7fbdd22-e3a6-4fb0-ba8b-3872f6c63b2a,Apply 
 6b385869-d7cc-11e8-824f-0242ac160002,a64482ea-60cb-4429-82b2-855e2ffb22ef,Acquire new academic and domain-specific vocabulary through reading and content study,ai_generated
 6b955ce8-d7cc-11e8-824f-0242ac160002,e18144fd-c3d3-44b6-926f-92101a7f45cd,Identify phrases and clauses within sentences,ai_generated
 6b955ce8-d7cc-11e8-824f-0242ac160002,aaa1d59f-a5c5-40b0-808f-be2bf816aa5c,Explain the grammatical function of a phrase within a specific sentence,ai_generated
+6b955ce8-d7cc-11e8-824f-0242ac160002,44c87740-ad9b-4290-9a59-faee086cb77c,Explain the grammatical function of a clause within a specific sentence,ai_generated
 6b955ce8-d7cc-11e8-824f-0242ac160002,46242c1d-bd24-4bb2-9c69-973de95072e3,Distinguish between the roles of dependent and independent clauses in sentences,ai_generated
 6b354f0c-d7cc-11e8-824f-0242ac160002,c116fecf-1fdb-4bba-9ce6-656bbe10a28a,"Write sustained pieces over extended time frames incorporating research, reflection, and revision",ai_generated
 6b354f0c-d7cc-11e8-824f-0242ac160002,c5ccad83-8294-49b0-93de-c436d22a77f1,Produce focused writing within a single sitting for a specific purpose and audience,ai_generated
@@ -1954,7 +1962,9 @@ d677ec7e-b4b5-4b44-876f-9a99011053dc,a7fbdd22-e3a6-4fb0-ba8b-3872f6c63b2a,Apply 
 6b340d4a-d7cc-11e8-824f-0242ac160002,06b8772f-538c-4ba7-9cd1-92d95cb47c55,Identify allusions to significant mythological characters within a text,ai_generated
 6b340d4a-d7cc-11e8-824f-0242ac160002,36f85a3c-14f0-4d0f-9e13-7002da5362ee,Interpret the meaning of a word or phrase shaped by its mythological allusion,ai_generated
 6b38aff7-d7cc-11e8-824f-0242ac160002,3b4eda22-1b25-494c-b604-a3cae4ae1193,Name the author of an informational text,ai_generated
+6b38aff7-d7cc-11e8-824f-0242ac160002,a0fa5405-d866-4e65-bc72-453048fb5ba1,Name the illustrator of an informational text,ai_generated
 6b38aff7-d7cc-11e8-824f-0242ac160002,03342bc5-c8e1-4ddf-bf7d-1d7ac01f9d55,Explain the role of the author in presenting ideas or information in a text,ai_generated
+6b38aff7-d7cc-11e8-824f-0242ac160002,1f9a193d-1e13-4f31-a506-5cf1b5d2739d,Explain the role of the illustrator in presenting ideas or information in a text,ai_generated
 59693770-e022-4649-9d9c-f3370fac0a79,c83f7d1d-25d3-4877-b5e2-c42d81f21e4e,Maintain a formal style throughout an informational or explanatory text,ai_generated
 59693770-e022-4649-9d9c-f3370fac0a79,284fc8f5-3481-4328-983c-d139ed27dd30,Sustain an objective tone by avoiding personal bias or informal language in writing,ai_generated
 59693770-e022-4649-9d9c-f3370fac0a79,4188b1b3-9d91-468d-9ce0-399e68d69612,"Revise writing to replace informal language with formal, objective word choices",ai_generated
@@ -2096,6 +2106,7 @@ fb83898c-76a3-4de3-a4c6-683db437ce04,6d5a9f3e-fd2a-403d-aabc-e0a5225e41bc,Evalua
 6b336266-d7cc-11e8-824f-0242ac160002,73cc782d-0ea4-44bb-b12c-cd6470ea1524,Monitor comprehension while reading history/social studies texts of appropriate complexity,ai_generated
 6b997aca-d7cc-11e8-824f-0242ac160002,41680330-3190-4632-b50a-82b3a2a52ddb,"Identify whether a verb expresses past, present, or future tense in a sentence",ai_generated
 6b997aca-d7cc-11e8-824f-0242ac160002,a85f542e-fbad-4b18-8993-5ef04a483571,Use present-tense verbs correctly to describe current actions in writing,ai_generated
+6b997aca-d7cc-11e8-824f-0242ac160002,cdd9f480-b007-4036-8559-a8798e388d42,Use past-tense verbs correctly to describe completed actions in writing,ai_generated
 6b997aca-d7cc-11e8-824f-0242ac160002,c6cd2c9c-9572-407c-a9ea-1b946e9b2ad1,Use future-tense verbs correctly to describe actions yet to occur in writing,ai_generated
 6b39308c-d7cc-11e8-824f-0242ac160002,3713072f-eb8b-43e2-a0f6-303ed5ffb321,Select transitional words or phrases that accurately signal the sequence of events in a narrative,ai_generated
 6b39308c-d7cc-11e8-824f-0242ac160002,48f36262-5a50-4ba5-a8c1-7ae7bec1e6c5,Use temporal clauses to connect events and manage pacing in narrative writing,ai_generated
@@ -2108,6 +2119,7 @@ fb83898c-76a3-4de3-a4c6-683db437ce04,6d5a9f3e-fd2a-403d-aabc-e0a5225e41bc,Evalua
 6b97f33e-d7cc-11e8-824f-0242ac160002,5bd99288-209a-4863-a908-781f6db5f7be,"Recognize common inflectional endings such as -s, -ed, and -ing added to a root word",ai_generated
 6b97f33e-d7cc-11e8-824f-0242ac160002,cfcf49f4-be1d-482c-9227-bc6046cdf28c,Match inflectional forms of a word to their common root word,ai_generated
 6b38b193-d7cc-11e8-824f-0242ac160002,0dadc211-3f80-4d8b-b855-f634df50ed3f,Identify a similarity between two texts on the same topic with prompting and support,ai_generated
+6b38b193-d7cc-11e8-824f-0242ac160002,5a1f5c13-4275-4a02-9569-a6ed6dd8dcf6,Identify a difference between two texts on the same topic with prompting and support,ai_generated
 6b38b193-d7cc-11e8-824f-0242ac160002,7ac7ed78-eb8a-4d78-beb0-d5d60af04c96,Compare illustrations or descriptions across two informational texts on the same topic,ai_generated
 6b3339c6-d7cc-11e8-824f-0242ac160002,20953754-6bd1-4b45-ad7c-7994dffa238c,Apply conventions of standard English grammar correctly in formal writing and speaking,ai_generated
 6b3339c6-d7cc-11e8-824f-0242ac160002,14cf0d91-0caf-4d50-8c22-b56714eb7f0d,Use parallel structure correctly in sentences and phrases when writing or speaking,ai_generated
@@ -2272,6 +2284,7 @@ a46a5f0c-833e-47c1-8286-238ca598dd1e,f1fdf8e7-0208-49cc-ab85-2d7fa93b345f,Explai
 6b986c8b-d7cc-11e8-824f-0242ac160002,b0322747-e92e-401b-a88c-db790ccb9bd3,Ask clarifying questions to resolve confusion about a topic or text under discussion,ai_generated
 6b3701ea-d7cc-11e8-824f-0242ac160002,6a3055e6-5e84-4487-97a0-2ba1040f34a0,Compare themes across two or more stories by the same author featuring similar characters,ai_generated
 6b3701ea-d7cc-11e8-824f-0242ac160002,9c267bb0-8b53-4fdd-85fb-41edc2fb6650,Contrast settings in stories written by the same author about the same or similar characters,ai_generated
+6b3701ea-d7cc-11e8-824f-0242ac160002,67a09478-9fd6-4722-80b7-9eb9fe7d5830,Contrast plot events across stories by the same author about the same or similar characters,ai_generated
 6b99c3c0-d7cc-11e8-824f-0242ac160002,566a8da2-6b59-4890-8684-f99f285c2626,Write a conclusion that follows logically from the narrated experiences or events,ai_generated
 6b99c3c0-d7cc-11e8-824f-0242ac160002,3204d30d-31ef-48e4-9be0-52702bb81614,Craft a reflective conclusion that demonstrates insight into the significance of narrated events,ai_generated
 6b34f48d-d7cc-11e8-824f-0242ac160002,24c3ef0a-1680-4118-9d97-ca9d985604af,Identify the task and purpose before beginning a piece of writing,ai_generated
@@ -2294,6 +2307,7 @@ a46a5f0c-833e-47c1-8286-238ca598dd1e,f1fdf8e7-0208-49cc-ab85-2d7fa93b345f,Explai
 6b970cd7-d7cc-11e8-824f-0242ac160002,505ed9ec-f970-47cd-a068-ca3d08b1da8a,Use commas correctly to separate elements within a written address,ai_generated
 a64729ff-c220-459d-87f9-82c60ef0485c,ff6a836e-f688-4f26-99a6-d66f6fa06b6e,Locate specific textual evidence within a primary or secondary source,ai_generated
 a64729ff-c220-459d-87f9-82c60ef0485c,d84d22ea-4b1e-43df-a483-bd7ea100a0f3,Cite textual evidence accurately to support an analysis of a primary source,ai_generated
+a64729ff-c220-459d-87f9-82c60ef0485c,087f3fa4-5508-4d91-84f8-5fce8dba1363,Cite textual evidence accurately to support an analysis of a secondary source,ai_generated
 a64729ff-c220-459d-87f9-82c60ef0485c,7442694c-1b5d-4a54-bbb8-4d631fb8481b,Distinguish between strong and weak textual evidence when supporting a historical analysis,ai_generated
 8f016850-7d19-4b33-a6b1-a8f092c80b8a,ee0b1749-aaef-408a-a8a9-93bfde629a85,Select relevant and accurate evidence from credible sources to support a claim,ai_generated
 8f016850-7d19-4b33-a6b1-a8f092c80b8a,46b96b5c-b981-4d0a-8071-5cbadd7625f0,Apply logical reasoning to connect evidence to a claim in discipline-specific writing,ai_generated
@@ -2319,6 +2333,7 @@ a64729ff-c220-459d-87f9-82c60ef0485c,7442694c-1b5d-4a54-bbb8-4d631fb8481b,Distin
 6b983b50-d7cc-11e8-824f-0242ac160002,0bfc6bb1-4a7b-42f3-a42f-8afb5aa79d42,Apply spelling rules and patterns to correct misspelled words in writing,ai_generated
 6b983b50-d7cc-11e8-824f-0242ac160002,6178115d-ee2b-4a23-b168-a6b0e123cb46,Use reference materials to verify and correct spelling in written work,ai_generated
 6b9757a8-d7cc-11e8-824f-0242ac160002,1c694f84-99eb-40fb-89e9-be7537a6672e,Identify the antonym of a frequently occurring verb,ai_generated
+6b9757a8-d7cc-11e8-824f-0242ac160002,adadd1a2-966a-4828-a08d-f9f2f3fbd03c,Identify the antonym of a frequently occurring adjective,ai_generated
 6b9757a8-d7cc-11e8-824f-0242ac160002,76a69617-99b1-421e-a7e5-13c4c335d35b,Match frequently occurring verbs and adjectives to their opposites,ai_generated
 6b99a85a-d7cc-11e8-824f-0242ac160002,15403da4-87a7-4a50-bbb6-e86382170b6a,Write a concluding statement that follows from the information or explanation presented,ai_generated
 6b99a85a-d7cc-11e8-824f-0242ac160002,7c35f8f9-9c76-43cc-9d92-6e291ed3f255,Distinguish between a concluding statement that relates to the topic and one that does not,ai_generated
@@ -2377,6 +2392,7 @@ fb52db1b-15c1-4163-be05-ede7de04cdeb,6f473ebf-7455-4e65-8f1e-5057c9dd2108,Cite s
 6b965c8f-d7cc-11e8-824f-0242ac160002,93c2ed85-6a8c-4855-a0b4-32d498935dd9,Gain the floor in respectful ways when contributing to a discussion,ai_generated
 6b36c281-d7cc-11e8-824f-0242ac160002,9faacf1f-eead-4af7-b0d1-fb664df20314,Determine the main idea of an informational text,ai_generated
 6b36c281-d7cc-11e8-824f-0242ac160002,7842468a-5f73-4877-be83-638fbac366af,Identify key details that support the main idea of an informational text,ai_generated
+6b36c281-d7cc-11e8-824f-0242ac160002,38118830-1f76-4aa8-a9ab-133747c9d1d9,Explain how key details support the main idea of an informational text,ai_generated
 6b36c281-d7cc-11e8-824f-0242ac160002,e0f279f7-daf0-43da-8a5c-2fb2100096fe,Summarize an informational text accurately and objectively,ai_generated
 6b3568e1-d7cc-11e8-824f-0242ac160002,79bf3481-d6b0-4169-8f1d-4780f3f0bad0,"Select an organizational structure appropriate to the task, purpose, and audience",ai_generated
 6b3568e1-d7cc-11e8-824f-0242ac160002,5358399d-4973-4ded-9919-3607b0ed113b,Apply discipline-specific style conventions to technical or argumentative writing,ai_generated
@@ -2463,6 +2479,8 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 68636f10-9e08-429d-b57e-38b657df3287,2380923e-3c2d-446a-8d60-2b7d2ae07514,"Edit writing for clarity, coherence, and correctness based on peer or adult feedback",ai_generated
 68636f10-9e08-429d-b57e-38b657df3287,942a2da3-a3c6-4f9f-b2da-d1c315e80aa2,Evaluate and apply a new writing approach when revision does not adequately meet purpose or audience needs,ai_generated
 6b34217e-d7cc-11e8-824f-0242ac160002,ef3ffc00-6d4e-495c-8002-00306bcd8e59,Read and comprehend stories at the grades 6–8 text complexity band with appropriate scaffolding,ai_generated
+6b34217e-d7cc-11e8-824f-0242ac160002,54a4f414-ca11-433b-8255-5d6a85af13be,Read and comprehend dramas at the grades 6–8 text complexity band with appropriate scaffolding,ai_generated
+6b34217e-d7cc-11e8-824f-0242ac160002,c19b3cef-f549-46f1-aa84-7ec4082034c0,Read and comprehend poems at the grades 6–8 text complexity band with appropriate scaffolding,ai_generated
 6b39167b-d7cc-11e8-824f-0242ac160002,5c4982ba-7a5c-4220-870d-c4c74ac9f841,"Establish a narrator, point of view, and structured event sequence to develop a narrative",ai_generated
 6b39167b-d7cc-11e8-824f-0242ac160002,40b0084b-d111-4322-be5a-a85c0b206ebb,"Use narrative techniques such as dialogue, pacing, and description to develop characters or events",ai_generated
 6b39167b-d7cc-11e8-824f-0242ac160002,12ffb516-7fd5-46dd-b0d4-fd78642335a7,Select well-chosen sensory details to convey a vivid setting or experience in a narrative,ai_generated
@@ -2534,6 +2552,7 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b3773c3-d7cc-11e8-824f-0242ac160002,46607260-802a-472c-8748-2f8ad565833f,Edit writing to correct errors and improve style appropriate to the task,ai_generated
 6b3773c3-d7cc-11e8-824f-0242ac160002,38bb35ed-eca3-4776-8dc6-d673bad39b4e,Evaluate when rewriting or trying a new approach best serves the writing's purpose,ai_generated
 6b9a2feb-d7cc-11e8-824f-0242ac160002,d6b349cf-8d62-4d9a-a7ee-48be7eddf8e2,Produce complete simple declarative and interrogative sentences in response to prompts,ai_generated
+6b9a2feb-d7cc-11e8-824f-0242ac160002,563ce990-4fd6-4887-81a7-c917e2f00124,Produce complete imperative and exclamatory sentences in response to prompts,ai_generated
 6b9a2feb-d7cc-11e8-824f-0242ac160002,228261dc-6dd9-4008-b9e6-75e44326077c,Expand simple sentences by adding details to provide more information,ai_generated
 6b9a2feb-d7cc-11e8-824f-0242ac160002,096bf39f-cad3-4b72-b9b2-b5a3801cf735,Construct compound sentences by joining two complete simple sentences,ai_generated
 6b9a2d02-d7cc-11e8-824f-0242ac160002,e3bfa98e-c4c4-4409-8ca5-bf15bf32f7ec,Produce simple sentences with a clear subject and predicate,ai_generated
@@ -2552,6 +2571,8 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b3a71b5-d7cc-11e8-824f-0242ac160002,4b9b93ea-8007-422b-a91c-502575ac7581,Analyze whether earlier events caused later events or simply preceded them in a text,ai_generated
 6b3a71b5-d7cc-11e8-824f-0242ac160002,d83e523a-d6ee-4885-8a86-4aa1943ee2f6,Distinguish between causation and sequence in a historical account of events,ai_generated
 6b38dc8c-d7cc-11e8-824f-0242ac160002,b4071107-6ca7-4746-9874-11668b97f6e2,Identify characters in a story with prompting and support,ai_generated
+6b38dc8c-d7cc-11e8-824f-0242ac160002,ab169f10-c684-4b7e-8b6f-7944be8d4f3c,Identify the setting of a story with prompting and support,ai_generated
+6b38dc8c-d7cc-11e8-824f-0242ac160002,dd60365a-aaf5-4d72-81db-3dc983babc9f,Identify major events in a story with prompting and support,ai_generated
 6b38650a-d7cc-11e8-824f-0242ac160002,e4ed24ca-6f2d-463d-9db7-168a74f8f841,Use general academic vocabulary accurately in writing and speaking at the 9–10 grade level,ai_generated
 6b38650a-d7cc-11e8-824f-0242ac160002,ccd002bf-ff06-4b79-9e43-edb114998b27,Use domain-specific words and phrases accurately in discipline-appropriate contexts,ai_generated
 6b38650a-d7cc-11e8-824f-0242ac160002,80b0d2b2-3dad-4e3e-84c0-7550e78440a7,Apply independent strategies to determine the meaning of unfamiliar words important to comprehension,ai_generated
@@ -2595,6 +2616,7 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b998981-d7cc-11e8-824f-0242ac160002,b6aa8667-9391-4aed-becc-9489de2f34ee,Identify and correct misspellings of studied words in written sentences,ai_generated
 6b998981-d7cc-11e8-824f-0242ac160002,22b85cb7-9096-4c52-bf10-a00d2a010f4e,"Spell words formed by adding common suffixes such as -ing, -ed, -es, and -ness to base words",ai_generated
 6b990b8b-d7cc-11e8-824f-0242ac160002,e74fa4e9-d293-41d5-b22a-4b02c15246c5,Identify common prefixes and their meanings when decoding unfamiliar words,ai_generated
+6b990b8b-d7cc-11e8-824f-0242ac160002,3440fa07-9640-4ff3-b7e7-aba4acc7b206,Identify common suffixes and their meanings when decoding unfamiliar words,ai_generated
 6b990b8b-d7cc-11e8-824f-0242ac160002,07af7f6b-4980-42c9-afaa-ce91f33d9e00,Decode multisyllabic words by separating known prefixes and suffixes from base words,ai_generated
 6b990b8b-d7cc-11e8-824f-0242ac160002,1d7e0a15-8e05-49c3-aa20-17d6f8c3f18e,Read aloud words with common prefixes and suffixes accurately and fluently,ai_generated
 6b94a9bf-d7cc-11e8-824f-0242ac160002,693b23bf-1c87-4941-836d-ca938b49db2f,Identify collective nouns in spoken or written sentences,ai_generated
@@ -2644,6 +2666,7 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b38f4c2-d7cc-11e8-824f-0242ac160002,47c87244-e883-43af-8c0f-d9046f40af7f,Identify information from a speaker's talk that requires further clarification or detail,ai_generated
 6b38f4c2-d7cc-11e8-824f-0242ac160002,4a85f09a-f0d0-43ea-8279-28cbb516a6f2,Explain how asking a question deepened understanding of a speaker's topic,ai_generated
 6b98485d-d7cc-11e8-824f-0242ac160002,fda9f916-695d-414d-9685-db848d98dcd7,Form regular plural nouns orally by adding /s/ to singular nouns,ai_generated
+6b98485d-d7cc-11e8-824f-0242ac160002,5ad97f65-f99e-4a18-acfa-6d489dd161f2,Form regular plural nouns orally by adding /es/ to singular nouns ending in specific sounds,ai_generated
 6b98485d-d7cc-11e8-824f-0242ac160002,369d7561-26d1-4734-afc8-a83c0316164e,Distinguish orally between singular and plural forms of regular nouns,ai_generated
 6b3949a2-d7cc-11e8-824f-0242ac160002,61c4fd8a-9b9e-4dab-a4ec-5bb0ab4b6ce0,Cite specific textual evidence from a literary text to support an analytical claim,ai_generated
 6b3949a2-d7cc-11e8-824f-0242ac160002,3ee12b4a-74ef-4223-b5be-ab796e3cd45c,Draw relevant evidence from an informational text to support a research conclusion,ai_generated
@@ -2699,6 +2722,7 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 079ebce2-ec1b-4487-8701-80a1a6f103f5,a4942d61-4b1f-44d4-8724-e4b084c5c9ea,Generate additional related questions to extend research across multiple avenues,ai_generated
 079ebce2-ec1b-4487-8701-80a1a6f103f5,07f6728a-e97e-4392-87f6-0e6f95f897b1,Synthesize information from several sources to address a research question,ai_generated
 6b388248-d7cc-11e8-824f-0242ac160002,4e2a8bda-9852-47b0-b1b3-bfc874d2e80e,Identify basic similarities between two texts on the same topic,ai_generated
+6b388248-d7cc-11e8-824f-0242ac160002,b548a8fd-d4fc-405f-9f93-f34b65150fd2,Identify basic differences between two texts on the same topic,ai_generated
 6b388248-d7cc-11e8-824f-0242ac160002,116faeb2-6fc6-4311-8d8d-5281cd13f89f,Compare how two texts on the same topic present information through illustrations or descriptions,ai_generated
 6b94ef03-d7cc-11e8-824f-0242ac160002,52065278-f318-4cdd-a980-6c0f49e44e43,"Identify relative pronouns (who, whose, whom, which, that) in sentences",ai_generated
 6b94ef03-d7cc-11e8-824f-0242ac160002,e9d34933-48d3-4b52-940d-4b5b3f8525d8,Use relative pronouns correctly to introduce a subordinate clause in writing,ai_generated
@@ -2761,6 +2785,7 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b359fdb-d7cc-11e8-824f-0242ac160002,9688c05d-1346-4c48-978e-a9be6a303ca8,Cite specific textual evidence to support a conclusion drawn from a text,ai_generated
 6b3418dc-d7cc-11e8-824f-0242ac160002,78c09a61-7f1f-45ca-ac67-b539a9077e92,Determine the literal meaning of words and phrases as used in a literary text,ai_generated
 6b3418dc-d7cc-11e8-824f-0242ac160002,187dda00-c6fe-4ed6-bbf9-ec201d0558a3,Interpret the meaning of metaphors as used in a specific literary context,ai_generated
+6b3418dc-d7cc-11e8-824f-0242ac160002,05e96d90-4d4c-4a1f-9507-d5663847b194,Interpret the meaning of similes as used in a specific literary context,ai_generated
 6b3418dc-d7cc-11e8-824f-0242ac160002,ed7b2973-1108-48f4-abfa-5ac60e5c8722,Explain how figurative language contributes to the meaning of a literary passage,ai_generated
 6b3a83ae-d7cc-11e8-824f-0242ac160002,f4d07232-b15f-4619-a218-c5ad9a7952be,Adapt spoken language to suit a specific communicative context or audience,ai_generated
 6b3a83ae-d7cc-11e8-824f-0242ac160002,8d110828-b13e-4845-a680-d6ef36ab700a,Apply formal English conventions when speaking in contexts that require them,ai_generated
@@ -2786,6 +2811,7 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b359109-d7cc-11e8-824f-0242ac160002,0aed13a3-de80-44a5-8879-fce283bec622,Adapt writing purpose and tone to suit varied discipline-specific audiences and tasks,ai_generated
 6b359109-d7cc-11e8-824f-0242ac160002,37918802-ec7c-45fd-857b-c65f2a13b5e6,Sustain writing practice across both short and extended time frames in content-area contexts,ai_generated
 6b33b610-d7cc-11e8-824f-0242ac160002,38849032-1da0-4903-a9fa-a98368314f69,Determine the figurative meaning of words and phrases as used in a grade 7 informational text,ai_generated
+6b33b610-d7cc-11e8-824f-0242ac160002,c35f2cc0-a792-48b8-8d8c-07fe86be981b,Identify the connotative meaning of words and phrases in a grade 7 informational text,ai_generated
 6b33b610-d7cc-11e8-824f-0242ac160002,d8666cea-8f18-4cac-93ea-e7f1f583fc98,Define technical vocabulary as used in a grade 7 informational text,ai_generated
 6b33b610-d7cc-11e8-824f-0242ac160002,68493222-1497-4241-afa0-050a7d418593,Analyze how a specific word choice shapes meaning and tone in an informational text,ai_generated
 6b98e09e-d7cc-11e8-824f-0242ac160002,6af51612-bb6f-4eed-8d03-5fc416ca6bf0,"Form regular verbs in past, present, and future tenses",ai_generated
@@ -2805,7 +2831,9 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b390e61-d7cc-11e8-824f-0242ac160002,d7d9f2cd-e168-43c7-99a8-b4d334062ca2,Adjust speech style and tone to meet the demands of varied tasks and audiences,ai_generated
 6b97ee5c-d7cc-11e8-824f-0242ac160002,3f7ac9ed-b0f5-4380-a5b2-514c18ff08ef,Identify whether a noun in a sentence is singular or plural,ai_generated
 6b97ee5c-d7cc-11e8-824f-0242ac160002,eef0a529-f92b-4e17-a312-b2b5e53724af,Match a singular noun with the correct present-tense verb form in a basic sentence,ai_generated
+6b97ee5c-d7cc-11e8-824f-0242ac160002,0e978aa9-31eb-4222-8467-e9d1e9f0acc9,Match a plural noun with the correct present-tense verb form in a basic sentence,ai_generated
 6b33c235-d7cc-11e8-824f-0242ac160002,8f331392-2c8f-4c64-afd4-51dceb16daf5,Determine the figurative meaning of words and phrases as used in a grade 8 informational text,ai_generated
+6b33c235-d7cc-11e8-824f-0242ac160002,ea9e43e1-edc2-4374-af33-235fe51cc6ae,Identify the connotative meaning of words and phrases in a grade 8 informational text,ai_generated
 6b33c235-d7cc-11e8-824f-0242ac160002,de6b019d-8305-446b-91fe-b6d608b6f3ef,Define technical vocabulary as used in a grade 8 informational text,ai_generated
 6b33c235-d7cc-11e8-824f-0242ac160002,80dcf95b-1ce1-42a0-8b12-9704eaec2b60,Analyze how an analogy or allusion to another text shapes meaning and tone,ai_generated
 6b33c235-d7cc-11e8-824f-0242ac160002,c6b50260-f0c0-4942-bbdf-fd5c56fb9ee0,Evaluate the cumulative impact of specific word choices on meaning and tone in an informational text,ai_generated
@@ -2839,6 +2867,8 @@ b734d9e0-0b0b-484b-b48e-82f188c9607e,bcb30dd9-2ecc-4fc1-a5db-6d20d7732fba,Evalua
 6b99ec0d-d7cc-11e8-824f-0242ac160002,9e541405-3268-4d3d-be17-d2d2d58645df,Form a compound sentence by joining two independent clauses correctly,ai_generated
 6b99ec0d-d7cc-11e8-824f-0242ac160002,b2833f20-9460-4c4c-9701-e1b95cb0de8a,Rearrange the words or clauses of a sentence while preserving its meaning,ai_generated
 6b9511fd-d7cc-11e8-824f-0242ac160002,619e17db-e6f9-4f35-bb4d-d3e1ef603a8a,Explain the general grammatical function of conjunctions in sentences,ai_generated
+6b9511fd-d7cc-11e8-824f-0242ac160002,d8e45bdc-f370-4a43-8f60-0eacefcf1ef9,Explain the general grammatical function of prepositions in sentences,ai_generated
+6b9511fd-d7cc-11e8-824f-0242ac160002,b1feb314-d31e-450b-8e3c-0b5f6533c6ec,Explain the general grammatical function of interjections in sentences,ai_generated
 6b9511fd-d7cc-11e8-824f-0242ac160002,edd451b9-7901-40a3-bd8c-14a7f80dc664,"Identify the specific function of a conjunction, preposition, or interjection in a given sentence",ai_generated
 6b95d85e-d7cc-11e8-824f-0242ac160002,6254cda6-8ec8-4e4e-98a6-5cfd733e86d4,Capitalize the first word of a written sentence,ai_generated
 6b95d85e-d7cc-11e8-824f-0242ac160002,25424331-9a20-4cf5-8795-548ec2e08e64,Capitalize the pronoun I wherever it appears in writing,ai_generated
@@ -3089,6 +3119,7 @@ fc3f9d72-d777-4086-b11b-0f0cb13dfe52,2400c05a-ab32-4eca-b789-f2785eccf979,Use ap
 6b99a5dd-d7cc-11e8-824f-0242ac160002,f4806713-f648-43ac-974b-aefac987b036,Craft a concluding section that follows logically from the resolution of the narrative,ai_generated
 6b99a5dd-d7cc-11e8-824f-0242ac160002,a076f2f7-33f3-4ce1-908c-3be8a2a9d377,Convey insight or growth in a narrative conclusion based on what was observed or resolved,ai_generated
 6b952e3a-d7cc-11e8-824f-0242ac160002,52cb94e3-52dd-4657-88f5-851c986cd5d8,Interpret the meaning of similes using context within a text,ai_generated
+6b952e3a-d7cc-11e8-824f-0242ac160002,6b95e73a-4f8c-40ee-b7d8-94e6b808ef2e,Interpret the meaning of metaphors using context within a text,ai_generated
 6b952e3a-d7cc-11e8-824f-0242ac160002,7f0dcbf4-6340-45ca-aba8-c01a2690c26f,Explain how figurative language such as similes and metaphors contributes to meaning in context,ai_generated
 6b94b7df-d7cc-11e8-824f-0242ac160002,29d83893-8369-4976-aef1-5eae04999781,Identify examples of formal and informal English in spoken and written contexts,ai_generated
 6b94b7df-d7cc-11e8-824f-0242ac160002,f36c9287-6474-450a-b249-3ab579c84717,Explain when formal English is appropriate versus informal English,ai_generated
@@ -3107,6 +3138,7 @@ fc3f9d72-d777-4086-b11b-0f0cb13dfe52,2400c05a-ab32-4eca-b789-f2785eccf979,Use ap
 6b982057-d7cc-11e8-824f-0242ac160002,0b2ad57f-1c8d-4ff7-99e6-502405f950e6,Use antonym relationships to distinguish between contrasting word meanings,ai_generated
 6b982057-d7cc-11e8-824f-0242ac160002,75b46836-fee5-4999-a338-5696901ec919,Use understanding of homographs to determine correct word meaning based on context,ai_generated
 6b9823f1-d7cc-11e8-824f-0242ac160002,4cec7665-46e3-491a-b7aa-fffe015af7e6,Identify inappropriate shifts in pronoun number within a sentence or passage,ai_generated
+6b9823f1-d7cc-11e8-824f-0242ac160002,e5b13c38-59d9-4aa4-80f6-1a0b8fc5436a,Identify inappropriate shifts in pronoun person within a sentence or passage,ai_generated
 6b9823f1-d7cc-11e8-824f-0242ac160002,2cd43b94-c970-44de-a219-e7cef8ccc308,Correct inappropriate pronoun shifts in number and person to ensure grammatical consistency,ai_generated
 6b353d89-d7cc-11e8-824f-0242ac160002,92f46651-5b5b-4481-93ef-7c865a0b4527,"Introduce a precise, arguable claim and distinguish it from alternate or opposing claims",ai_generated
 6b353d89-d7cc-11e8-824f-0242ac160002,81335482-c058-4c4e-b659-6d6eab17ddf3,"Support a claim with clear, logical reasons and relevant textual evidence",ai_generated
@@ -3165,6 +3197,7 @@ fc3f9d72-d777-4086-b11b-0f0cb13dfe52,2400c05a-ab32-4eca-b789-f2785eccf979,Use ap
 6b98a5ed-d7cc-11e8-824f-0242ac160002,ae72e1ac-4f55-4bed-b45e-f1677e0ba18b,Apply transitions that clarify the logical relationships among concepts in an explanatory essay,ai_generated
 6b98a5ed-d7cc-11e8-824f-0242ac160002,b9f58613-66fc-4c38-aad4-15dc2f15502a,Evaluate and revise the use of transitions to strengthen cohesion in an informative or explanatory text,ai_generated
 6b38537b-d7cc-11e8-824f-0242ac160002,73ece30a-96fa-4479-acd3-92ea1c58df68,"Use adjectives acquired through reading and conversation to describe people, places, or things in writing or speech",ai_generated
+6b38537b-d7cc-11e8-824f-0242ac160002,97d4a96f-7ca7-48e0-adae-43943ed0d609,Use adverbs acquired through reading and conversation to describe actions in writing or speech,ai_generated
 6b38537b-d7cc-11e8-824f-0242ac160002,969b8100-f90e-4746-b1b9-2013ce5c36ec,Apply newly acquired vocabulary words and phrases appropriately when responding orally or in writing to texts,ai_generated
 6b368bbe-d7cc-11e8-824f-0242ac160002,f34cc066-53ef-441b-9ac7-460b356948ff,Apply standard English capitalization rules correctly in formal writing,ai_generated
 6b368bbe-d7cc-11e8-824f-0242ac160002,d0c53f0e-bbce-40ed-addb-841f9f2588cd,"Use punctuation marks including commas, semicolons, colons, and dashes correctly in writing",ai_generated
@@ -3313,6 +3346,8 @@ ac00cd2e-cfe8-42e0-b618-d7d516468e3e,69db38e1-a7d5-4f84-a8d0-cad411761ed6,Select
 6b379e0a-d7cc-11e8-824f-0242ac160002,a9a7dcf9-dcb7-4b22-acc4-d09e5ba6a5a8,Structure an informative or explanatory text using organizational strategies appropriate to the topic,ai_generated
 6b379e0a-d7cc-11e8-824f-0242ac160002,1348bd31-4397-45f3-8861-096aa6aa7c61,Use precise language and domain-specific vocabulary to explain concepts in informative writing,ai_generated
 6b38b332-d7cc-11e8-824f-0242ac160002,d372e34c-23ec-450f-a9e0-c1d1429717b9,Describe a character in a story using key details from the text,ai_generated
+6b38b332-d7cc-11e8-824f-0242ac160002,c5401806-269a-4e0b-a096-285c1608ecb8,Describe the setting of a story using key details from the text,ai_generated
+6b38b332-d7cc-11e8-824f-0242ac160002,08182748-8ac5-448c-a65f-bf0ac559874d,Describe a major event in a story using key details from the text,ai_generated
 6b98711a-d7cc-11e8-824f-0242ac160002,02e4cb37-8e43-4016-bcf4-fbd5f5073042,Ask a clarifying question to better understand a peer's comment during a discussion,ai_generated
 6b98711a-d7cc-11e8-824f-0242ac160002,994e593a-a9a4-431c-91b5-c3a8091e498c,Request further explanation from a peer or teacher when information about a text or topic is unclear,ai_generated
 6b98711a-d7cc-11e8-824f-0242ac160002,989e255a-b1fd-46be-9dbb-8c844a08f436,Identify moments in a discussion when clarification or elaboration is needed and respond appropriately,ai_generated
@@ -3412,6 +3447,7 @@ c16d379b-57f7-4f72-9a58-7fa4448a76f4,9c213b5e-1996-4b9a-90b6-2b6679a4ecbd,Use co
 6b350802-d7cc-11e8-824f-0242ac160002,e6a6162e-9785-4a86-ace9-05a9bdc02bd8,Select language and tone appropriate to a specific writing purpose and audience,ai_generated
 6b350802-d7cc-11e8-824f-0242ac160002,bfbf5a4c-5fe5-4e1d-9b21-e247671dbb29,Produce writing that is clear and coherent across development and organization,ai_generated
 6b394402-d7cc-11e8-824f-0242ac160002,8fff28c9-439b-4a0e-bcee-9bcceb57540e,Quote or paraphrase textual evidence from a literary text to support analysis,ai_generated
+6b394402-d7cc-11e8-824f-0242ac160002,5ab4bd64-61ff-4774-afe4-537ca4a5392d,Quote or paraphrase textual evidence from an informational text to support analysis,ai_generated
 6b394402-d7cc-11e8-824f-0242ac160002,0b563984-112b-4b72-811f-003f04ceb4fc,Select evidence from a text that is directly relevant to a research or reflective claim,ai_generated
 6b394402-d7cc-11e8-824f-0242ac160002,19d32e62-9c96-4dd7-9181-33e6316ebb7e,Integrate evidence from multiple texts to support a written argument or analysis,ai_generated
 6b33d7fb-d7cc-11e8-824f-0242ac160002,6f1948fe-6b46-4786-befb-65b69ebadad9,Identify unknown words encountered in an informational text,ai_generated
@@ -3456,6 +3492,7 @@ eb6d832d-dfa4-412a-8144-396663e982fe,b9ae0126-1b6c-45f4-98fb-ed5208cd5606,Select
 6b375260-d7cc-11e8-824f-0242ac160002,e6cd122f-c1c3-4414-a4c4-b50264498c60,Integrate visual displays into a presentation to support theme development,ai_generated
 6b375260-d7cc-11e8-824f-0242ac160002,5c161733-4046-4aac-8007-369f831a519c,Explain how a chosen multimedia element strengthens the presentation's central idea,ai_generated
 6b3430ea-d7cc-11e8-824f-0242ac160002,fc147a58-0f2b-4606-8dab-e30849640508,Determine the figurative meaning of words and phrases as used in a literary text,ai_generated
+6b3430ea-d7cc-11e8-824f-0242ac160002,dba049ad-4ecb-40f3-a16b-4dafb91680e5,Determine the connotative meaning of words and phrases as used in a literary text,ai_generated
 6b3430ea-d7cc-11e8-824f-0242ac160002,b478537c-0665-4b3a-8775-acb7ebc11b63,Analyze the impact of rhyme on the meaning or effect of a specific poem or stanza,ai_generated
 6b3430ea-d7cc-11e8-824f-0242ac160002,be8a8a00-955c-453e-9791-634e57ddb6b0,"Analyze how alliteration or other sound repetitions affect a verse, stanza, or story section",ai_generated
 6b34b93b-d7cc-11e8-824f-0242ac160002,389b63b4-c6de-4c33-b619-c4253667af9a,Prepare for discussions by reading assigned texts and gathering relevant evidence,ai_generated
@@ -3782,6 +3819,7 @@ e013a212-318d-401e-b12c-69144da0a12c,e438e555-8574-4178-aa0a-1fcbd95ee149,Distin
 6b95c958-d7cc-11e8-824f-0242ac160002,f2143475-b384-43c1-bad6-5f14f9827a1e,Interpret the meaning of a figure of speech based on its surrounding context,ai_generated
 6b95c958-d7cc-11e8-824f-0242ac160002,6ee9f7bb-0865-47e9-b8c9-9f0123fc5ff5,Analyze the rhetorical or thematic role a figure of speech plays within a text,ai_generated
 6b9701b0-d7cc-11e8-824f-0242ac160002,06a4598a-8c39-4c80-8977-718ecfacba64,Identify the correct placement of a comma in a letter greeting,ai_generated
+6b9701b0-d7cc-11e8-824f-0242ac160002,7145372d-cdd4-4b70-90fc-09af5908730a,Identify the correct placement of a comma in a letter closing,ai_generated
 6b9701b0-d7cc-11e8-824f-0242ac160002,31c793b6-8612-4821-bae2-83fdbbb88273,Apply comma rules when writing greetings and closings of letters,ai_generated
 6b9701b0-d7cc-11e8-824f-0242ac160002,54de36af-314d-479f-beca-a7ce9d4e91fd,Distinguish between correctly and incorrectly punctuated letter greetings and closings,ai_generated
 6b998228-d7cc-11e8-824f-0242ac160002,49281f12-0a7c-42ca-9fad-33ffb90d8def,Locate a word's spelling using a beginning print or digital dictionary,ai_generated
@@ -3820,6 +3858,7 @@ e013a212-318d-401e-b12c-69144da0a12c,e438e555-8574-4178-aa0a-1fcbd95ee149,Distin
 6b954333-d7cc-11e8-824f-0242ac160002,33990999-9d71-45b9-8f8d-ba87430da460,Revise a passage by varying sentence patterns to improve style and clarity,ai_generated
 6b954333-d7cc-11e8-824f-0242ac160002,acd57ee2-516c-4b23-be82-c0f49d9cb5c4,Apply different sentence structures to create emphasis or convey tone in writing,ai_generated
 6b95d0c8-d7cc-11e8-824f-0242ac160002,e3c479c4-816b-4615-b421-ab86e5e63e79,Print uppercase letters of the alphabet with legible formation,ai_generated
+6b95d0c8-d7cc-11e8-824f-0242ac160002,e9ea154e-3513-4930-85b2-faf4dae8bb55,Print lowercase letters of the alphabet with legible formation,ai_generated
 6b95d0c8-d7cc-11e8-824f-0242ac160002,562698cf-4e3d-4181-8370-f27c0af1e1c4,Distinguish between uppercase and lowercase forms when printing letters,ai_generated
 6b376c94-d7cc-11e8-824f-0242ac160002,e750aa97-a844-4c7e-a1b4-48f871b6ade2,Focus a piece of writing on a single topic with adult guidance,ai_generated
 6b376c94-d7cc-11e8-824f-0242ac160002,be94c912-600f-4de6-87ea-6af5cea4b26f,Incorporate peer and adult feedback by responding to questions and suggestions about a draft,ai_generated
@@ -3844,6 +3883,7 @@ e013a212-318d-401e-b12c-69144da0a12c,e438e555-8574-4178-aa0a-1fcbd95ee149,Distin
 6b992538-d7cc-11e8-824f-0242ac160002,c5528f6d-1797-4c80-9a8c-0ecf28097f2e,Evaluate evidence presented by others to determine whether it warrants adjusting a personal view,ai_generated
 6b992538-d7cc-11e8-824f-0242ac160002,2dfa7ef2-ec7c-4d9a-8bc5-6fd6b5cb38f6,Qualify or justify a personal position in response to compelling evidence from other speakers,ai_generated
 6b982e26-d7cc-11e8-824f-0242ac160002,88e138b8-544b-4143-954b-7feb4e26e89a,Identify misplaced modifiers within a sentence,ai_generated
+6b982e26-d7cc-11e8-824f-0242ac160002,ac2d159f-2f53-4d3e-b5b1-dc09ddf452ca,Identify dangling modifiers within a sentence,ai_generated
 6b982e26-d7cc-11e8-824f-0242ac160002,4a8d4172-872c-4e2d-af22-9be9fb519e81,Correct a misplaced modifier by repositioning the phrase or clause,ai_generated
 6b982e26-d7cc-11e8-824f-0242ac160002,eea9a589-132a-4246-8967-354b0718d7a9,Correct a dangling modifier by revising the sentence structure,ai_generated
 6b982e26-d7cc-11e8-824f-0242ac160002,714d02bb-a23e-414d-8bfc-5aea58e65dbc,Place a modifying phrase or clause adjacent to the word it modifies,ai_generated
@@ -3895,6 +3935,7 @@ e013a212-318d-401e-b12c-69144da0a12c,e438e555-8574-4178-aa0a-1fcbd95ee149,Distin
 6b99c145-d7cc-11e8-824f-0242ac160002,4d412d38-b931-411e-a33c-4d4df11341ba,Revise word choice in an informative text to establish and sustain a formal style,ai_generated
 6b32fa81-d7cc-11e8-824f-0242ac160002,bc18f4ee-1746-405b-8b02-72524b2b8086,Use collective nouns correctly in writing or speaking,ai_generated
 6b32fa81-d7cc-11e8-824f-0242ac160002,c0bc1d21-8447-4c04-8194-040085e178a4,Form and use frequently occurring irregular plural nouns,ai_generated
+6b32fa81-d7cc-11e8-824f-0242ac160002,8c4a32b1-7511-4854-a2b0-95318fc82bb5,Use reflexive pronouns correctly in writing or speaking,ai_generated
 6b32fa81-d7cc-11e8-824f-0242ac160002,0413398b-40d8-4f87-9a39-3c042c05e917,Form and use the past tense of frequently occurring irregular verbs,ai_generated
 6b32fa81-d7cc-11e8-824f-0242ac160002,d0ca70fb-f96e-4276-b0a5-9ea6c91b9568,"Produce, expand, and rearrange complete simple and compound sentences",ai_generated
 6b378e75-d7cc-11e8-824f-0242ac160002,7dba63ef-7352-428b-bf57-ede99141804a,Plan a piece of writing using prewriting strategies with guidance from peers or adults,ai_generated
@@ -3927,6 +3968,7 @@ e013a212-318d-401e-b12c-69144da0a12c,e438e555-8574-4178-aa0a-1fcbd95ee149,Distin
 6b9974ed-d7cc-11e8-824f-0242ac160002,0ed03c29-7306-4196-ad50-2de637a45436,Sustain an objective tone consistent with the norms of a specific academic discipline,ai_generated
 6b9974ed-d7cc-11e8-824f-0242ac160002,af4f16cd-ed1d-4990-aad9-538a55420b0e,Revise word choice and sentence structure to align with disciplinary writing conventions,ai_generated
 6b36a974-d7cc-11e8-824f-0242ac160002,ed3c02ba-dc78-4d70-bcfd-951248cc641d,Ask questions about key details in an informational text,ai_generated
+6b36a974-d7cc-11e8-824f-0242ac160002,6c3b48ba-adc1-453a-8373-d95670ffb6c4,Answer questions about key details in an informational text,ai_generated
 6b36a974-d7cc-11e8-824f-0242ac160002,f9694425-15be-4272-b715-3fee473e4b4f,Locate key details in a text to support answers to questions,ai_generated
 6b965fc3-d7cc-11e8-824f-0242ac160002,30a7e4e6-23eb-4dc6-aa23-eaca82311c98,Prepare for a discussion by reading or studying required material in advance,ai_generated
 6b965fc3-d7cc-11e8-824f-0242ac160002,1e961628-6fe9-4064-8a05-0cfded0fc18f,Draw explicitly on prepared material to contribute ideas during a discussion,ai_generated
@@ -4050,7 +4092,9 @@ f8c8d74e-6ec5-41e8-ae57-7611993b4c35,c931c1da-83dd-41e5-b071-a9a829330a5e,Ask an
 6b342460-d7cc-11e8-824f-0242ac160002,460f4e1e-a0a7-474a-93b8-b05fa1eec511,Analyze how a specific word choice influences the meaning of a passage,ai_generated
 6b342460-d7cc-11e8-824f-0242ac160002,c43f4dc5-a6bf-4a37-86d7-c4532f9d5915,Analyze how a specific word choice contributes to the tone of a literary text,ai_generated
 6b963df5-d7cc-11e8-824f-0242ac160002,ee22cf99-db30-4b3d-92c6-99d17fd51091,Identify the most common prefixes in grade-level words,ai_generated
+6b963df5-d7cc-11e8-824f-0242ac160002,85b4fcf9-3cff-4a30-b25d-4bc6b7db057f,Identify the most common derivational suffixes in grade-level words,ai_generated
 6b963df5-d7cc-11e8-824f-0242ac160002,1547482c-d590-4bb6-a988-cd0121ebdefa,Determine the meaning of a word by applying knowledge of a known prefix,ai_generated
+6b963df5-d7cc-11e8-824f-0242ac160002,cb565c13-b7e6-4dcc-a384-334a77e561b5,Determine the meaning of a word by applying knowledge of a known derivational suffix,ai_generated
 43e547c4-4ce2-4a23-a580-a0b427b9ed04,5769f881-9010-4155-aae4-ed6b8439e9aa,Read science and technical texts at the grades 6–8 complexity band independently,ai_generated
 43e547c4-4ce2-4a23-a580-a0b427b9ed04,53a8d613-5de7-4eb8-bff2-17b8fe012fef,Comprehend domain-specific vocabulary used in grades 6–8 science and technical texts,ai_generated
 43e547c4-4ce2-4a23-a580-a0b427b9ed04,431e28e5-f427-4427-801c-771c7b0b4ee7,Apply reading strategies to independently navigate complex science and technical texts,ai_generated
@@ -4148,6 +4192,7 @@ d793f5d7-265d-4763-86ba-64f7463cd9b7,09cde661-c57d-4b6e-abbc-c6b4fdf08727,Descri
 6b35b223-d7cc-11e8-824f-0242ac160002,eadca6e2-13bd-44d9-9acc-82cb57b322e7,"Distinguish between individual letters, words, and sentences in printed text",ai_generated
 6b35b223-d7cc-11e8-824f-0242ac160002,bde98894-c549-4e5f-805b-c839d5f5a388,"Identify the front cover, back cover, and title page of a book",ai_generated
 6b946b50-d7cc-11e8-824f-0242ac160002,d47734fb-6833-448e-8b9d-a716f12ae2c6,Print all 26 uppercase letters of the alphabet legibly,ai_generated
+6b946b50-d7cc-11e8-824f-0242ac160002,55c86dac-bb59-4b64-a515-7d4512dbff4a,Print all 26 lowercase letters of the alphabet legibly,ai_generated
 6b946b50-d7cc-11e8-824f-0242ac160002,8efe7170-9c83-4218-b320-6712de482d0d,Distinguish between uppercase and lowercase forms of each letter when printing,ai_generated
 6b38a2d2-d7cc-11e8-824f-0242ac160002,1426ba02-674b-44b6-82cc-b9e64683f771,Identify the key information emphasized by each of two or more authors writing on the same topic,ai_generated
 6b38a2d2-d7cc-11e8-824f-0242ac160002,a5613234-e385-41ba-8042-67a100fbaf0b,Compare how different authors interpret the same facts about a shared topic,ai_generated
@@ -4354,6 +4399,7 @@ b41b7a96-6061-4d5b-95f8-97a744b4f2de,6622fe3b-3086-48d9-8ca7-f378fa2ece67,Evalua
 07a6d259-9eba-4eab-967c-d7f9d5b4c638,c2b7da2e-75d6-4391-823c-b254724261f3,Identify the topic and purpose of a social studies argument,ai_generated
 07a6d259-9eba-4eab-967c-d7f9d5b4c638,922823bd-6ef4-47ba-b725-a2cd29a54dd0,Analyze relevant information from multiple sources used to support claims,ai_generated
 07a6d259-9eba-4eab-967c-d7f9d5b4c638,cd0d28d7-1c00-4a36-a7ff-d6467096f448,Evaluate the point of view of a source based on relevance and intended use,ai_generated
+07a6d259-9eba-4eab-967c-d7f9d5b4c638,f6eae03f-b3c9-4f7a-8ac2-f2c1453de6da,Evaluate the credibility of a source based on its relevance and intended use,ai_generated
 37d4fc94-a76c-4f6a-8574-dcfd168b851c,1f347c67-348a-4129-9628-728daa3de53a,Ask questions to clarify or probe others' stated opinions,ai_generated
 37d4fc94-a76c-4f6a-8574-dcfd168b851c,4ce4eeb2-92cf-428c-a246-12fe46a50a63,Support own opinions with relevant reasons during discussion,ai_generated
 37d4fc94-a76c-4f6a-8574-dcfd168b851c,bad5e833-f6a3-4f03-8bb5-9a07637f6f9d,Clarify and elaborate personal ideas in response to feedback,ai_generated
@@ -4389,6 +4435,7 @@ b1eccd50-54c0-44da-a34e-f69bf2299bb8,834625a4-eaba-46ad-8ff6-55b43fc94175,Distin
 049b0a8f-2a1a-41f4-a27f-238ae8f0c20a,bb7d9e93-b9aa-4321-a5f1-e7587a0fc112,Analyze evidence gathered from a source to support or challenge a claim,ai_generated
 049b0a8f-2a1a-41f4-a27f-238ae8f0c20a,c692b55a-cf26-4d79-a524-6fe097d37ec1,Evaluate a source by distinguishing between facts and opinions,ai_generated
 6b96e805-d7cc-11e8-824f-0242ac160002,fffc1409-bd4d-4f0d-9e8f-067121da56c6,"Identify common nouns as words that name general people, places, or things",ai_generated
+6b96e805-d7cc-11e8-824f-0242ac160002,0c9971ca-2653-490c-a4c9-ddbcb1992a1f,"Identify proper nouns as words that name specific people, places, or things",ai_generated
 6b96e805-d7cc-11e8-824f-0242ac160002,f61ac707-0236-4b79-b99f-f0db159eeb92,Use possessive nouns to show ownership in writing,ai_generated
 6b96e805-d7cc-11e8-824f-0242ac160002,8d77100f-54e7-4578-8c3a-6cbf23d8d84f,"Distinguish between common, proper, and possessive nouns in a sentence",ai_generated
 6b345a79-d7cc-11e8-824f-0242ac160002,2c9f7265-db7a-4eb9-9959-700752807ff7,Read grade 11–12 science and technical texts independently without instructional support,ai_generated
@@ -4441,6 +4488,7 @@ b1eccd50-54c0-44da-a34e-f69bf2299bb8,834625a4-eaba-46ad-8ff6-55b43fc94175,Distin
 6b343fc2-d7cc-11e8-824f-0242ac160002,f1be907f-ff0a-4835-9134-a21b99ae7504,Analyze how production decisions create fidelity to or departure from the source text,ai_generated
 6b343fc2-d7cc-11e8-824f-0242ac160002,37801129-c051-4e25-aa5a-f782fefbf7f2,"Assess the effect of staging, performance, or cinematic choices on the story's meaning",ai_generated
 6b33bf7b-d7cc-11e8-824f-0242ac160002,b78a3746-06ca-421d-b43c-205743f78742,Read literary nonfiction texts at the high end of the grades 6–8 text complexity band independently,ai_generated
+6b33bf7b-d7cc-11e8-824f-0242ac160002,2ddafe5e-df96-4967-a12e-198c29d40716,Comprehend literary nonfiction texts at the high end of the grades 6–8 complexity band proficiently,ai_generated
 6b33bf7b-d7cc-11e8-824f-0242ac160002,b5966e14-33f8-4fc2-90d3-1f03fbf8a8d2,Apply appropriate reading strategies to access complex literary nonfiction without instructional support,ai_generated
 6b330bba-d7cc-11e8-824f-0242ac160002,eb62aa3a-840a-413f-aff1-e5b597dd3dde,Use context clues to determine the meaning of an unknown word in grade 3 texts,ai_generated
 6b330bba-d7cc-11e8-824f-0242ac160002,91eed0da-e6b8-4869-b97a-c94837094dfe,Use a known root word or affix to clarify the meaning of an unfamiliar word,ai_generated
@@ -4586,6 +4634,7 @@ c6e1cce6-16b9-4382-a277-32d5a14e8807,a8c251fe-a692-47ee-9c42-1f062fe289aa,"Integ
 6b37e71b-d7cc-11e8-824f-0242ac160002,d6f7b0bf-e922-4c9e-97bf-e80727d4fd8c,Analyze content clearly and accurately in an informative or explanatory text,ai_generated
 6b37e71b-d7cc-11e8-824f-0242ac160002,64101ee2-6f22-4062-94eb-43ebb9b6d9b0,Construct an informative or explanatory text that examines complex ideas and information,ai_generated
 6b36f25b-d7cc-11e8-824f-0242ac160002,66e5e9b9-a5f4-4241-9ceb-59bc7265f53d,Identify similarities in the adventures or experiences of characters across stories,ai_generated
+6b36f25b-d7cc-11e8-824f-0242ac160002,3b595f4a-fdbf-47c6-b346-e75c65009cc3,Identify differences in the adventures or experiences of characters across stories,ai_generated
 6b36f25b-d7cc-11e8-824f-0242ac160002,b3d5e629-2144-463d-84bd-519032dc43be,Compare and contrast characters' experiences from two or more stories,ai_generated
 6b384e8a-d7cc-11e8-824f-0242ac160002,bd3b6580-8373-4ca5-8cbc-0a0784899b2b,Use vocabulary acquired through conversations and reading in oral and written responses,ai_generated
 6b384e8a-d7cc-11e8-824f-0242ac160002,3316cb2b-f60c-4e13-88f7-c65935d9ec08,Apply frequently occurring conjunctions to signal simple relationships between ideas,ai_generated
@@ -4713,6 +4762,7 @@ d04ed1ee-09e0-4580-ba92-9c1364da2ea1,e95e9fb8-73da-4674-943f-ac43d330df34,Distin
 6b967061-d7cc-11e8-824f-0242ac160002,8a570697-73db-48f8-992f-5fda64597ee2,Draw on outside research to enrich and extend ideas in a discussion,ai_generated
 6b967061-d7cc-11e8-824f-0242ac160002,f6229a7c-8118-49dc-9eff-bee5338c9268,Pose questions that connect personal preparation to the ideas of others,ai_generated
 6b33cff0-d7cc-11e8-824f-0242ac160002,ad42867d-eda3-453e-b30d-f538da50614d,Identify which details about a subject are emphasized in a print account,ai_generated
+6b33cff0-d7cc-11e8-824f-0242ac160002,d5af46e8-7eda-47d1-99e0-7d2cf7cc7531,Identify which details about a subject are emphasized in a multimedia account,ai_generated
 6b33cff0-d7cc-11e8-824f-0242ac160002,d8e35819-15d0-4d8a-8013-9fd76a46876b,Compare the details emphasized across two different media accounts of the same subject,ai_generated
 6b33cff0-d7cc-11e8-824f-0242ac160002,c8df6eb5-9647-4c1c-80f5-2062f8d32a83,Analyze how the choice of medium shapes the presentation of a subject,ai_generated
 6b96ae05-d7cc-11e8-824f-0242ac160002,785d10dd-466c-4a70-8522-e8813bd242e0,Establish a clear context and point of view to orient the reader,ai_generated
@@ -4727,6 +4777,7 @@ d04ed1ee-09e0-4580-ba92-9c1364da2ea1,e95e9fb8-73da-4674-943f-ac43d330df34,Distin
 6b99774b-d7cc-11e8-824f-0242ac160002,0037b720-73ac-4be9-a5d4-e976b26d67ed,Select domain-specific vocabulary appropriate to the discipline and topic,ai_generated
 6b99774b-d7cc-11e8-824f-0242ac160002,ed75f965-bfa0-4ce0-9f2f-fd50f058ecd8,Adjust vocabulary and style to match the likely expertise of the intended audience,ai_generated
 6b9a1a35-d7cc-11e8-824f-0242ac160002,0a7ab785-11e1-4518-a256-2bbf7a469ef2,Form comparative adjectives correctly using -er or more,ai_generated
+6b9a1a35-d7cc-11e8-824f-0242ac160002,4c452447-564f-49d4-b59b-0be5b367867d,Form superlative adjectives correctly using -est or most,ai_generated
 6b9a1a35-d7cc-11e8-824f-0242ac160002,5b2b7d84-92b7-4ffc-bf4a-ceb8fd9f0955,Form comparative and superlative adverbs correctly,ai_generated
 6b9a1a35-d7cc-11e8-824f-0242ac160002,4c84c6e0-5205-45c5-95a0-aa7bbd4af7f2,Choose between a comparative and superlative form based on what is being modified,ai_generated
 6b98f12a-d7cc-11e8-824f-0242ac160002,1e5a97b7-6504-4d58-bd9a-bd3c2f2433c1,Identify pronouns with unclear or ambiguous antecedents in a sentence,ai_generated
@@ -4801,6 +4852,8 @@ ccdef02b-a525-490a-b632-785a0e2d4fd7,583a546e-f830-4d55-81eb-66ca3285ed57,Synthe
 6b98d4a6-d7cc-11e8-824f-0242ac160002,83b76922-3617-4641-81f7-4be088571a79,Select the most precise verb or adjective to convey a specific shade of meaning in context,ai_generated
 6b98d4a6-d7cc-11e8-824f-0242ac160002,17426abf-1a17-41d7-85a8-0596c2d736ff,Act out or define words to demonstrate understanding of nuanced differences among related terms,ai_generated
 6b975340-d7cc-11e8-824f-0242ac160002,a60aa72e-6449-460a-9208-6fd8c42b9867,Identify a period as end punctuation in a written sentence,ai_generated
+6b975340-d7cc-11e8-824f-0242ac160002,044459db-ad01-47d8-aa9e-f824a8b08ed1,Identify a question mark as end punctuation in a written sentence,ai_generated
+6b975340-d7cc-11e8-824f-0242ac160002,bd6e8217-b2a0-4a1f-8ea3-7a53dca605b5,Identify an exclamation point as end punctuation in a written sentence,ai_generated
 6b975340-d7cc-11e8-824f-0242ac160002,e58b0268-9148-49af-ab01-3cc949b9ec1b,Name the correct end punctuation mark for a given sentence type,ai_generated
 6b97a054-d7cc-11e8-824f-0242ac160002,418f9034-e9cc-4bff-8cdb-4e55d15da007,Select relevant facts or definitions to develop a topic in informative writing,ai_generated
 6b97a054-d7cc-11e8-824f-0242ac160002,80206c8b-ebc8-41cc-aeeb-387fdb0df304,Incorporate concrete details or examples to support a topic in explanatory writing,ai_generated
@@ -4837,6 +4890,7 @@ ccdef02b-a525-490a-b632-785a0e2d4fd7,583a546e-f830-4d55-81eb-66ca3285ed57,Synthe
 6b37b5b4-d7cc-11e8-824f-0242ac160002,37510883-a0e3-47ee-ae79-5bca51f892bf,Evaluate a draft to identify the most significant areas for improvement given purpose and audience,ai_generated
 6b37b5b4-d7cc-11e8-824f-0242ac160002,69bfc072-6193-4ea2-96ed-48a835aa2ba8,Rewrite or restructure a draft using a new approach when previous strategies are insufficient,ai_generated
 6b95f0fd-d7cc-11e8-824f-0242ac160002,656731a3-5e90-4c62-942a-13e2abe97cf2,Identify long vowel sounds in spoken single-syllable words,ai_generated
+6b95f0fd-d7cc-11e8-824f-0242ac160002,ecd0c635-2763-45b6-88a6-bc05f7fb9119,Identify short vowel sounds in spoken single-syllable words,ai_generated
 6b95f0fd-d7cc-11e8-824f-0242ac160002,514db255-05a0-4ff1-8d90-7bc00bbdf729,Distinguish between long and short vowel sounds in spoken single-syllable words,ai_generated
 6b373edd-d7cc-11e8-824f-0242ac160002,4fdf8848-1800-4f81-aade-264f782904a8,Select appropriate digital media formats to enhance a specific presentation's purpose and audience,ai_generated
 6b373edd-d7cc-11e8-824f-0242ac160002,b78633bd-b495-4e6e-8b30-af21525f9bfe,"Integrate visual, audio, or interactive elements strategically to clarify reasoning and evidence",ai_generated
@@ -4886,7 +4940,9 @@ a74913f8-c8e6-4c8f-ba9c-c84a7e27bb7a,99b86910-2b5d-4001-b9ab-54b63f8c2bab,Explai
 0f8877a6-0bf9-4eb0-894f-efb36ee8c634,fe54788d-4cd4-4099-809a-81d9b5499409,Evaluate whether a concluding section effectively supports the body of an explanatory text,ai_generated
 0f8877a6-0bf9-4eb0-894f-efb36ee8c634,9a79f97c-41cd-460d-b8df-71caf680628f,Revise a weak conclusion to better reflect and reinforce the content of an informational piece,ai_generated
 6b98f8ee-d7cc-11e8-824f-0242ac160002,05635f05-b96f-4036-bced-90edc26592c2,Identify inappropriate shifts in verb voice within a sentence or passage,ai_generated
+6b98f8ee-d7cc-11e8-824f-0242ac160002,f7973eb6-911c-478b-8227-a583c247ce26,Identify inappropriate shifts in verb mood within a sentence or passage,ai_generated
 6b98f8ee-d7cc-11e8-824f-0242ac160002,fb01fae1-4662-4f8a-8099-ddd551244c66,Correct inappropriate shifts in verb voice to maintain consistency,ai_generated
+6b98f8ee-d7cc-11e8-824f-0242ac160002,3b7b8977-5127-45dc-9783-063d9ae20472,Correct inappropriate shifts in verb mood to maintain consistency,ai_generated
 6b352ab8-d7cc-11e8-824f-0242ac160002,e0ea5c9f-1573-4987-b98e-0c466b2efbbd,Formulate a focused research question to guide a short inquiry project,ai_generated
 6b352ab8-d7cc-11e8-824f-0242ac160002,1225d241-3e8c-48cd-a70b-b6715e42b6da,Gather relevant information from multiple sources to answer a research question,ai_generated
 6b352ab8-d7cc-11e8-824f-0242ac160002,e8fc575b-f855-4928-9b4b-4eea2abbe561,Evaluate and synthesize information from several sources for a short research project,ai_generated
@@ -4904,6 +4960,7 @@ a74913f8-c8e6-4c8f-ba9c-c84a7e27bb7a,99b86910-2b5d-4001-b9ab-54b63f8c2bab,Explai
 6b9897e5-d7cc-11e8-824f-0242ac160002,464af786-27ca-47de-a8cb-0b36621a99dd,Use transitional words and phrases to connect an opinion to supporting reasons,ai_generated
 6b9897e5-d7cc-11e8-824f-0242ac160002,ac931c5f-a7f3-41b0-83cd-a2e2e4d052f9,Apply subordinating and coordinating connectives to clarify logical relationships between claims and evidence,ai_generated
 e2e11e60-5889-4eb3-976a-8fffee20443b,0483f457-cf42-4e6d-a15e-3a6b1af0bc70,Identify the perspective and purpose of a primary source on a given historical topic,ai_generated
+e2e11e60-5889-4eb3-976a-8fffee20443b,dfbe4767-0653-46b1-97a1-8a89e79c51b8,Identify the perspective and purpose of a secondary source on the same historical topic,ai_generated
 e2e11e60-5889-4eb3-976a-8fffee20443b,9355550c-966a-422a-959a-5db8da1323f1,"Analyze how a secondary source interprets, uses, or departs from a primary source",ai_generated
 e2e11e60-5889-4eb3-976a-8fffee20443b,92bcfc9f-d691-4dac-8c54-78cd97062497,Evaluate the relationship between a primary and secondary source to deepen understanding of a topic,ai_generated
 6b949569-d7cc-11e8-824f-0242ac160002,9a5fd97f-828e-4a35-8bc0-143097b0e120,Vary sentence syntax deliberately to achieve specific rhetorical or stylistic effects,ai_generated
@@ -4926,6 +4983,7 @@ a8701caf-7c5a-4cc4-bee5-6ed46ec512a7,e426ae6a-705f-45f5-be49-342cb508f8dd,Cite r
 6b36985b-d7cc-11e8-824f-0242ac160002,cd857c53-bac8-4c22-b41b-5ac0326e152d,Challenge an author's premises or evidence using contradictory or alternative information,ai_generated
 6b36985b-d7cc-11e8-824f-0242ac160002,90a593ce-55f2-4dad-8dd4-25bfec11eeab,Evaluate the overall validity of an author's argument based on evidence and reasoning,ai_generated
 6b39341f-d7cc-11e8-824f-0242ac160002,64c211db-6f47-4a0b-aa8d-e9f63db259a7,Locate evidence from a literary text to support analysis or reflection in writing,ai_generated
+6b39341f-d7cc-11e8-824f-0242ac160002,2fa41d2f-d55f-4a92-8303-38273514c204,Locate evidence from an informational text to support analysis or research in writing,ai_generated
 6b39341f-d7cc-11e8-824f-0242ac160002,808f9314-3eb8-4287-b757-65da4d0828c5,Integrate textual evidence accurately and effectively into written responses,ai_generated
 6b97803e-d7cc-11e8-824f-0242ac160002,f3d06266-e2c4-4544-8d7c-833abd5515a9,Follow agreed-upon rules and norms during collaborative discussions,ai_generated
 6b97803e-d7cc-11e8-824f-0242ac160002,fe22b089-e467-4a38-8f0c-55b73bdebdb0,Carry out an assigned role responsibly within a structured group discussion,ai_generated
@@ -5001,6 +5059,7 @@ fd4ea99e-7207-4676-9545-f60251874add,fc72e081-b845-4bc4-ad70-8ac0a2eb96b1,Apply 
 6b391c78-d7cc-11e8-824f-0242ac160002,7bd8e4d6-8e74-4315-959e-2529970b398c,Use temporal words and phrases to signal the order of events in a narrative,ai_generated
 6b391c78-d7cc-11e8-824f-0242ac160002,2ebf03dd-5eae-4014-99e6-05263a7bb592,Provide a sense of closure at the end of a written narrative,ai_generated
 6b9772c5-d7cc-11e8-824f-0242ac160002,eeda9732-0ccc-4bc3-9b4b-03f1a0379f9b,Associate the short vowel sound with its common spelling for each of the five major vowels,ai_generated
+6b9772c5-d7cc-11e8-824f-0242ac160002,4fcec3c2-deb6-4a46-9a9a-92a635005882,Associate the long vowel sound with its common spelling for each of the five major vowels,ai_generated
 6b9772c5-d7cc-11e8-824f-0242ac160002,eca0b1c8-f877-4767-89d8-b32267bab198,Distinguish between long and short vowel sounds for a given vowel grapheme,ai_generated
 6b951fd5-d7cc-11e8-824f-0242ac160002,14f077a6-ec1d-4775-b2ee-82aa8aa308a7,Expand sentences by adding words or phrases to increase meaning or detail,ai_generated
 6b951fd5-d7cc-11e8-824f-0242ac160002,35d74c28-a34e-465a-a66d-7b32bbfbcbce,Combine two or more sentences into a single sentence to improve style or clarity,ai_generated
@@ -5013,6 +5072,7 @@ fd4ea99e-7207-4676-9545-f60251874add,fc72e081-b845-4bc4-ad70-8ac0a2eb96b1,Apply 
 6b37455d-d7cc-11e8-824f-0242ac160002,328c2493-339c-4125-9c88-1d84a6029910,Interpret information presented quantitatively in diverse media formats to determine key ideas,ai_generated
 6b9a02b7-d7cc-11e8-824f-0242ac160002,bc14785c-d7f7-425c-8beb-7fc9cab84024,Write a concluding statement or section that follows logically from the explanation or information presented,ai_generated
 6b37dfc8-d7cc-11e8-824f-0242ac160002,d4a8d1ee-0bca-4dcb-8eae-e3586a67d74f,Apply standard English capitalization rules correctly in writing,ai_generated
+6b37dfc8-d7cc-11e8-824f-0242ac160002,e8e87173-8926-4048-a092-09586ea1d897,Apply standard English punctuation conventions correctly in writing,ai_generated
 6b37dfc8-d7cc-11e8-824f-0242ac160002,0723eb2b-da11-44db-ad01-788d404258c0,Spell grade-level words correctly in writing,ai_generated
 6b965407-d7cc-11e8-824f-0242ac160002,399768b5-d30f-4708-871a-df6475263cac,Produce the primary sound for each consonant letter of the alphabet,ai_generated
 6b965407-d7cc-11e8-824f-0242ac160002,5e6fb641-f81d-4745-bbfd-5d4dff0030bf,Identify the letter that corresponds to a given consonant sound in spoken words,ai_generated
@@ -5026,6 +5086,7 @@ fd4ea99e-7207-4676-9545-f60251874add,fc72e081-b845-4bc4-ad70-8ac0a2eb96b1,Apply 
 6b96b917-d7cc-11e8-824f-0242ac160002,e52ddfd6-7954-481e-8162-a9561bef097d,Organize a narrative event sequence that unfolds in a natural and logical order,ai_generated
 6b344ba5-d7cc-11e8-824f-0242ac160002,0a8f946c-843a-4ca2-841b-dc3d6e9b5d2e,Compare how a subject or key scene is represented in two different artistic mediums,ai_generated
 6b344ba5-d7cc-11e8-824f-0242ac160002,b280a657-78be-45ff-abf0-4f729204ebd0,Analyze what is emphasized in each artistic medium's treatment of a shared subject,ai_generated
+6b344ba5-d7cc-11e8-824f-0242ac160002,9e6deb67-01b1-4293-a315-8dc78bd1764f,Analyze what is absent in each artistic medium's treatment of a shared subject,ai_generated
 6b344ba5-d7cc-11e8-824f-0242ac160002,d4cfcc29-9360-46cc-b716-396395942f1f,Explain how the choice of medium shapes the portrayal of a subject or scene,ai_generated
 6b9a21f4-d7cc-11e8-824f-0242ac160002,4218784d-f479-49a8-b6a4-0d92e6515d4c,Recognize grade-appropriate irregularly spelled words on sight,ai_generated
 6b9a21f4-d7cc-11e8-824f-0242ac160002,a6128a97-e384-43b6-9628-8966cc2d5def,Read grade-appropriate irregularly spelled words accurately in connected text,ai_generated
@@ -5060,6 +5121,7 @@ fd4ea99e-7207-4676-9545-f60251874add,fc72e081-b845-4bc4-ad70-8ac0a2eb96b1,Apply 
 6b98ec79-d7cc-11e8-824f-0242ac160002,08116376-0ff2-4094-b7bd-64521517984e,Correct inappropriate verb tense shifts in written sentences,ai_generated
 6b98ec79-d7cc-11e8-824f-0242ac160002,4e75f2e6-d331-41c6-977a-4395c2d9f4a3,Recognize when a deliberate tense shift is appropriate versus an error,ai_generated
 6b99eeaf-d7cc-11e8-824f-0242ac160002,81e4be28-4729-410a-b42d-6bd33f6845ab,Identify subject-verb agreement errors in written sentences,ai_generated
+6b99eeaf-d7cc-11e8-824f-0242ac160002,45ee1e9d-ec1d-4d69-aa98-f15cd31fc777,Correct subject-verb agreement errors in sentences,ai_generated
 6b99eeaf-d7cc-11e8-824f-0242ac160002,1a1d2ef7-f886-42c2-811d-5e252d7d5083,"Match pronouns to their antecedents in number, gender, and person",ai_generated
 6b99eeaf-d7cc-11e8-824f-0242ac160002,0e642c4d-3c9c-4ffd-8f7f-34eb45440675,Correct pronoun-antecedent agreement errors in written sentences,ai_generated
 6b37e9cd-d7cc-11e8-824f-0242ac160002,0f3b876f-624d-4471-9bd5-4c731bbb3c6a,Distinguish spoken words by identifying individual phonemes within them,ai_generated
@@ -5083,19 +5145,23 @@ fd4ea99e-7207-4676-9545-f60251874add,fc72e081-b845-4bc4-ad70-8ac0a2eb96b1,Apply 
 6b38fdcc-d7cc-11e8-824f-0242ac160002,cdfc4e77-1a52-4f5d-a0ca-e33c8c3ef562,Use formal English appropriately when presenting ideas or in academic tasks,ai_generated
 6b38fdcc-d7cc-11e8-824f-0242ac160002,27d88de6-5463-4061-866f-0bba2bf4be1f,Adjust language register between formal and informal based on context and audience,ai_generated
 6b397c7c-d7cc-11e8-824f-0242ac160002,72d03e75-7e4b-4043-8e8d-3b08cc10339f,Cite strong and thorough textual evidence to support explicit analysis of a literary text,ai_generated
+6b397c7c-d7cc-11e8-824f-0242ac160002,9d9cc964-a924-40fc-adcb-6b5a94ebd198,Cite strong and thorough textual evidence to support inferences drawn from a literary text,ai_generated
 6b397c7c-d7cc-11e8-824f-0242ac160002,ec762b1f-beb0-49dd-a5d3-5d6bf1c2a68a,Identify and interpret moments of textual ambiguity or uncertainty within a literary work,ai_generated
 6b397c7c-d7cc-11e8-824f-0242ac160002,412035da-0c96-4f73-b462-1d7bb7ded387,Evaluate the strength and relevance of textual evidence chosen to support a literary analysis,ai_generated
 6b373855-d7cc-11e8-824f-0242ac160002,67f84f64-de46-4f65-b28a-11a14ab19006,Ask questions about key details in a text read aloud or information presented orally,ai_generated
+6b373855-d7cc-11e8-824f-0242ac160002,73dd14f5-b569-4415-b786-ababeab54bc8,Answer questions about key details in a text read aloud or information presented orally,ai_generated
 6b373855-d7cc-11e8-824f-0242ac160002,f83fe51e-c1e1-428b-9418-380d3adb52d7,Identify key details from information presented through media such as audio or video,ai_generated
 6b970f93-d7cc-11e8-824f-0242ac160002,878b107d-fdc8-42f2-a048-382edca2c92c,Identify differences between conventions used in spoken English and written standard English,ai_generated
 6b970f93-d7cc-11e8-824f-0242ac160002,c8657482-ceb4-4e54-8ccc-86d099315eb0,Recognize informal spoken language features that are inappropriate in formal written English,ai_generated
 6b970f93-d7cc-11e8-824f-0242ac160002,ae963cd5-ad87-4a3a-8918-7182c43537f4,Apply standard written English conventions that differ from typical spoken language patterns,ai_generated
 6b9808cd-d7cc-11e8-824f-0242ac160002,9b0f810e-b8c0-4664-bb49-c4a0d3f4ee8e,Distinguish shades of meaning among related words describing degrees of certainty,ai_generated
+6b9808cd-d7cc-11e8-824f-0242ac160002,4ab4523b-53e3-4b57-af9b-3959f21aec4a,Distinguish shades of meaning among related words describing states of mind,ai_generated
 6b9808cd-d7cc-11e8-824f-0242ac160002,07fb00e6-f78b-41bd-a4dd-5b3fa748e238,Rank related mental-state or certainty words along a spectrum from least to most certain,ai_generated
 6b9808cd-d7cc-11e8-824f-0242ac160002,55779113-4699-48ea-90ad-5815d86ddf91,Use context to select the most precise word from a set of related mental-state terms,ai_generated
 6b9a270b-d7cc-11e8-824f-0242ac160002,f74961d6-c732-43de-a951-3bde6b75a270,Identify coordinating conjunctions and explain their function in joining words or clauses,ai_generated
 6b9a270b-d7cc-11e8-824f-0242ac160002,87d88718-5509-474d-8934-99af54406ae8,Identify subordinating conjunctions and explain how they create dependent clauses,ai_generated
 6b9a270b-d7cc-11e8-824f-0242ac160002,cb5a3f7e-1e7c-44a0-8c38-0daf6afd06ff,Use coordinating conjunctions to combine independent clauses correctly in writing,ai_generated
+6b9a270b-d7cc-11e8-824f-0242ac160002,66a9f5ac-82b6-4c7c-8881-1ff82ce7a735,Use subordinating conjunctions to combine independent and dependent clauses in writing,ai_generated
 c28bbc12-4bc2-40ed-8815-d03b29213643,772e63a6-8433-422b-98d5-e86a7b236acb,Identify the organizational structure an author uses in a science or technical text,ai_generated
 c28bbc12-4bc2-40ed-8815-d03b29213643,787c6e84-507f-4f28-8ea5-a4cf568f1a9c,Analyze how major sections of a science or technical text contribute to the whole,ai_generated
 c28bbc12-4bc2-40ed-8815-d03b29213643,7d93c75b-01a4-4c2d-a06c-f06bb317c950,Explain how an author's organizational structure advances understanding of the topic,ai_generated
@@ -5103,8 +5169,10 @@ c28bbc12-4bc2-40ed-8815-d03b29213643,7d93c75b-01a4-4c2d-a06c-f06bb317c950,Explai
 6b39181a-d7cc-11e8-824f-0242ac160002,4b78f2e3-e0cd-48cc-a082-7395b2213a5d,"Update individual or shared writing products in response to feedback, new arguments, or information",ai_generated
 6b39181a-d7cc-11e8-824f-0242ac160002,46cb7874-4031-48e5-84b1-52decfabae9d,"Collaborate on shared digital writing products, incorporating ongoing peer or instructor feedback",ai_generated
 6b392bec-d7cc-11e8-824f-0242ac160002,25f7e092-6270-41e1-9416-103ccb46f5a3,Locate and quote relevant evidence from literary texts to support analysis or reflection,ai_generated
+6b392bec-d7cc-11e8-824f-0242ac160002,4c773844-8464-47d8-93c6-fd2ddb12a06e,Locate and quote relevant evidence from informational texts to support analysis or research,ai_generated
 6b392bec-d7cc-11e8-824f-0242ac160002,305059ea-fab3-4d9a-a9dd-365d1673f48e,Explain how cited textual evidence supports a specific analytical or research claim,ai_generated
 6b3880a9-d7cc-11e8-824f-0242ac160002,6da3720a-0247-4b2c-93ef-510e5ed0af14,Identify information conveyed specifically by illustrations or images in an informational text,ai_generated
+6b3880a9-d7cc-11e8-824f-0242ac160002,43f4b410-3341-4f29-b760-2e61f9661af5,Identify information conveyed specifically by the words in an informational text,ai_generated
 6b3880a9-d7cc-11e8-824f-0242ac160002,47ab084f-67cc-49f3-861d-054dfdd31cbf,Distinguish between information provided by illustrations and information provided by words in the same text,ai_generated
 6b3398cc-d7cc-11e8-824f-0242ac160002,77c7b47b-5837-4c63-8d72-10e894926dfd,Quote accurately from an informational text to explain what it says explicitly,ai_generated
 6b3398cc-d7cc-11e8-824f-0242ac160002,60c7fba8-71a3-40b4-8e6d-d5d7054f17c4,Draw inferences from an informational text supported by accurate quotations,ai_generated
@@ -5188,6 +5256,7 @@ c28bbc12-4bc2-40ed-8815-d03b29213643,7d93c75b-01a4-4c2d-a06c-f06bb317c950,Explai
 4931eb24-30ff-42e4-8112-b6e11e3d6a8a,70777058-dc81-43e3-8230-ea256c577e10,Evaluate discrepancies between information in a text and a corresponding multimedia source,ai_generated
 6b344e9d-d7cc-11e8-824f-0242ac160002,580830b4-3bbb-4d9a-9606-43a79987a7e7,Identify key details in a literary text with prompting and support,ai_generated
 6b344e9d-d7cc-11e8-824f-0242ac160002,89820ae0-e8bf-461a-88ea-b6f7f16fcd3e,Ask questions about key details in a story with prompting and support,ai_generated
+6b344e9d-d7cc-11e8-824f-0242ac160002,e12f09f7-6bbb-4140-9202-a394a390ce2c,Answer questions about key details in a literary text with prompting and support,ai_generated
 6b38bcec-d7cc-11e8-824f-0242ac160002,caca737f-634c-46a0-bfc1-6b66f8ab4c75,"Identify character traits, motivations, and feelings in a story",ai_generated
 6b38bcec-d7cc-11e8-824f-0242ac160002,4b94f5be-9219-43e2-bf00-e1cd033c869f,Describe how a character's actions drive the sequence of events,ai_generated
 6b38bcec-d7cc-11e8-824f-0242ac160002,6193d827-7517-4115-a16f-90c25144a315,Explain the relationship between a character's motivations and their behavior,ai_generated
@@ -5226,6 +5295,7 @@ afc9c656-e9b4-45b1-b1e7-e67e2c2fb059,077a88c5-d411-45e9-8d84-a1f2db99c21e,Contra
 6b36869b-d7cc-11e8-824f-0242ac160002,03bc3fb1-0cca-4c49-82d6-f681029d656a,"Use punctuation conventions correctly, including commas, semicolons, and ellipses, in writing",ai_generated
 6b36869b-d7cc-11e8-824f-0242ac160002,66d9e7bc-e9d0-45f8-8230-f6e0d54a9e27,"Spell correctly, consulting reference materials to resolve spelling uncertainties",ai_generated
 6b359bf5-d7cc-11e8-824f-0242ac160002,5b1fa706-2513-4c32-b904-0907b1f666a6,Apply standard English grammar conventions correctly when writing,ai_generated
+6b359bf5-d7cc-11e8-824f-0242ac160002,9b307d32-4206-40fe-9744-974241cfae9b,Apply standard English usage conventions correctly when speaking,ai_generated
 6b359bf5-d7cc-11e8-824f-0242ac160002,54de5212-9ab7-47dd-a732-0267a9dea3dc,Identify and correct errors in grammar and usage in written and spoken language,ai_generated
 6b34fef2-d7cc-11e8-824f-0242ac160002,206c6741-fa0b-4b0a-9afb-8813086a0c5d,State a clear opinion or point of view on a topic or text in writing,ai_generated
 6b34fef2-d7cc-11e8-824f-0242ac160002,799a23f5-5d4b-42f4-953f-7fb40115c9cd,Provide reasons that support a stated opinion in an opinion piece,ai_generated
@@ -5342,6 +5412,7 @@ eef72e8a-f359-4445-8242-9ace5e653724,232cab33-7142-4364-b271-15c7efcd8cdc,"Selec
 6b967e4e-d7cc-11e8-824f-0242ac160002,b81547c1-f7ed-4fef-b5b0-1ddf9b0946eb,Compare how two or more texts from the same literary period treat similar themes or topics,ai_generated
 6b967e4e-d7cc-11e8-824f-0242ac160002,0a57d262-52af-4e9c-b08a-a0bcabbdbf65,Support written analysis of literature with evidence drawn from close reading of the text,ai_generated
 6b33ab5d-d7cc-11e8-824f-0242ac160002,41441077-e0e6-4951-9821-b0463f281730,Determine the figurative meaning of words and phrases as used in an informational text,ai_generated
+6b33ab5d-d7cc-11e8-824f-0242ac160002,e96d2c9b-ee4c-4dc5-bd68-2704102ed9b3,Interpret the connotative meaning of words and phrases in an informational text,ai_generated
 6b33ab5d-d7cc-11e8-824f-0242ac160002,955ef9a6-61b7-4611-b8e5-b0b10ac07777,Identify technical vocabulary and determine its meaning within an informational text,ai_generated
 6b99e965-d7cc-11e8-824f-0242ac160002,9a1c4351-cf49-4ae1-ac6a-e4863e2cb0fe,Identify frequently occurring adjectives in spoken or written language,ai_generated
 6b99e965-d7cc-11e8-824f-0242ac160002,a6a1fc00-2b8e-464c-ac2e-cfc44c688d00,Use frequently occurring adjectives to describe nouns in writing or speech,ai_generated
@@ -5389,11 +5460,13 @@ e2f85c53-d13d-4f96-bd39-c17b8cc1e52b,3947c9b4-29d7-4efa-ac44-0c4c97d4f617,Identi
 6b97948a-d7cc-11e8-824f-0242ac160002,f11bba8d-0b8c-4509-87f5-b83061d2cd88,Analyze the purposes and arguments in works of public advocacy such as The Federalist Papers,ai_generated
 6b97948a-d7cc-11e8-824f-0242ac160002,3c5ed166-a065-4b22-9f7a-487a26d73b15,Synthesize evidence from literary nonfiction sources to support a written argument or analysis,ai_generated
 fc05c597-30de-42cf-a6e6-9e4b947eb8ce,7c4b7579-c4e0-461d-a233-8758b0ca49f4,Cite specific textual evidence from a primary source to support a historical analysis,ai_generated
+fc05c597-30de-42cf-a6e6-9e4b947eb8ce,d2a11917-6f0a-41cc-baa7-92b421c26ed5,Cite specific textual evidence from a secondary source to support a historical analysis,ai_generated
 fc05c597-30de-42cf-a6e6-9e4b947eb8ce,f347cb41-3357-478d-b329-ac550097aab0,Distinguish between evidence that directly supports a claim and evidence that is tangential,ai_generated
 6b980b74-d7cc-11e8-824f-0242ac160002,d1173af9-f5d6-4fff-a70e-057a08c61480,"Identify modal auxiliaries such as can, may, and must in sentences",ai_generated
 6b980b74-d7cc-11e8-824f-0242ac160002,3e252b19-51bc-4298-a25c-07123ca18354,Distinguish the conditions conveyed by different modal auxiliaries in context,ai_generated
 6b980b74-d7cc-11e8-824f-0242ac160002,12d5b5c9-926a-4772-9623-8dd0667b1c2d,"Use modal auxiliaries to convey degrees of possibility, necessity, or permission in writing",ai_generated
 6b975113-d7cc-11e8-824f-0242ac160002,96bbdda2-25b0-4f88-a479-c19ee9896154,Use frequently occurring nouns correctly in spoken and written language,ai_generated
+6b975113-d7cc-11e8-824f-0242ac160002,1556916b-0f58-46d2-b379-22218e1585e7,Use frequently occurring verbs correctly in spoken and written language,ai_generated
 6b975113-d7cc-11e8-824f-0242ac160002,18e9a53d-1141-48c7-bddb-54eb75d8b6d1,Identify frequently occurring nouns and verbs in simple sentences,ai_generated
 6b332d2f-d7cc-11e8-824f-0242ac160002,e20c6cf7-0cd0-4a07-8f2f-8303ffca1c7e,Choose language conventions that match the intended audience and purpose of a text,ai_generated
 6b332d2f-d7cc-11e8-824f-0242ac160002,9500583b-d22d-4b4c-850d-8d304399c93f,Revise writing to eliminate inappropriate shifts in style or tone,ai_generated
@@ -5419,6 +5492,7 @@ a9121f0e-d49b-4107-a3d4-bd18ee44eb68,63d80273-5e3d-4f6b-a48e-26450ef298f6,Explai
 6b332832-d7cc-11e8-824f-0242ac160002,69aaee7e-a8db-4ca5-8bbf-be9402d641cc,Select the most appropriate word-meaning strategy based on the type of unknown word encountered,ai_generated
 6b33888d-d7cc-11e8-824f-0242ac160002,8fb55965-f873-4344-b241-c293510bbc11,Read grade-level informational texts independently at the high end of the grades 2–3 text complexity band,ai_generated
 6b33888d-d7cc-11e8-824f-0242ac160002,26f9e5b5-7162-4f78-832e-9485e09c9656,Demonstrate comprehension of history/social studies informational texts at the grades 2–3 complexity band,ai_generated
+6b33888d-d7cc-11e8-824f-0242ac160002,47654b4f-f8a7-4037-a7b8-e20eba015245,Demonstrate comprehension of science and technical informational texts at the grades 2–3 complexity band,ai_generated
 6b3a41a5-d7cc-11e8-824f-0242ac160002,81e9baf1-ed24-4974-bfaa-443a041aefc6,Write a conclusion that follows logically from the narrated experiences or events in a narrative,ai_generated
 6b3a41a5-d7cc-11e8-824f-0242ac160002,189f5b68-3d7f-43b9-b88e-bfa818bd78a4,Craft a concluding statement or section that provides closure to a narrative,ai_generated
 6b352387-d7cc-11e8-824f-0242ac160002,6ae36fa3-a7fb-40aa-8c5d-bdea184b2658,"Write for extended time frames incorporating research, reflection, and revision",ai_generated
@@ -5455,6 +5529,8 @@ a9121f0e-d49b-4107-a3d4-bd18ee44eb68,63d80273-5e3d-4f6b-a48e-26450ef298f6,Explai
 6b975e55-d7cc-11e8-824f-0242ac160002,3926645d-71f1-4ac9-83d2-fd3d6e7dcce7,Read on-level text at an appropriate rate across successive readings,ai_generated
 6b975e55-d7cc-11e8-824f-0242ac160002,95380f1d-125a-4d8c-8b33-39933c82ed41,Read on-level text with expression that reflects meaning across successive readings,ai_generated
 6b972116-d7cc-11e8-824f-0242ac160002,7f4dbee1-74d3-4e8c-93f9-2649ed3add5a,Form past perfect verb tense in written and spoken sentences,ai_generated
+6b972116-d7cc-11e8-824f-0242ac160002,02571527-2e3c-4430-864a-2e10322c541c,Form present perfect verb tense in written and spoken sentences,ai_generated
+6b972116-d7cc-11e8-824f-0242ac160002,75d82cbb-74f6-47de-9a1d-cabe8e642fd7,Form future perfect verb tense in written and spoken sentences,ai_generated
 6b972116-d7cc-11e8-824f-0242ac160002,17a02e19-a4a3-464b-b430-17349bc9d4df,Use perfect verb tenses appropriately to convey precise timing of actions,ai_generated
 6b396bfb-d7cc-11e8-824f-0242ac160002,67eb81e8-42a8-41c2-a6ce-36858ffee9bd,Use effective narrative techniques such as dialogue and pacing to develop experiences or events,ai_generated
 6b396bfb-d7cc-11e8-824f-0242ac160002,788d6579-2422-40db-b187-2301ab5e7ab6,Select well-chosen details to develop real or imagined narrative experiences,ai_generated
@@ -5463,6 +5539,7 @@ a9121f0e-d49b-4107-a3d4-bd18ee44eb68,63d80273-5e3d-4f6b-a48e-26450ef298f6,Explai
 6b3855f2-d7cc-11e8-824f-0242ac160002,9e600d17-02ac-4e69-a0fb-423ac51c817d,Use grade-appropriate academic vocabulary accurately in speaking and writing,ai_generated
 6b3855f2-d7cc-11e8-824f-0242ac160002,32235720-64b6-466f-b37d-b03bf80e11ef,Use domain-specific words and phrases accurately in content-area speaking and writing,ai_generated
 6b3855f2-d7cc-11e8-824f-0242ac160002,c767ca4e-827f-4279-a68a-49925a94a075,Apply words and phrases that signal spatial relationships in speaking and writing,ai_generated
+6b3855f2-d7cc-11e8-824f-0242ac160002,b8fb7fa9-4b38-4eab-8bfe-5b12c50dad0e,Apply words and phrases that signal temporal relationships in speaking and writing,ai_generated
 6b37fb3e-d7cc-11e8-824f-0242ac160002,4c2b7435-cbe7-4aef-b840-8e451f7a0ead,Identify the main topic of a multiparagraph informational text,ai_generated
 6b37fb3e-d7cc-11e8-824f-0242ac160002,a0915621-d9d2-4211-80f0-65475655ce67,Identify the focus of a specific paragraph within a multiparagraph informational text,ai_generated
 6b37fb3e-d7cc-11e8-824f-0242ac160002,729aa1a3-6b20-4e2f-a488-70295850f2f8,Distinguish between the main topic of a full text and the focus of individual paragraphs,ai_generated
@@ -5556,8 +5633,11 @@ ecbab904-353e-4bce-9aff-e8675b4ef687,b702f5e4-b6f0-4be8-a78a-51f184f40d7c,Select
 700820e8-6077-4071-8278-4598c6cec98a,7a8bd222-e784-43a2-897f-295b6db86fb7,Organize informational or explanatory writing in a manner suited to purpose and audience,ai_generated
 700820e8-6077-4071-8278-4598c6cec98a,c2f975c8-cf18-4f11-8957-8496e250a6d0,Select a style and tone in writing that is appropriate to the intended task and audience,ai_generated
 6b3714d4-d7cc-11e8-824f-0242ac160002,418bd4f4-5879-4ad2-9706-23ecd8dffa94,Identify structural features of dramatic forms such as soliloquy and their function,ai_generated
+6b3714d4-d7cc-11e8-824f-0242ac160002,6f76d523-70c4-4547-b1bc-b707c27f736d,Identify structural features of poetic forms such as the sonnet and their function,ai_generated
 6b3714d4-d7cc-11e8-824f-0242ac160002,d1dff697-900e-42d5-9f5a-a377f82109e6,Analyze how a drama's or poem's form or structure contributes to its overall meaning,ai_generated
 6b985122-d7cc-11e8-824f-0242ac160002,51f04386-4e7e-4c8f-bcf2-293d683a524b,Isolate the initial phoneme in a spoken single-syllable word,ai_generated
+6b985122-d7cc-11e8-824f-0242ac160002,92978d34-d989-414d-a283-76967d9b0073,Isolate the medial vowel sound in a spoken single-syllable word,ai_generated
+6b985122-d7cc-11e8-824f-0242ac160002,8fd6033b-3742-4ef4-8a7c-9a2fdeeb5c20,Isolate the final phoneme in a spoken single-syllable word,ai_generated
 6b36b465-d7cc-11e8-824f-0242ac160002,f64eb251-d1fc-4aa0-bfdd-ec10dc1a5f5e,Delineate the premises and purposes of arguments in seminal U.S. public advocacy texts,ai_generated
 6b36b465-d7cc-11e8-824f-0242ac160002,47eadefc-1587-4723-9229-7f53d857dac0,Evaluate the application of constitutional principles in U.S. Supreme Court opinions,ai_generated
 6b36b465-d7cc-11e8-824f-0242ac160002,bd8254aa-8a2f-4b6f-ad25-565c8663951f,Analyze the legal reasoning used in U.S. Supreme Court majority opinions and dissents,ai_generated
@@ -6575,6 +6655,7 @@ a5c745c4-8688-4903-8d7c-faa05ae5350e,f2a412db-05d3-4b58-bd0e-47df6990ea1a,Propos
 6b34886c-d7cc-11e8-824f-0242ac160002,7be28ccb-2bc9-406d-837b-860ddc1ad5f5,Interpret technical information presented in multiple formats within a single text,ai_generated
 6b975569-d7cc-11e8-824f-0242ac160002,cbc25684-26fd-4667-8a8c-a9b14b6cdc0c,Identify common inflectional endings such as -ed and -s in unfamiliar words,ai_generated
 6b975569-d7cc-11e8-824f-0242ac160002,24711aa7-1970-4494-abb8-e5fbb5b1df30,"Identify common prefixes such as re-, un-, and pre- as clues to word meaning",ai_generated
+6b975569-d7cc-11e8-824f-0242ac160002,d43b5def-ac8f-451b-8d40-a3af3904a78b,Identify common suffixes such as -ful and -less as clues to word meaning,ai_generated
 6b975569-d7cc-11e8-824f-0242ac160002,7e2f3389-2a01-4620-b422-4c2b684a5ace,Use a known affix to determine the meaning of an unknown word,ai_generated
 6b37502e-d7cc-11e8-824f-0242ac160002,3ec8febc-93db-4c15-a0a1-fd8a4233da12,Summarize key information from a text read aloud by a speaker,ai_generated
 6b37502e-d7cc-11e8-824f-0242ac160002,3febe552-b315-4319-879b-23ad98339913,Summarize information presented in visual formats such as charts or images,ai_generated
@@ -6594,12 +6675,14 @@ a5c745c4-8688-4903-8d7c-faa05ae5350e,f2a412db-05d3-4b58-bd0e-47df6990ea1a,Propos
 6b98fb24-d7cc-11e8-824f-0242ac160002,4e67d1d9-0a98-4337-875f-4e5b4f397681,Confirm the meaning of an unknown word or phrase using a print or digital dictionary,ai_generated
 6b98fb24-d7cc-11e8-824f-0242ac160002,14cc3fb2-61fd-44d0-b9a1-29ff081d6cf2,Evaluate whether a preliminary word meaning is accurate using reference materials,ai_generated
 6b991012-d7cc-11e8-824f-0242ac160002,deef3073-1190-446f-8223-732a789292e1,Recognize all 26 uppercase letters of the alphabet,ai_generated
+6b991012-d7cc-11e8-824f-0242ac160002,abe48f25-2c43-4642-92d1-acba87017ef0,Recognize all 26 lowercase letters of the alphabet,ai_generated
 6b991012-d7cc-11e8-824f-0242ac160002,900ed6dc-b44e-43e8-b951-6b2c98a420c3,Name any upper- or lowercase letter of the alphabet when shown it in isolation,ai_generated
 6b38ee52-d7cc-11e8-824f-0242ac160002,64f5ab59-435a-4436-ab90-b41e24f893ab,Ask clarifying questions about information a speaker has presented,ai_generated
 6b38ee52-d7cc-11e8-824f-0242ac160002,947fdd2c-ea5c-48c2-8d96-052ba3043b5f,Answer questions to demonstrate understanding of a speaker's key points,ai_generated
 6b38ee52-d7cc-11e8-824f-0242ac160002,52c08b11-5f3d-46a1-a7f7-162e3957c417,Identify specific details from a speaker's message that require further clarification,ai_generated
 6b991259-d7cc-11e8-824f-0242ac160002,007f0673-9c5a-4099-8f17-147e65d11a97,Isolate and pronounce the initial phoneme in a CVC word,ai_generated
 6b991259-d7cc-11e8-824f-0242ac160002,3db61633-f5aa-48c7-bbbc-fdbefdc82ca6,Isolate and pronounce the medial vowel sound in a CVC word,ai_generated
+6b991259-d7cc-11e8-824f-0242ac160002,b8d6c952-aff3-46c6-8576-16e5470ca016,Isolate and pronounce the final phoneme in a CVC word,ai_generated
 6b991259-d7cc-11e8-824f-0242ac160002,1cc53208-035b-4170-bd8e-f7b6e33c93d1,Blend the three phonemes of a CVC word to produce the whole word,ai_generated
 6b96c6d5-d7cc-11e8-824f-0242ac160002,484a10fd-7369-4092-98ae-e0fe38b839f0,Analyze how an author draws on source material such as mythology or prior literature in a new work,ai_generated
 6b96c6d5-d7cc-11e8-824f-0242ac160002,9f77ae34-3c3c-4794-9271-4dc65d359b09,Analyze how an author transforms a theme or topic from a source text in a specific literary work,ai_generated
@@ -6623,6 +6706,7 @@ a5c745c4-8688-4903-8d7c-faa05ae5350e,f2a412db-05d3-4b58-bd0e-47df6990ea1a,Propos
 364adde5-dea3-48ef-9627-aca1c5a6102c,f421bd09-3c63-4dd7-abf2-cb8cd1f228f7,Identify speculative claims in a science or technical text,ai_generated
 364adde5-dea3-48ef-9627-aca1c5a6102c,f9c72359-8b97-41a1-9daa-4ffb60959fcf,Compare factual evidence with reasoned conclusions and speculation within a single text,ai_generated
 6b35e5d4-d7cc-11e8-824f-0242ac160002,d9cf7fad-729d-465b-b2f5-fa4a6fd1de10,Read complex literary texts independently with comprehension at the appropriate grade band,ai_generated
+6b35e5d4-d7cc-11e8-824f-0242ac160002,1b4850c6-4174-4221-83f3-3113d4dc2b66,Read complex informational texts independently with comprehension at the appropriate grade band,ai_generated
 6b35e5d4-d7cc-11e8-824f-0242ac160002,36a09849-65bd-4131-9a3d-f46243eae932,Apply appropriate reading strategies to comprehend texts of increasing complexity,ai_generated
 6b9984af-d7cc-11e8-824f-0242ac160002,bc5a6336-d21a-4066-8eb3-c43b0e33ba2b,Use a print glossary to determine the meaning of an unknown word or phrase,ai_generated
 6b9984af-d7cc-11e8-824f-0242ac160002,1921b33f-0559-4ab7-b11e-48e122745b55,Use a beginning print or digital dictionary to clarify the meaning of an unfamiliar word,ai_generated
@@ -7286,6 +7370,7 @@ cf225053-f338-4f08-b0fa-3d23803779eb,f7f97f20-5162-431d-b422-3439e3e779ef,Use es
 03e41aa0-b2f6-11e9-832e-0242ac150005,694ee8a1-a479-4fd8-868c-33f6ac13f84b,Analyze how a single environmental change caused by human activity produces different impacts on different organisms,ai_generated
 03e41aa0-b2f6-11e9-832e-0242ac150005,6dcbbd91-d370-44a5-8e21-1d851af1d342,Evaluate both negative and positive consequences of human-driven environmental changes on biodiversity and ecosystems,ai_generated
 03e2729a-b2f6-11e9-b21e-0242ac150005,4c0ea3d2-8b17-44c8-aebe-c5eb46934a57,Analyze observational data to determine whether a push or pull changed an object's speed,ai_generated
+03e2729a-b2f6-11e9-b21e-0242ac150005,deb97762-b969-4f0b-85b8-b31dae627c89,Analyze observational data to determine whether a push or pull changed an object's direction,ai_generated
 03e2729a-b2f6-11e9-b21e-0242ac150005,9bf55c38-1aa1-45bc-b07e-1dfaf16bcf1b,Evaluate whether a design solution performs as intended based on collected motion data,ai_generated
 03e48026-b2f6-11e9-89d1-0242ac150005,9d8ed7aa-0fd8-4f9d-a2ea-74a5d5d6be9b,Synthesize information from multiple complex texts and reliable media sources to support a scientific claim,ai_generated
 03e48026-b2f6-11e9-89d1-0242ac150005,4c8ada79-cc2b-45eb-acdd-b6affead6c2d,Evaluate the reliability and relevance of information across sources to inform a scientific or engineering practice,ai_generated
@@ -7357,6 +7442,7 @@ cf225053-f338-4f08-b0fa-3d23803779eb,f7f97f20-5162-431d-b422-3439e3e779ef,Use es
 03e36808-b2f6-11e9-b75a-0242ac150005,e17cbf7c-3560-495e-ac80-73380258ba8d,Interpret mathematical representations to communicate the results of a scientific investigation or design solution,ai_generated
 03e3bac4-b2f6-11e9-ae27-0242ac150005,97366231-d916-4575-b142-7535afcbe3f5,Explain why reproduction is essential to the continued existence of a species,ai_generated
 03e3bac4-b2f6-11e9-ae27-0242ac150005,392a9b72-9d17-451f-93f8-585ec52e1c40,"Compare the life cycles of different plant species, identifying stages of reproduction",ai_generated
+03e3bac4-b2f6-11e9-ae27-0242ac150005,f98c6fdd-6622-4416-9760-0a86bb500875,"Compare the life cycles of different animal species, identifying key reproductive stages",ai_generated
 03e3bac4-b2f6-11e9-ae27-0242ac150005,367b519c-05bb-456a-b5e4-4b01df5b20a0,Distinguish between the reproductive strategies of plants and animals,ai_generated
 03e4042a-b2f6-11e9-b7b7-0242ac150005,93eaabef-65fd-4503-9785-17fd9a6032e0,Explain the theory of plate tectonics and how it accounts for surface rock movements,ai_generated
 03e4042a-b2f6-11e9-b7b7-0242ac150005,f2a3a624-9f91-4072-83b6-b5fabdc7f729,Identify geological evidence that supports plate tectonic theory,ai_generated
@@ -7367,6 +7453,7 @@ cf225053-f338-4f08-b0fa-3d23803779eb,f7f97f20-5162-431d-b422-3439e3e779ef,Use es
 03e3e4e0-b2f6-11e9-9e2f-0242ac150005,64ac127d-33ac-4e12-a1cc-9b64e6a436b4,Identify examples of traits that positively affect survival in a specific environment,ai_generated
 03e3e4e0-b2f6-11e9-9e2f-0242ac150005,f600caab-682f-48f4-bd76-7f7fdb50306f,Distinguish between traits that increase versus decrease an organism's survival and reproductive success,ai_generated
 03e3b4fc-b2f6-11e9-8c8d-0242ac150005,30bc99a2-1617-4d88-ad22-718120734d59,Identify internal structures of plants or animals and describe their functions,ai_generated
+03e3b4fc-b2f6-11e9-8c8d-0242ac150005,257c981e-5f12-4df9-9943-5c7c3761f40e,Identify external structures of plants or animals and describe their functions,ai_generated
 03e3b4fc-b2f6-11e9-8c8d-0242ac150005,75c35327-daef-4130-b700-2064550d30ed,"Explain how specific structures support an organism's growth, survival, behavior, or reproduction",ai_generated
 03e3b4fc-b2f6-11e9-8c8d-0242ac150005,6e684a98-1ac6-4484-a36c-6d41cd09709e,Compare structural adaptations across organisms and relate them to differences in function,ai_generated
 03e4250e-b2f6-11e9-8027-0242ac150005,5bd96d19-98f9-4c76-95bb-1cd97f376db2,Conduct a test of a design solution to evaluate its performance against defined criteria,ai_generated
@@ -7634,6 +7721,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e2c1aa-b2f6-11e9-b1b0-0242ac150005,6ab40cb1-00c6-4aba-97a6-6b3fc7eee0a2,Present a scientific argument connecting observed changes in motion to the principle of energy conservation,ai_generated
 03e2fe68-b2f6-11e9-9221-0242ac150005,7e05b45e-be34-432f-9421-10661c9e1d02,Evaluate evidence that changing environmental conditions can increase the population size of certain species,ai_generated
 03e2fe68-b2f6-11e9-9221-0242ac150005,f3eef223-7d9e-4a0d-b399-f76cb34c517e,Evaluate evidence that changing environmental conditions can drive the emergence of new species over time,ai_generated
+03e2fe68-b2f6-11e9-9221-0242ac150005,656d76db-7265-46e6-a252-73f21bcf3098,Evaluate evidence that changing environmental conditions can lead to the extinction of species,ai_generated
 03e2fe68-b2f6-11e9-9221-0242ac150005,606272ee-5682-41b8-a57d-07b627c3844e,Analyze how natural selection operating under new environmental conditions affects species survival and diversification,ai_generated
 03e2fe68-b2f6-11e9-9221-0242ac150005,6020ddfe-79c6-4521-bba5-900e415b4661,Compare multiple lines of evidence to assess the strength of claims about environmental change and species outcomes,ai_generated
 03e49548-b2f6-11e9-b3cc-0242ac150005,50d96dff-9f63-4dcc-85af-1ba1b7542313,Define a system by identifying its component parts and the relationships among them,ai_generated
@@ -8120,7 +8208,9 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e3eff8-b2f6-11e9-a9fd-0242ac150005,b8a1bac2-e3de-4608-a60c-3cfb876a077a,Predict the apparent position of the sun or moon based on observed cyclical patterns,ai_generated
 03e3eff8-b2f6-11e9-a9fd-0242ac150005,2e4c9d40-0bde-4876-9434-494e5aea1aec,Construct a model to explain why the apparent motion of celestial objects follows predictable patterns,ai_generated
 03e2bec6-b2f6-11e9-9330-0242ac150005,8887cf9a-d16e-4a05-84f5-317d4bcd14b5,Construct a graphical display showing the relationship between kinetic energy and object mass,ai_generated
+03e2bec6-b2f6-11e9-9330-0242ac150005,055b998b-8a8e-45bf-82f7-e0b973a5d3ab,Construct a graphical display showing the relationship between kinetic energy and object speed,ai_generated
 03e2bec6-b2f6-11e9-9330-0242ac150005,46c6dcce-b529-456b-9278-fb5d9efd3446,Interpret a graph to describe how changes in mass affect an object's kinetic energy,ai_generated
+03e2bec6-b2f6-11e9-9330-0242ac150005,b4aee96d-7aa8-4c8b-8295-ecd6f71822b7,Interpret a graph to describe how changes in speed affect an object's kinetic energy,ai_generated
 03e2bec6-b2f6-11e9-9330-0242ac150005,245c39ce-a17c-45b6-a996-d7d14586c1cf,Compare the relative effects of mass and speed on the kinetic energy of an object,ai_generated
 03e341f2-b2f6-11e9-97ad-0242ac150005,8a4790b0-bbbc-4cb3-a736-bf58e1422578,Use a model to explain the mechanism by which a cause produces an observable effect,ai_generated
 03e341f2-b2f6-11e9-97ad-0242ac150005,1d6d5274-3283-4fbe-ad27-37f97a3b4e63,Identify the components of a model that account for a specific natural phenomenon,ai_generated
@@ -8131,6 +8221,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e48b70-b2f6-11e9-a34f-0242ac150005,04d98245-f4d1-4eb0-afd8-c0aeb70aee11,Apply relative scale comparisons to describe differences between natural objects or phenomena,ai_generated
 03e3a66a-b2f6-11e9-bb16-0242ac150005,dc2f6e25-a89b-4913-b4ca-e0185a03c912,Identify the amplitude and wavelength of a wave from a visual or graphical representation,ai_generated
 03e3a66a-b2f6-11e9-bb16-0242ac150005,4bbc052d-badc-4e89-80c4-e37a4197f07d,Compare the amplitudes of two waves of the same type,ai_generated
+03e3a66a-b2f6-11e9-bb16-0242ac150005,0d9b5210-dffd-4656-917b-085179718ab3,Compare the wavelengths of two waves of the same type,ai_generated
 03e3a66a-b2f6-11e9-bb16-0242ac150005,3296d47e-26f5-4aba-9b62-3d682df0e28f,Explain how amplitude and wavelength are independent properties that can vary within the same wave type,ai_generated
 03e3ff02-b2f6-11e9-aa3b-0242ac150005,91371f1a-65a8-4d7e-a9db-da82a1eb6557,Identify a feedback mechanism within an Earth system that amplifies or dampens an initial change,ai_generated
 03e3ff02-b2f6-11e9-aa3b-0242ac150005,bd43e58a-7cef-40bd-9b5c-428ccca549df,Distinguish between positive and negative feedback effects in an Earth system,ai_generated
@@ -8218,6 +8309,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e2b7b4-b2f6-11e9-8fc4-0242ac150005,914b43ea-5acb-4f22-bf2b-4827fb37b266,Develop models depicting the repeating atomic structure of extended solid structures,ai_generated
 03e2b7b4-b2f6-11e9-8fc4-0242ac150005,779bb779-bcad-4fd8-9195-846a44f11972,Compare atomic arrangements in simple molecules versus extended structures using physical or visual models,ai_generated
 03e2f5da-b2f6-11e9-9825-0242ac150005,4ea4893b-bc46-413a-be81-9958afcacf60,Construct an explanation for how matter cycles through ecosystems under aerobic conditions,ai_generated
+03e2f5da-b2f6-11e9-9825-0242ac150005,6c12b478-be02-413e-a5b1-a0e6572e37b7,Construct an explanation for how matter cycles through ecosystems under anaerobic conditions,ai_generated
 03e2f5da-b2f6-11e9-9825-0242ac150005,527c7f83-a263-429f-85d7-f597e9dd2718,Compare the flow of energy in aerobic versus anaerobic metabolic processes using evidence,ai_generated
 03e2f5da-b2f6-11e9-9825-0242ac150005,3410579d-f9f9-4151-bd10-58842b412034,Revise an explanation for matter cycling and energy flow based on new or additional evidence,ai_generated
 03e2f5da-b2f6-11e9-9825-0242ac150005,b37c9260-e42d-4bab-9a40-514c2eb444da,Identify evidence from biochemical processes that supports explanations of carbon and nutrient cycling,ai_generated
@@ -8611,6 +8703,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e374ce-b2f6-11e9-80c4-0242ac150005,26c99b3a-746a-436c-a79e-ae8ef61e30c4,Distinguish between the spacing and contact patterns of molecules in liquids versus gases,ai_generated
 03e374ce-b2f6-11e9-80c4-0242ac150005,100c4de2-80aa-4b61-9541-215f17b85a58,Explain that atoms in a solid vibrate in fixed positions without changing relative locations,ai_generated
 03e33306-b2f6-11e9-85c2-0242ac150005,42cfc3c3-3332-4a47-8ab8-c475cfcce854,Make a qualitative claim describing the directional relationship between an independent and dependent variable,ai_generated
+03e33306-b2f6-11e9-85c2-0242ac150005,72fa1e19-e0ca-4501-bdc6-117cf11c73c6,Make a quantitative claim expressing the mathematical relationship between independent and dependent variables,ai_generated
 03e33306-b2f6-11e9-85c2-0242ac150005,18cc3d1d-efe0-4e6e-b20a-edefd6896470,Identify which variable in an investigation is independent and which is dependent based on experimental design,ai_generated
 03e38680-b2f6-11e9-88d9-0242ac150005,5300eee7-c73d-44f1-9e5f-de04fbaee0db,Explain how external interactions cause changes in the total momentum of a system,ai_generated
 03e38680-b2f6-11e9-88d9-0242ac150005,0e3719d0-09c0-4595-b519-4ca1a04923d1,Apply conservation of momentum to analyze forces between a system and its surroundings,ai_generated
@@ -8643,6 +8736,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e2bba6-b2f6-11e9-b05b-0242ac150005,96257c55-89af-4895-b4fc-61b7d0c61707,Design a solution to a collision problem that accounts for equal and opposite forces between objects,ai_generated
 03e2bba6-b2f6-11e9-b05b-0242ac150005,7612fb33-e6a5-4765-a8ea-682f00d945d8,Evaluate a proposed design solution for a collision scenario using Newton's Third Law as a criterion,ai_generated
 03e29194-b2f6-11e9-8313-0242ac150005,83f08949-4567-4c6a-94e7-bb02e4e70f41,Ask testable questions about cause and effect relationships in electric interactions between non-contact objects,ai_generated
+03e29194-b2f6-11e9-8313-0242ac150005,a98dcde6-eb64-4221-9122-2f39b065fa99,Ask testable questions about cause and effect relationships in magnetic interactions between non-contact objects,ai_generated
 03e29194-b2f6-11e9-8313-0242ac150005,5c405911-b6f1-46ac-b063-0fb0f69bb640,Identify evidence that electric or magnetic forces act between objects without physical contact,ai_generated
 03e29194-b2f6-11e9-8313-0242ac150005,2e1dd411-2e5f-4a8a-a536-b9be60426b96,Determine how variables such as distance affect electric or magnetic interactions between objects,ai_generated
 03e29fb8-b2f6-11e9-9649-0242ac150005,2866c511-9b1d-4e01-b56d-423c5b401f63,Develop a model to represent wave properties including amplitude and wavelength,ai_generated
@@ -8757,6 +8851,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e28d3e-b2f6-11e9-9784-0242ac150005,c4b38638-b9c5-4f33-a177-4d6958fc673d,Evaluate design solutions for preventing erosion based on observable evidence of performance,ai_generated
 03e28d3e-b2f6-11e9-9784-0242ac150005,f8b2cfcc-a4ed-40da-b514-d75ea47b3d3e,Construct an argument for which erosion-prevention solution best reduces land change,ai_generated
 03e28136-b2f6-11e9-8c7c-0242ac150005,099e269c-1685-4a28-b646-60cab710c121,Identify behavioral patterns of parents that support offspring survival from texts or media,ai_generated
+03e28136-b2f6-11e9-8c7c-0242ac150005,4aada4a2-9029-4b78-81c2-09bfd7e1e5d3,Identify behavioral patterns of offspring that support their own survival from texts or media,ai_generated
 03e28136-b2f6-11e9-8c7c-0242ac150005,ac106ab0-5d89-40cd-a1a2-20c79891c3c5,Compare parental and offspring behaviors across multiple species to identify common survival patterns,ai_generated
 03e28136-b2f6-11e9-8c7c-0242ac150005,9b6786f0-af37-41c3-a4a0-2893886ab59d,Explain how specific parent–offspring behavioral patterns increase the likelihood of offspring survival,ai_generated
 03e41532-b2f6-11e9-85fa-0242ac150005,af4b12da-86d9-4029-bd67-d98a6a23af10,Identify natural resources that have influenced the development of human settlements or societies,ai_generated
@@ -8982,9 +9077,12 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e34170-b2f6-11e9-85ac-0242ac150005,5eaac665-b1bc-4746-bccc-f863fdd98b42,Evaluate the merits and limitations of different model types when applied to a given scientific context,ai_generated
 03e34170-b2f6-11e9-85ac-0242ac150005,fc3284ad-6e5a-4a91-bb9c-40d388a1c83c,Transition flexibly between model types based on the explanatory or predictive demands of a phenomenon,ai_generated
 03e2bd36-b2f6-11e9-8251-0242ac150005,1c1023ee-a2dc-4ed7-89d7-42d1a5ec8811,Formulate questions about experimental data to identify variables affecting the strength of electric forces,ai_generated
+03e2bd36-b2f6-11e9-8251-0242ac150005,2e726c53-79bc-4262-b6e0-5a801eb08940,Formulate questions about experimental data to identify variables affecting the strength of magnetic forces,ai_generated
 03e2bd36-b2f6-11e9-8251-0242ac150005,2cb5f2fe-580d-45e3-8388-96da6d5bc939,Analyze patterns in data to determine how distance and charge magnitude influence electric force strength,ai_generated
+03e2bd36-b2f6-11e9-8251-0242ac150005,981df21f-39c5-4e1c-a609-59da4517a23d,Analyze patterns in data to determine how distance and current influence magnetic force strength,ai_generated
 03e4af10-b2f6-11e9-962f-0242ac150005,759005e7-e2cd-41ae-9bea-5ddcbe394691,Distinguish between negative and positive feedback mechanisms in a system,ai_generated
 03e4af10-b2f6-11e9-962f-0242ac150005,e7af7562-27e3-4f4b-bbf6-0af528f11fd8,Explain how negative feedback stabilizes a system by counteracting change,ai_generated
+03e4af10-b2f6-11e9-962f-0242ac150005,7feebb73-ddf1-4048-9674-0917013d394b,Explain how positive feedback destabilizes a system by amplifying change,ai_generated
 03e4af10-b2f6-11e9-962f-0242ac150005,b37b276f-d092-420d-9496-7382bd4f8013,Predict whether a given feedback loop will increase or decrease system stability,ai_generated
 03e2c6aa-b2f6-11e9-b53c-0242ac150005,64f89c91-7468-4b88-860c-8c3d61739ac8,Identify characteristic animal behaviors that increase the probability of successful reproduction,ai_generated
 03e2c6aa-b2f6-11e9-b53c-0242ac150005,6327c078-56ce-4ecf-bc81-529b92d11d01,Identify specialized plant structures that increase the probability of successful reproduction,ai_generated
@@ -9010,6 +9108,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e3652e-b2f6-11e9-9611-0242ac150005,075c1815-39a5-4eca-b9a5-6c25f10c0800,Select the appropriate data type to determine if a designed object or tool meets stated success criteria,ai_generated
 03e281c2-b2f6-11e9-b12d-0242ac150005,37261162-d3f7-4a01-9347-5d4c5c7808e3,Observe and record physical traits of young plants or animals and their parents,ai_generated
 03e281c2-b2f6-11e9-b12d-0242ac150005,4b902549-87e2-420d-a1ed-fd96d123a815,Identify similarities between offspring and their parents based on observational evidence,ai_generated
+03e281c2-b2f6-11e9-b12d-0242ac150005,d247ee61-a34a-4a00-9599-d77aa96c2ca7,Identify differences between offspring and their parents based on observational evidence,ai_generated
 03e281c2-b2f6-11e9-b12d-0242ac150005,edb406af-5c08-4352-89b1-d6ae84f4668e,Construct an evidence-based account explaining why offspring resemble but are not identical to their parents,ai_generated
 03e2a0c6-b2f6-11e9-8262-0242ac150005,39ff208b-c596-4f8c-a209-3e3e490c3a49,Explain that light must reflect off an object and enter the eye for the object to be seen,ai_generated
 03e2a0c6-b2f6-11e9-8262-0242ac150005,52bf24e0-98ec-4d86-b105-661fcfaba83d,Develop a model showing the path of light from a source to an object and then to the eye,ai_generated
@@ -9141,8 +9240,10 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e2d01e-b2f6-11e9-9081-0242ac150005,c2c58d54-11c7-4558-bc73-f7793863da40,Construct an evidence-based explanation linking natural selection to changes in trait frequency over generations,ai_generated
 03e2d01e-b2f6-11e9-9081-0242ac150005,51da7937-7e25-45de-9048-961968e59ef9,Analyze population data to determine which trait variations correlate with increased reproductive success,ai_generated
 03e279a2-b2f6-11e9-a43a-0242ac150005,87652512-92b9-4532-b7b9-3d85be86e31e,Identify basic needs that plants require to survive based on observations,ai_generated
+03e279a2-b2f6-11e9-a43a-0242ac150005,5bdcd943-347f-4bc8-9a1d-df33547bb933,"Identify basic needs that animals, including humans, require to survive based on observations",ai_generated
 03e279a2-b2f6-11e9-a43a-0242ac150005,a2487d60-4bc4-4d0f-a3f6-f996a6f3cb01,Describe patterns in what living things need to survive using observational evidence,ai_generated
 03e2880c-b2f6-11e9-b489-0242ac150005,167b4da6-4dbd-473a-950e-ad9df94907ad,Plan a fair-test investigation to determine whether plants need sunlight to grow,ai_generated
+03e2880c-b2f6-11e9-b489-0242ac150005,389b7e78-18c3-4319-800d-a54da446f332,Plan a fair-test investigation to determine whether plants need water to grow,ai_generated
 03e2880c-b2f6-11e9-b489-0242ac150005,aabb5493-6759-4fd4-b82b-3f3b00fbb58e,Conduct an investigation and record observations about plant growth under varied conditions,ai_generated
 03e2880c-b2f6-11e9-b489-0242ac150005,02c9c5e9-28d3-4761-9578-3e11fa100345,Interpret investigation results to determine if sunlight or water affects plant growth,ai_generated
 03e3e922-b2f6-11e9-953b-0242ac150005,263dec05-a8c4-4dc4-9899-d9e6ec2075f0,Explain why species become extinct when environmental changes exceed their adaptive capacity,ai_generated
@@ -9461,6 +9562,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e349d6-b2f6-11e9-bfeb-0242ac150005,6a04a905-8d75-48fb-ba8b-057dce4efde5,Evaluate the quality of empirical evidence used to support or refute a proposed solution,ai_generated
 03e349d6-b2f6-11e9-bfeb-0242ac150005,33f0bdc6-b425-48fa-96b8-a70bacb1a1de,Apply scientific reasoning to connect evidence to a claim about a natural phenomenon,ai_generated
 03e28b9a-b2f6-11e9-a4ba-0242ac150005,bf39ca85-4906-4a41-b676-8cf291ef4087,Identify Earth events that occur quickly using information from multiple sources,ai_generated
+03e28b9a-b2f6-11e9-a4ba-0242ac150005,ef9eef9e-42d0-4a34-b346-ca5a8139f2a7,Identify Earth events that occur slowly using information from multiple sources,ai_generated
 03e28b9a-b2f6-11e9-a4ba-0242ac150005,fc4a5c0e-37b5-4baf-8bfe-0851f991d6c5,Compare evidence from different sources to classify Earth events by their rate of occurrence,ai_generated
 03e28b9a-b2f6-11e9-a4ba-0242ac150005,297e4037-de91-4c00-8646-bd7da89f6054,"Interpret information from texts, images, or media to explain the pace of specific Earth events",ai_generated
 03e4086c-b2f6-11e9-9b7d-0242ac150005,aa26faba-b2c0-4858-9424-f7541328b78f,Explain how the movement of water on land causes weathering and erosion of surface features,ai_generated
@@ -9528,6 +9630,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e49b42-b2f6-11e9-b9a1-0242ac150005,075548cc-1a68-4f44-8d31-8139ceaad7b2,Apply the concept of energy transfer to predict changes in a physical system,ai_generated
 03e2876c-b2f6-11e9-a6c1-0242ac150005,7f1f62d1-c88b-4811-92cf-7338addab818,Distinguish between reversible and irreversible changes caused by heating or cooling,ai_generated
 03e2876c-b2f6-11e9-a6c1-0242ac150005,4b9dc790-075d-4053-99dc-ac29b8601213,Construct an evidence-based argument that certain heating or cooling changes can be reversed,ai_generated
+03e2876c-b2f6-11e9-a6c1-0242ac150005,785bed34-4961-48ce-9fab-7d5e4fde4d02,Construct an evidence-based argument that certain heating or cooling changes cannot be reversed,ai_generated
 03e2876c-b2f6-11e9-a6c1-0242ac150005,1c0d0de0-4b7d-4581-9a22-c1b2764bcb09,Identify observable evidence that indicates whether a physical or chemical change has occurred,ai_generated
 03e4aae2-b2f6-11e9-ae2f-0242ac150005,19d394bf-5656-4398-8107-0f78ab0eb529,Distinguish between sudden events and gradual changes that disturb system stability,ai_generated
 03e4aae2-b2f6-11e9-ae2f-0242ac150005,1755c1eb-8386-4b54-990b-46cb2c4832b0,Explain how gradual changes accumulating over time can disrupt a previously stable system,ai_generated
@@ -9578,6 +9681,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e4236a-b2f6-11e9-bfd6-0242ac150005,4a0f424f-424b-4ed3-b990-bcdaa3fcae29,Plan an investigation to test how well a proposed solution performs under a range of conditions,ai_generated
 03e4236a-b2f6-11e9-bfd6-0242ac150005,09d676d3-44a5-492c-9166-5cb4f62140d4,Evaluate a design solution based on performance data gathered across likely operating conditions,ai_generated
 03e4a7ea-b2f6-11e9-b532-0242ac150005,316cabcc-23c7-4759-b2d8-1ed8162a6c1f,Identify which properties or features of a system remain constant over time,ai_generated
+03e4a7ea-b2f6-11e9-b532-0242ac150005,5fc71b97-42ec-4349-847d-90833313912f,Identify which properties or features of a system change over time,ai_generated
 03e4a7ea-b2f6-11e9-b532-0242ac150005,3916fbe2-6acd-4b90-b67b-0b55dc792318,Compare stable and changing aspects of a system to describe its overall behavior,ai_generated
 03e4a7ea-b2f6-11e9-b532-0242ac150005,887c5fc5-d513-43b4-94c4-f006006a9d93,Explain how recognizing what stays the same helps detect meaningful change in a system,ai_generated
 03e496ec-b2f6-11e9-a71d-0242ac150005,92f6f9d0-a034-43a7-be70-a152a509b70e,Identify specific aspects of a system that a given model represents accurately,ai_generated
@@ -9716,6 +9820,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e34b16-b2f6-11e9-b91d-0242ac150005,1ca9053e-f8b3-42f1-a61f-ae1083b55be0,Justify the selection of a preferred design solution using evidence aligned with agreed-upon criteria,ai_generated
 03e2ee14-b2f6-11e9-a209-0242ac150005,070e9de2-704d-4532-8326-bcc8452808a9,Evaluate the evidence supporting the wave model versus the particle model of electromagnetic radiation,ai_generated
 03e2ee14-b2f6-11e9-a209-0242ac150005,fdde4932-7260-42da-961b-d7bf5c29df9d,Identify specific physical phenomena that are better explained by the wave model of light,ai_generated
+03e2ee14-b2f6-11e9-a209-0242ac150005,30620653-4418-48aa-9bfa-579a4b5abfa6,Identify specific physical phenomena that are better explained by the particle model of electromagnetic radiation,ai_generated
 03e2ee14-b2f6-11e9-a209-0242ac150005,d7ce363a-84b3-4bf7-ae2e-6e107d57c9f3,Analyze the reasoning behind selecting one electromagnetic radiation model over the other for a given situation,ai_generated
 03e2ee14-b2f6-11e9-a209-0242ac150005,aa4ac520-f895-49c6-812f-de4273265f2c,Distinguish between scientifically valid claims and inadequately supported assertions about electromagnetic radiation models,ai_generated
 03e3ae1c-b2f6-11e9-bda2-0242ac150005,0b7c1150-72d3-4f7c-bf2b-255ea71dc4aa,Distinguish light as an electromagnetic wave that requires no medium from mechanical waves such as sound or water waves,ai_generated
@@ -9860,6 +9965,7 @@ e00a3a42-5832-4722-913f-c6e9686bf17f,e05dcd62-c25f-4bde-b9fd-c834c4014276,Apply 
 03e4097a-b2f6-11e9-b435-0242ac150005,1dacba88-8ea8-44c7-a791-248b9dbdf30e,Distinguish between weather at a given moment and longer-term patterns observed in a location,ai_generated
 03e4097a-b2f6-11e9-b435-0242ac150005,1cbb6135-8451-4ff9-9a80-857b9333b8e3,Use weather measurement tools to record and describe current atmospheric conditions,ai_generated
 03e2ea4a-b2f6-11e9-9493-0242ac150005,300b67e3-15cf-4926-ac17-2089017a5649,Develop a model illustrating kinetic energy as the energy associated with the motion of particles or objects,ai_generated
+03e2ea4a-b2f6-11e9-9493-0242ac150005,8bb53f8b-5212-4d32-ae31-3a26e969a5c4,Develop a model illustrating potential energy as the energy associated with the relative positions of particles or objects,ai_generated
 03e2ea4a-b2f6-11e9-9493-0242ac150005,9a960171-db44-457d-b043-a73473f99e90,Use a model to show how macroscopic thermal energy can be accounted for by microscopic particle motion,ai_generated
 03e2ea4a-b2f6-11e9-9493-0242ac150005,f1025e96-d461-405f-bf06-44a9946cce23,Explain how total mechanical energy at the macroscopic scale is the sum of kinetic and potential energy contributions,ai_generated
 03e27d58-b2f6-11e9-928a-0242ac150005,d17fbecf-6ce1-47fa-a026-69a568ef2e53,Plan an investigation to test whether vibrating materials produce sound,ai_generated
