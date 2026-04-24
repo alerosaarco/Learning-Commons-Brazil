@@ -1,0 +1,54 @@
+name: Fetch Learning Commons KG
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install requests pandas tenacity tqdm
+
+      - name: Fetch Learning Commons data
+        env:
+          LC_API_KEY: ${{ secrets.LC_API_KEY }}
+        run: python src/step2_fetch_lc.py
+
+      - name: Commit and push outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw/lc_cc_standards.csv \
+                  data/raw/lc_components.csv \
+                  data/raw/lc_cc_components.csv \
+                  data/raw/lc_cc_prerequisites.csv
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Fetch Learning Commons KG via REST API"
+            git push
+          fi
+
+      - name: Upload log as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: step2-log
+          path: data/logs/step2_fetch_lc.log
+          if-no-files-found: ignore
