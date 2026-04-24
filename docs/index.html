@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNCC × Learning Commons</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>BNCC × Learning Commons</h1>
+      <p class="subtitle">Mapeamento de habilidades da BNCC com o Knowledge Graph do Learning Commons</p>
+    </div>
+  </header>
+
+  <main class="search-page">
+    <div class="search-box">
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="Buscar por código (ex: EF01MA03), disciplina ou descrição…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <div id="searchMeta" class="search-meta"></div>
+    </div>
+
+    <div id="filters" class="filters hidden">
+      <select id="filterStage">
+        <option value="">Todas as etapas</option>
+        <option value="EI">Educação Infantil</option>
+        <option value="EF">Ensino Fundamental</option>
+        <option value="EM">Ensino Médio</option>
+      </select>
+      <select id="filterSubject">
+        <option value="">Todas as disciplinas</option>
+      </select>
+    </div>
+
+    <ul id="results" class="results-list" aria-live="polite"></ul>
+    <div id="noResults" class="no-results hidden">Nenhuma habilidade encontrada.</div>
+  </main>
+
+  <footer>
+    <p>Dados: <a href="https://github.com/alerosaarco/Learning-Commons-Brazil" target="_blank">alerosaarco/Learning-Commons-Brazil</a> · Learning Commons Knowledge Graph · BNCC (MEC, 2018)</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>
