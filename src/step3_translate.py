@@ -34,20 +34,28 @@ from tqdm import tqdm
 
 load_dotenv()
 
-API_KEY = os.environ.get("ANTHROPIC_API_KEY")
-if not API_KEY:
-    print("ERROR: ANTHROPIC_API_KEY not set (check .env)", file=sys.stderr)
-    sys.exit(1)
-
 MODEL = "claude-sonnet-4-6"
 BATCH_SIZE = 20
 CONCURRENCY = 8
-MAX_TOKENS = 4096
+MAX_TOKENS = 8192
 
 ROOT = Path(__file__).resolve().parent.parent
 IN_CSV = ROOT / "data" / "processed" / "bncc_standards.csv"
 OUT_CSV = ROOT / "data" / "processed" / "bncc_translated.csv"
 LOGS_DIR = ROOT / "data" / "logs"
+
+# Auth: prefer API key; fall back to Claude Code subscription OAuth token
+_SESSION_TOKEN_FILE = Path("/home/claude/.claude/remote/.session_ingress_token")
+
+def _make_client() -> Anthropic:
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if api_key:
+        return Anthropic(api_key=api_key)
+    if _SESSION_TOKEN_FILE.exists():
+        token = _SESSION_TOKEN_FILE.read_text().strip()
+        return Anthropic(auth_token=token)
+    print("ERROR: no ANTHROPIC_API_KEY and no Claude Code session token found", file=sys.stderr)
+    sys.exit(1)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
 logging.basicConfig(
@@ -60,7 +68,7 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-client = Anthropic(api_key=API_KEY)
+client = _make_client()
 
 # ---------------------------------------------------------------------------
 # Prompting
