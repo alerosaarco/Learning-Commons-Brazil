@@ -147,9 +147,17 @@ def _system_prompt(subject: str) -> str:
     )
 
 
+def _lookup_key(row: dict) -> str:
+    """Stable key for JSON round-trip: statement_code if present, else first 8 chars of UUID."""
+    code = row.get("statement_code")
+    if code and str(code).lower() not in ("nan", "none", ""):
+        return str(code)
+    return str(row["identifier"])[:8]
+
+
 def _user_message(batch: list[dict]) -> str:
     items = [
-        {"statement_code": r["statement_code"], "description": r["description"]}
+        {"key": _lookup_key(r), "description": r["description"]}
         for r in batch
     ]
     return (
@@ -183,9 +191,9 @@ def _generate_batch(batch: list[dict]) -> dict[str, list[str]]:
     except json.JSONDecodeError as e:
         raise ValueError(f"non-JSON response: {text[:300]!r}") from e
 
-    missing = [r["statement_code"] for r in batch if r["statement_code"] not in result]
+    missing = [_lookup_key(r) for r in batch if _lookup_key(r) not in result]
     if missing:
-        raise ValueError(f"missing codes in response: {missing[:5]}")
+        raise ValueError(f"missing keys in response: {missing[:5]}")
 
     return result
 
@@ -259,14 +267,14 @@ def main() -> None:
             try:
                 mapping = fut.result()
             except Exception as e:
-                codes = [r["statement_code"] for r in batch]
+                codes = [_lookup_key(r) for r in batch]
                 log.error("Batch failed (%s…): %s", codes[0], e)
                 failures.append((codes, str(e)))
                 continue
 
             rows = []
             for std in batch:
-                components = mapping.get(std["statement_code"], [])
+                components = mapping.get(_lookup_key(std), [])
                 for desc in components:
                     rows.append({
                         "standard_id": std["identifier"],
