@@ -62,15 +62,17 @@
     .then(data => {
       allHabs = data;
 
-      // Flat dropdown with canonical group labels only
+      // Flat dropdown with canonical group labels, sorted alphabetically
       const present = new Set(data.map(h => h.subject));
-      SUBJECT_GROUPS.forEach(group => {
-        if (!group.subjects.some(s => present.has(s))) return; // skip empty groups
-        const opt = document.createElement("option");
-        opt.value = group.label;
-        opt.textContent = group.label;
-        filterSubject.appendChild(opt);
-      });
+      [...SUBJECT_GROUPS]
+        .filter(g => g.subjects.some(s => present.has(s)))
+        .sort((a, b) => a.label.localeCompare(b.label, "pt"))
+        .forEach(group => {
+          const opt = document.createElement("option");
+          opt.value = group.label;
+          opt.textContent = group.label;
+          filterSubject.appendChild(opt);
+        });
 
       fuse = new Fuse(data, {
         keys: [
