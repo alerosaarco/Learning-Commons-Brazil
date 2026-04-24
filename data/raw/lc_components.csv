@@ -1,0 +1,239 @@
+﻿identifier,name,description
+14047f66-56ba-59f0-b582-2af921aab0e6,,Represent a multiple of a/b as a multiple of 1/b
+4671de27-b1dd-5e8a-a985-0b1e2e42082d,,Use an understanding of a/b as a multiple of 1/b to multiply a fraction by a whole number
+0c5dbe5b-eb42-5e3f-a345-2c1982961790,,Prove the elimination method of solving systems of equations
+1eba2459-09b5-5633-b32b-db28212d846b,,Prove the substitution method of solving systems of equations
+07f4ca9a-f0ef-53e5-a387-4b5d049185a1,,Describe a sequence of transformations that exhibits congruence between two given congruent figures
+f56c2e0b-ff61-55b2-8eac-4b069a784d31,,"Understand that a two-dimensional figure is congruent to another if the second can be obtained from the first by a sequence of rotations, reflections, and translations"
+0396ab7c-b6e4-5fc1-b098-ec364e56f022,,Find the conjugate of a complex number
+68bf454a-c926-5337-af32-8c0a4d993320,,Use the conjugate of a complex number to find its modulus
+b6582c34-bfdd-5028-8ff9-a31d50b19ce5,,Find the quotient of two complex numbers by using their conjugates
+88b14085-880b-52a9-8914-e6b8c8a8e077,,Use a simulation to generate frequencies for compound events
+eefa37d0-e3d7-53cd-9e91-f877889b7db0,,Design a simulation to generate frequencies for compound events
+b9d27304-5ca2-57b9-968d-e5c946985513,,Convert between forms of writing decimals to the thousandths
+10e69fc1-7f7a-56a5-b13d-8d8bab6e5674,,Draw rays and identify them in two-dimensional figures
+1f95ef88-6b5b-5b50-acab-79a69f51f872,,Identify lines in two-dimensional figures
+27812e5c-a04d-549c-8341-4ab7bccdb688,,"Draw angles (right, acute, obtuse) and identify them in two-dimensional figures"
+2f646a05-2fae-5a36-962a-94bc9453ad83,,Draw line segments and identify them in two-dimensional figures
+3a80eead-6bf5-522c-a824-9570862ece16,,Identify parallel lines in two-dimensional figures
+559a6e78-4316-5d90-95de-004872285c49,,Draw points and identify them in two-dimensional figures
+70453a52-6c2e-5f51-8360-d7176bee3ff5,,Draw parallel and perpendicular lines and identify them in two-dimensional figures
+ba8dce38-25fb-5155-b5df-d4084be22ba8,,Identify perpendicular lines in two-dimensional figures
+c69a41b7-0f98-5837-8a08-bc749f9e0a26,,"Identify right, acute, and obtuse angles in two-dimensional figures"
+d6ead46a-e7cd-5534-ae61-3badfc31fa26,,Draw lines and identify them in two-dimensional figures
+3a925711-3572-5ea7-93c7-3b5ca7ce0e5d,,Use the Multiplication Principle to decide if two events are independent and to calculate conditional probabilities
+91be6280-69b5-5005-aceb-21de46856e86,,Define and understand conditional probabilities
+52099373-73ba-51af-86c0-c3fa57c49dec,,Demonstrate that exponential functions grow by equal factors over equal intervals
+7f73d67f-1970-5831-9fb9-c7324f552413,,Demonstrate that linear functions grow by equal differences over equal intervals
+4ae29496-ad30-54cb-8b3d-0c5472c7d2f9,,Count to 100 by tens
+555df2b6-7a87-5114-8ba5-398a82a7f6e3,,Count to 100 by ones
+67200ac5-9ecb-5f5d-975c-a343ea14082b,,Count to 10 by ones
+34fbe045-f7dc-5086-9079-2d35e254c9fe,,Interpret the parameters in a exponential function in terms of a context
+78be5909-caa1-57b4-863b-b8424dbad63b,,Interpret the parameters in a linear function in terms of a context
+22098a76-50b2-5d73-8c84-6c8a436a8aa0,,Determine the surface area of three-dimensional prisms in mathematical problems
+370f42c5-303d-5239-acb6-262fef986998,,Determine the area of two-dimensional figures composed of various polygons in mathematical problems
+3bc46cc4-1dd7-546f-9ffd-138b27d535d1,,Determine the area of two-dimensional figures composed of various polygons in real-world problems
+414ec184-bad9-54a7-a34f-a77dfdf9c0f9,,Determine the volume of three-dimensional objects composed of cubes and right prisms in real-world problems
+8b731d33-c19b-5567-909c-26ea35d247d1,,Determine the surface area of three-dimensional prisms in real-world problems
+c9233a4b-7017-5a51-964b-5d6377c07a31,,Determine the volume of three-dimensional objects composed of cubes and right prisms in mathematical problems
+b1b23bda-9699-55f0-943b-e10052fbc0c3,,"Use properties of exponents to write an equivalent form of an exponential function, including expressions with rational coefficients in the exponents"
+e9caada8-124e-5265-91c5-b8d2f7571230,,Use properties of exponents to write an equivalent form of an exponential function
+edec9d04-be62-5087-ae21-2002b7765473,,Use properties of exponents to write an equivalent form of an exponential expression
+9646cd38-fc5d-59a7-9728-df655c9afa69,,Recognize and use the fact that the radius of a circle is perpendicular to the tangent where the radius intersects the circle
+acdc1dd7-24da-553a-929c-bd2ce8e09121,,Recognize and use the fact that inscribed angles on a diameter are right angles
+b0669eef-f6e8-5fec-9b0d-a4104550c92e,,"Recognize and use the relationships among radii, chords, tangents, and secants of a circle"
+e30dbc0a-a929-5846-bc1d-9c5d3b24400d,,"Recognize, describe, and use the relationships among inscribed angles in a circle, including between central, inscribed, and circumscribed angles"
+7d5e2ea9-0bac-5822-8c15-f5bf1ea6309b,,"Fluently subtract multi-digit whole numbers (minuend to 1,000,000) using the standard algorithm"
+bd0c4c17-8426-507e-9615-64ed2eca7270,,"Fluently add multi-digit whole numbers (sums to 1,000,000) using the standard algorithm"
+2abe1331-000f-535d-9dca-ea14efc72a5f,,"Use the four operations to solve word problems involving distances, intervals of time, liquid volumes, masses of objects, or money"
+3d94e385-0372-5d24-aa7d-0af24425f245,,Solve two-step problems using any combination of the four operations in a real-world context involving distances
+9432b8e1-ebd3-5962-a190-080bc5687ace,,"Use the four operations to solve word problems involving measurement, including simple fractions or decimals"
+a05de981-d7cc-55b5-8b8e-d0640a9f3d67,,"Represent measurement quantities using diagrams, such as number lines, that feature a measurement scale"
+a16722fd-5811-5b22-9e40-ed3218acd6b3,,"Use the four operations to solve word problems involving measurement, including conversion from a larger unit to a smaller unit"
+e13cdaca-ec2b-52fd-94aa-01aed2a01332,,"Add, subtract, and multiply whole numbers to solve metric measurement problems involving distances, liquid volumes, and masses of objects"
+ef9f46a3-ac8f-5b36-96e8-fbe81b1aa280,,Solve two-step problems using any combination of the four operations in a real-world context involving time intervals
+8b702e5a-6cb6-5a06-8e68-f99b7d2cec25,,Use the unit circle to explain the periodicity of trigonometric functions
+f407bb54-f091-54bb-8928-5c7af6f88ddf,,Use the unit circle to explain the symmetry of trigonometric functions
+78e03758-731e-5143-9aba-2b60b3f9b013,,"Recognize that the numbers 10, 20, 30, 40, 50, 60, 70, 80, 90 refer to one, two, three, four, five, six, seven, eight, or nine tens (and 0 ones)"
+e24232f5-bf99-599b-a631-d7c6f51020d2,,"Identify 100 as a bundle of ten tens, called a ""hundred"""
+75c742eb-4313-54fa-b3a3-7d7c685e74a3,,Know that multiplication of square matrices does not satisfy the commutative property
+855181d6-1d1c-58c0-9375-82fa7b4f3bf2,,Know that multiplication of square matrices does satisfy the distributive property
+f8f5591d-10d6-5d7d-8206-79f85534e22c,,Know that multiplication of square matrices does satisfy the associative property
+165b6006-2a0c-573c-8e7b-4253658b3c25,,Recognize the correct side ratios for each trigonometric ratio
+19124e02-e18e-5967-822e-c97d936f9f8c,,Define trigonometric ratios for acute angles as the ratio of the sides of similar triangles
+f2f4bc7b-f00f-5a76-85a7-b57e4dd7909c,,"Using a corresponding angle of similar right triangles, show that the relationships of the side ratios are the same, which leads to the definition of trigonometric ratios for acute angles"
+0b6078ae-9225-5c0b-bcd6-c0ec9eaf6ed3,,Create rational equations in one variable in a contextual situation
+168bf44c-0f5d-5039-a57d-f353e4f7a865,,Create linear inequalities in one variable in a contextual situation
+201f5a2d-e18a-522a-8b6f-3aeb93d1ea8f,,Solve problems leading to a square root equation in one variable in a contextual situation
+20caf1dd-aefc-5994-802f-edc289b44d9f,,Solve problems leading to a radical equation in one variable in a contextual situation
+247500f3-fd66-591c-97aa-02e85cf0c94a,,Create inverse variation equations in one variable in a contextual situation
+2494e2de-3d30-5e88-a10e-087f82fa6a78,,Create absolute value linear inequalities in one variable in a contextual situation
+25ceb601-2e45-5e73-acc8-3b2faab4765b,,Solve problems leading to a radical inequality in one variable in a contextual situation
+2e291362-0e37-5b14-83d5-4279cbf0ddd0,,Create quadratic inequalities in one variable in a contextual situation
+2ffc0dff-6308-50a2-8169-2824990d2012,,Create rational inequalities in one variable in a contextual situation
+341ea56a-5675-51d7-a2bc-bfbcb841784e,,Solve problems leading to a inverse variation inequality in one variable in a contextual situation
+381baa6d-e842-5f7e-a80e-4d7da491937b,,Create right triangle trigonometric inequalities in one variable in a contextual situation
+3abd1adb-d141-5fb7-a631-b846ae574ade,,Solve problems leading to a polynomial inequality in one variable in a contextual situation
+44f95431-dc63-5839-8b34-f609a2911662,,Create exponential equations in one variable in a contextual situation
+4a4e1096-0f2a-5fe8-abfe-feabc2558ea3,,Solve problems leading to a polynomial equation in one variable in a contextual situation
+4c5acfed-6bdf-5c69-a8ea-8199c79fa370,,"Create exponential equations in one variable in a contextual situation, limited to situations that do not require a constant term"
+4ebd838a-59cf-5551-a413-213d019ae817,,Solve problems leading to a right triangle trigonometric equation in one variable in a contextual situation
+572e9ce7-94d9-5853-8434-e04976e896be,,Solve problems leading to an absolute value linear inequality in one variable in a contextual situation
+6e118b02-6bd2-59a5-b213-94813576f59e,,Solve problems leading to a right triangle trigonometric inequality in one variable in a contextual situation
+6f836060-df22-54a9-8b03-987f68ccd782,,Solve problems leading to a inverse variation equation in one variable in a contextual situation
+72042a25-9586-56f7-a939-d1a7e94756e6,,Create exponential inequalities in one variable in a contextual situation
+7262597f-1b87-58d4-99c3-91f159a3e22b,,Create right triangle trigonometric equations in one variable in a contextual situation
+7714f415-8b26-5cca-9bee-f31697eaa90a,,Solve problems leading to a rational inequality in one variable in a contextual situation
+7a685f35-289a-59d0-b892-46be6445ad8e,,Solve problems leading to an exponential inequality in one variable in a contextual situation
+7bb7260e-dbe9-5824-aac0-02ce0fb074e6,,Solve problems leading to a rational equation in one variable in a contextual situation
+7e4d374c-7a24-5d0e-bf5d-df8c371e0e99,,Create polynomial inequalities in one variable in a contextual situation
+7fa26e65-dabd-5c32-9f02-90cbc8d315c1,,Create absolute value linear equations in one variable in a contextual situation
+959c65ae-0389-56d8-805e-a21c25973b3d,,Create radical equations in one variable in a contextual situation
+9a11be70-bc9a-52b2-a76a-50c1c9b21da5,,Create square root equations in one variable in a contextual situation
+9f41ca74-48e5-52a0-9b3a-df07d58fc8b2,,Solve problems leading to a quadratic equation in one variable in a contextual situation
+a1229cde-8ea7-5a4e-a3c2-fd00a94ba61e,,Create inverse variation inequalities in one variable in a contextual situation
+acd78dfd-24f9-54e5-bc5e-8968c67c1dc3,,Create polynomial equations in one variable in a contextual situation
+acfc0029-ee45-5894-af7c-5463945154e4,,Create linear equations in one variable in a contextual situation
+aea86a4c-972e-52fe-8b0b-5f4b8e917b06,,Create quadratic equations in one variable in a contextual situation
+bdbd4009-a84d-5a76-b360-ed82124b8858,,Create radical inequalities in one variable in a contextual situation
+bf1f3c1c-e240-5ea9-953c-fd542b146193,,Solve problems leading to a square root inequality in one variable in a contextual situation
+c7704833-fde5-531f-8148-858979290236,,Solve problems leading to a quadratic inequality in one variable in a contextual situation
+cc64bba3-b517-5c0a-a4ab-3416bd8c4f90,,Solve problems leading to an exponential equation in one variable in a contextual situation
+dcebba18-68d9-5c60-bc7e-dd92df78d516,,Solve problems leading to a linear inequality in one variable in a contextual situation
+e1ea4b5b-25dd-560d-a6be-86974b1f8ff1,,Solve problems leading to a linear equation in one variable in a contextual situation
+e5c2ed40-fb82-5cd5-a5ab-aad2a322f64f,,Solve problems leading to an absolute value linear equation in one variable in a contextual situation
+e903ca04-e689-5d23-905c-2e3c038367ed,,Create square root inequalities in one variable in a contextual situation
+41261db0-5e95-5198-ae17-0e905db9ab53,,Rewrite an expression in different forms in a problem context
+75924fc9-b2ad-5273-b21d-e7b8c262153a,,Interpret how quantities in an expression are related
+e2c041dc-be4f-55ae-b02c-ac6e09b82173,,Extend properties of exponents to justify the interpretation of fractional exponents
+e3333e44-9d4e-54a9-a427-00f3523532f9,,Recognize that the denominator of the rational exponent is the root index and the numerator is the exponent of the radicand
+051034c9-6867-50df-81ba-8a5dc6629e8e,,"Recognize that in a multi-digit number (including decimals), a digit in one place represents 1/10 what it represents in the place to its left"
+ba0b5da7-336a-54af-bc1d-c4fbceb2df62,,"Recognize that in a multi-digit number (including decimals), a digit in one place represents ten times what it represents in the place to its right"
+48cb8621-0c51-560b-a565-ddd9f6e5f5fc,,Reproduce a scale drawing at a different scale (using proportional reasoning)
+9ffdee4b-84bd-56cd-b894-fbec5c1df544,,Compute actual lengths from a scale drawing (using proportional reasoning)
+f75552e4-5ff9-5df8-a686-b30b0b1f19f7,,Compute actual areas from a scale drawing (using proportional reasoning)
+0edaa02c-0e8e-5b84-a494-665b641dba4b,,Graph proportional relationships
+c7ca6f31-ac92-53a4-aa20-6cd3ccb6b797,,Interpret the slope of the graph of a proportional relationship as the unit rate
+fbbff3cd-ef58-5383-ab5a-94c445fcd933,,Compare two proportional relationships represented in different ways
+54e86591-b40f-5d88-96fd-74fd2880ba83,,"Tell time from a digital clock, using a.m. and p.m. when appropriate"
+9af7bd3c-21c3-5f1f-8e5d-0315073e3484,,"Tell time from an analog clock, using a.m. and p.m. when appropriate"
+cf3900ab-a5e5-5e0d-a3a9-f1e9a8680981,,"Write time on an analog clock, using a.m. and p.m. when appropriate, given a description of the time"
+f25112a6-9606-5267-8aa5-08cc8949b6f5,,"Express time shown, using a.m. and p.m. when appropriate, on a digital clock using an analog clock, and vice versa"
+fca56ad3-1cb6-5e33-b69a-ac15d756deca,,"Write time on a digital clock, using a.m. and p.m. when appropriate, given a description of the time"
+4a3655e0-0275-5949-a449-f9b8088763bf,,Interpret key features of graphs and tables that represent a function that models a real world relationship between two quantities
+4d3237bd-56eb-5b2c-9e0f-47a73d0e57b4,,"Given the key features of a function, sketch the graph"
+52473267-d034-5618-be1d-904cf3c06fd2,,"Given the key features of a quadratic function, sketch the graph"
+a904613a-b364-5f0b-ae0e-71ab92e51a41,,"Given the key features of a linear function, sketch the graph"
+cb330a1c-ce97-5881-a22f-6afdf45c205d,,"Given the key features of a exponential function, sketch the graph"
+0bd082cc-be74-564c-9cf4-941f5d959507,,Identify instances in which the decimal form of a rational number ends in 0 or eventually repeats
+2ab6ac49-716f-507d-bce0-a9696013c6b2,,Convert a rational number to a decimal using long division to solve mathematical problems
+ffd9dc15-b8f1-527e-a374-a6c04d8f6bd7,,Convert a rational number to a decimal using long division to solve real world problems
+755f16f4-088e-5f11-bd81-06674000ca1e,,"Read, and explain in context, data from outside reports"
+79506838-311e-5599-a93e-a9d03c0d80ab,,"Evaluate expressions involving nested parentheses, brackets, and/or braces"
+9355ee95-a7a5-5a41-89e1-8ffaef80af0b,,"Evaluate expressions involving parentheses, brackets, or braces that are not nested"
+12b69651-752f-5e48-b838-0c669df35b64,,"Use variables to represent an unknown number or any number in a specified set, depending on the context"
+306ce9f4-0018-504d-bf10-70d68c8563ec,,Create a real-world situation to represent an expression using variables to represent numbers
+60a51673-b0e6-57d6-840c-64a3c5b61cc0,,Solve a real-world problem by writing an expression with variables to represent the situation
+10c58598-1ea8-523a-b29b-b997668dbe27,,Add within 10
+50ac7ad4-c4f0-564c-9bf6-53542b1a5a9a,,Use objects or drawings to represent subtraction word problems
+56754811-3d83-5040-9e36-fdda3d57d4a1,,Solve subtraction word problems
+5c48ad41-0fdb-53b7-9222-dcf3262b9912,,Subtract within 10
+eb90163e-9db9-5375-bad3-4287deb4a71b,,Use objects or drawings to represent addition word problems
+f22b9881-4f43-544c-be55-de8e3edc5f85,,Solve addition word problems
+14c9562d-c985-5d98-8fe5-a8551e0a20ff,,Use whole-number exponents to denote powers of 10
+39c782cc-8c89-5974-98b8-a3158125e227,,Explain patterns in the placement of the decimal point when dividing a decimal by a power of 10
+53dba7fb-c548-5f5b-88cd-e657ec2114d7,,Explain patterns in the placement of the decimal point when multiplying a decimal by a power of 10
+a275a470-8fa8-5bbe-bc69-d7d90b8b1137,,Explain patterns in the number of zeros of a product when multiplying a whole number by a power of 10
+c4a38f79-95a9-5e1b-a031-b214f46d8307,,Explain patterns in the placement of the decimal point when dividing by a power of 10
+646e93bc-23b5-57bc-9e03-b7ae4f4ef83c,,Describe situations where one quantity changes at a constant rate per unit interval as compared to another
+471f63ab-db68-5f3d-ba18-8add02ec2b2a,,Determine the size of an angle based on its number of n one-degree angles
+1944c542-6fe1-5883-beee-d6fe87cc5e7f,,Determine the rate of change of a function from a mathematical context presented with a verbal description
+411f2a23-973d-5338-9a16-93f6c252b221,,Determine the initial value of a function from a mathematical context presented with a verbal description
+443d082c-df90-5586-8d15-fc375f4a8b4f,,Determine the initial value of a function from a real-world context presented in a table or graph
+5f3a9252-5252-54ed-9c00-f4c910b3b9a4,,Determine the initial value of a function from a mathematical context presented in a table or graph
+6c340f89-4534-5ed4-acee-bb1e959071d4,,Interpret the initial value of a linear function in the context of the situation it models
+b2a9431b-e28d-5c7c-8a46-e0012eef91b8,,Interpret the rate of change of a linear function in the context of the situation it models
+c6f0747b-6ee8-5e35-95d9-d25d8f5debc6,,Determine the rate of change of a function from a real-world context presented in a table or graph
+c8e759d8-4ed5-597d-a8ae-6a20147a354d,,Determine the initial value of a function from a real-world context presented with a verbal description
+dab9e9b0-faa3-5080-9f2e-ac82c0ba0346,,Model a linear relationship between two quantities with a function
+dd4d95c3-4e5b-511f-b490-f0bf52638e99,,Determine the rate of change of a function from a real-world context presented with a verbal description
+e1ce9802-e05b-541d-ae86-641087a49faf,,Determine the rate of change of a function from a mathematical context presented in a table or graph
+bac2efb6-afa7-518d-be33-714f3a956905,,Estimate the value of irrational numbers to a given degree of precision
+e96d5914-1b25-5d07-80e5-ce0d9fdf863f,,Generate rational approximations of irrational numbers and locate them on a number line
+1d180a4e-19ec-5ad6-9d2a-067e7bff23c2,,Use expected values to evaluate strategies for decisions involving probabilities
+2474815e-4b0c-598c-88a4-cbf10ba11108,,Use expected values to compare strategies for decisions involving probabilities
+4f1cf322-82e0-543b-9d80-c2fa79085fd8,,Solve simple radical equations in one variable
+50e80b33-1c0f-5235-a050-ad43976cf7bf,,Provide examples of how extraneous solutions arise when solving rational or radical equations
+702b51aa-2ef8-51f2-af94-7cc53c8a95f6,,Solve simple radical equations in one variable involving cube roots
+c5bb6f18-50f3-50b4-90bb-1392694c0f42,,Solve simple radical equations in one variable involving square roots
+ddd1228a-24ee-5140-a3ea-fff93d8393ae,,Solve simple rational equations in one variable
+0c75837c-d3e8-5e87-beb6-c650eb6fa077,,Divide numbers expressed in both decimal and scientific notation
+2687e8fb-2c68-509e-8ca5-56ca08ba3999,,"Add, subtract, multiply, and divide numbers written in scientific notation"
+4cc1921c-003d-59bb-89e5-903826594253,,Interpret scientific notation that has been generated by technology (i.e. calculators)
+52ad9e03-d6ad-59cf-92b6-983a59f9b7d4,,Subtract numbers written in scientific notation
+93a8423a-e120-52d3-827c-2db0fde2a923,,Divide numbers written in scientific notation
+c34d178e-5417-5849-b054-e0fbf5c99ef2,,Multiply numbers expressed in both decimal and scientific notation
+cad5a87d-5b70-5a8c-b648-138054ab306a,,Subtract numbers in scientific notation with the same integer exponent
+d4407237-ea99-5f02-960e-4ae6eedc96fb,,Multiply numbers written in scientific notation
+d4f29aa5-6c36-5c69-b6d4-d3fa66b70d22,,Add numbers in scientific notation with the same integer exponent
+d6c129bf-c684-51b3-977f-4b56b2be79db,,Add numbers written in scientific notation
+dc8db438-33f2-5239-8957-e25cdaa9e5e0,,Choose units of appropriate size for measures of very large or very small quantities and express those amounts in scientific notation
+768d53ed-5358-5708-91c3-53b1df5c189f,,"Given a center and a scale factor, verify experimentally that when performing dilations of a line segment, the pre-image, the segment which becomes the image, is longer or shorter based on the ratio given by the scale factor"
+05d0879f-43a5-5797-aab7-8083cb9f02a9,,Add matrices of appropriate dimensions
+561ace34-8a42-5c1b-b84d-1c6bf2aab9ad,,Subtract matrices of appropriate dimensions
+f0f82964-123f-5298-83db-afe8b99620b7,,Multiply matrices of appropriate dimensions
+32458a68-9a3b-5f62-afa1-99e3e31b9c19,,"Determine if an addition equation is true or false, including equations relating two expressions"
+5d2ed8f0-95cd-5086-abd6-54ce74e789e2,,"Determine if a subtraction equation is true or false, including equations relating two expressions"
+93ef1daf-e4e0-56d7-ada3-397bbce1bd5b,,Know that an equal sign indicates that the numbers or expressions on each side of the equal sign have the same value
+d0dc7a0d-45e1-5e0c-b941-4f8f63442879,,"Using the fact that the ratio of diameter to circumference is the same for circles, prove that all circles are similar"
+3b3c207c-2fbb-594f-bc16-aef719637e52,,Understand that generalizations about a population from a sample are valid only if the sample is representative of that population
+f26b664c-7aaf-5f47-bd64-6bd2d7574cca,,Understand that random sampling tends to produce representative samples
+13103f2c-f538-50eb-90e7-440094c0e723,,Calculate and use relative frequencies to describe the association between the variables
+412a2d72-fda1-5c7d-9781-9329a5bf1f04,,Construct a two-way table given a data set
+49eb9d6a-a869-5dea-9f38-8577e21e8b91,,Understand that two-way tables can be used to to show associations in bivariate categorical data
+bf631804-8622-56ee-ba38-16984854c49c,,Interpret a two-way table summarizing data
+52ffb8ee-c70d-5076-b2c6-8f3a1b435fa9,,"Draw geometric shapes with given conditions (side lengths, angle measures, radius/diameter)"
+9ddaee28-59fe-5fc5-8752-07e538ce90da,,"Know and understand conditions that determine a unique triangle, more than one triangle, or no triangle"
+0f972f57-4f94-5bc2-816e-cd7e819a9442,,Use comparative language to communicate comparison of two three-digit numbers
+24cff8cf-a4e1-5427-8d3b-dc20d19489ed,,Compare two three-digit numbers by comparing the digits in each place value
+b404ce7e-82bd-5265-8b6f-843ac9118599,,"Use symbols (>,<, or =) to communicate comparison of two three-digit numbers"
+a766ca44-c654-505f-a2b9-b2f1e3b468b4,,Describe situations where a quantity grows or decays at a constant percent rate per unit interval as compared to another
+7782ce05-1218-5a88-8d2c-ef908e4d8fb4,,Analyze and solve pairs of simultaneous linear equations
+8119c47d-f394-50ff-b630-f4aa64763b52,,Use positive and negative numbers to represent quantities in real-world contexts
+f38825db-1963-5e02-85ea-b722bff5635a,,Explain the meaning of 0 when using positive or negative numbers to represent quantities in real-world contexts
+f57f8f6c-ec91-5b37-9632-fdb36c088666,,Use positive and negative numbers to describe quantities having opposite directions or values
+42d2f53f-81ba-5799-8f91-a43902da4d78,,"Given the number of hundreds, tens, and/or ones, write a three- digit number"
+511b5ebb-36d0-59c0-9308-4452ce5300eb,,Given the number of tens and/or ones write a two- digit number
+9d9fd685-c4d8-58ac-b98c-3a5aad283b9d,,Decompose a two-digit number into its tens and ones
+c1eb6d51-b8df-5ce4-ab03-314750e960b8,,"Decompose a three-digit number into its hundreds, tens, and ones"
+fd70ea61-d4b0-5e5a-aecf-82bf0aff6480,,Find the components of a vector by subtracting the coordinates of an initial point from the coordinates of a terminal point
+22156372-ad11-5837-9b62-4489288590bb,,Recognize that opposite signs of numbers are located on opposite sides of 0 on the number line
+4c975388-0779-5402-ac2e-eda40bc3a324,,Recognize that 0 is its own opposite
+a40a923f-8622-5b74-aa84-849e70cfbf65,,Recognize that the opposite of the opposite of a number is the number itself
+29c42ed3-da20-5288-a4b1-c72989c97fe4,,Find the area of rectilinear figures by decomposing them into non-overlapping parts and finding the area of each part
+7be9b24a-c5cc-5882-adae-ac60664a1864,,Find the area of rectilinear figures in real-world problems by decomposing them into non-overlapping parts and finding the area of each part
+a997e206-ba00-5087-9ac7-f301f2eb9841,,Solve real-world problems involving rectilinear figures
+2d077eff-1399-5272-8c90-1970ed3c315b,,Verify that no combination of basic rigid motions will alter the measure of an angle
+c15920a0-cd97-5424-aab0-693100eab9ee,,Use the relationship between the sine and cosine of complementary angles to solve problems
+2445741d-152c-50b2-9c29-9bf55c047418,,"Draw a bar graph, including with single-unit scales, to represent a data set with up to four categories"
+51ebaa2d-8bd9-5614-9ed2-2cef16cd341e,,"Solve one-step, take-apart problems using information presented in a bar graph"
+5ac573e0-035f-57d1-80ee-08510bfe8557,,"Solve one-step, put-together problems using information presented in a bar graph"
+6cb4db86-2142-5dfe-806c-9e31ca5ef65d,,Draw a picture graph to represent a data set with up to four categories
+d1013e8f-56fc-5553-b839-ab5eacf5e7c9,,"Solve one-step, compare problems using information presented in a bar graph"
+37366bc7-5746-5a1c-bf97-577a56df2b9e,,Use properties of operations to explain why subtraction strategies work
+87aec89a-e355-5021-9f76-17d56b743547,,Use properties of operations to explain why addition strategies work
+d822a3cc-0e07-5871-9344-0b1a3d830c43,,Solve quadratic equations with real coefficients that have complex solutions
+1a91a235-2a8d-5ad7-930f-758df472b2b6,,Apply the perimeter formula for rectangles to mathematical problems
+8a82f241-5bc1-5ba7-9a24-ed9c72a581d2,,Apply the perimeter formula for rectangles to real-world problems
+92e853a7-1f4a-57df-af59-5303d1ce5f1f,,Apply the area formula for rectangles to real-world problems
+984b8dc3-b5db-551f-9af5-b44b06aaa40c,,Apply the area formula for rectangles to mathematical problems
+d7f72fb7-cf73-5e6f-b121-de26302ed7cd,,Find the midpoint of a line segment defined by two given points
+fa6fd745-8337-55b1-a05b-f7f6234543a9,,"Given two points, find the point on the line segment between the two points that divides the segment into a given ratio"
+a161c501-80f8-5a7c-886f-912181c6bb10,,Use probability to make fair decisions
+779be2f1-070a-5d68-9928-0025fa62985f,,Write equations for multi-step problems to find an unknown angle
+82575afc-11d9-5184-afb7-76e36fb4384b,,"Find an unknown angle, including by writing and solving equations"
+21594cad-4891-5f65-97a1-5324e6d58a36,,"When counting objects, pair each object with one and only one number name"
+a1024467-ced8-57d5-ab8d-b9af6bca0f9c,,"When counting objects, say number names in the standard order"
+efb98db3-4a8d-53aa-a306-54666ddf7da3,,"When counting objects, pair each number name with one and only one object"
+87046098-2a74-5ba0-998c-6d34f6a54c4f,,Give an informal argument for the formulas for the circumference of a circle and the area of a circle by using dissection arguments and informal limit arguments
+e19d5ffa-5eb9-5a2b-bd02-313130cf64f5,,"Give an informal argument for the formulas for volume of a cylinder, pyramid and cone by using dissection, cavalieri's principle, and informal limit arguments"
