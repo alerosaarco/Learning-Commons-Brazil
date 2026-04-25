@@ -141,8 +141,12 @@ def main() -> None:
     cc_comp_desc: dict[str, str] = dict(zip(cc_comps["component_id"], cc_comps["description"]))
 
     # cc_standard_id → (statement_code, description)
+    # statement_code can be NaN for some Science standards — normalise to ""
     cc_std_info: dict[str, tuple[str, str]] = {
-        row["identifier"]: (row["statement_code"], row["description"])
+        row["identifier"]: (
+            "" if pd.isna(row["statement_code"]) else str(row["statement_code"]),
+            row["description"],
+        )
         for _, row in cc_stds.iterrows()
     }
 
